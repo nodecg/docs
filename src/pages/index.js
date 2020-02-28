@@ -26,13 +26,13 @@ const features = [
 				<div className={classnames('container-small', styles.environments)}>
 					<div className="row">
 						<a
-							className={classnames('col', styles.environmentItem)}
+							className={classnames('col', styles.environmentItem, styles.shadow2)}
 							href="https://obsproject.com/"
 						>
 							OBS Studio
 						</a>
 						<a
-							className={classnames('col', styles.environmentItem)}
+							className={classnames('col', styles.environmentItem, styles.shadow2)}
 							href="http://www.vmix.com/"
 						>
 							vMix
@@ -40,13 +40,13 @@ const features = [
 					</div>
 					<div className="row">
 						<a
-							className={classnames('col', styles.environmentItem)}
+							className={classnames('col', styles.environmentItem, styles.shadow2)}
 							href="https://www.xsplit.com/"
 						>
 							xSplit
 						</a>
 						<a
-							className={classnames('col', styles.environmentItem)}
+							className={classnames('col', styles.environmentItem, styles.shadow2)}
 							href="https://casparcg.com/"
 						>
 							CasparCG
