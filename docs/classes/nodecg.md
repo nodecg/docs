@@ -1,0 +1,72 @@
+---
+id: nodecg
+title: NodeCG
+sidebar_label: NodeCG
+---
+
+`new NodeCG(bundle, socket)`
+
+Creates a new NodeCG API instance. It should never be necessary to use this constructor in a bundle, as NodeCG automatically injects a pre-made API instance.
+
+|  Name  |  Type  |                   Description                      |
+| ------ | ------ | -------------------------------------------------- |
+| bundle | object | The bundle object to build an API instance from.   |
+| socket | object | The Socket.IO socket instance to communicate with. |
+
+## Members
+
+### _(static)_ declaredReplicants
+
+An object containing references to all Replicants that have been declared in this `window`, sorted by bundle. E.g., `NodeCG.declaredReplicants.myBundle.myRep`
+
+### bundleConfig
+
+An object containing the parsed content of cfg/&lt;bundle-name>.json, the contents of which are read once when NodeCG starts up. Used to quickly access per-bundle configuration properties.
+
+### _(readonly)_ bundleGit
+
+Provides information about the current git status of this bundle, if found.
+
+#### Properties
+
+|    Name   |  Type  |   Attribues   |                  Description                    |
+| --------- | ------ | ------------- | ----------------------------------------------- |
+| branch    | String |               | What branch this bundle is on.                  |
+| hash      | String |               | The full hash of the commit this bundle is on.  |
+| shortHash | String |               | The short hash of the commit this bundle is on. |
+| date      | Date   | &lt;optional> | The date of the commit this bundle is on.       |
+| message   | String | &lt;optional> | The message of the commit this bundle is on.    |
+
+### bundleName
+
+The name of the bundle which this NodeCG API instance is for.
+
+### bundleVersion
+
+The version (from package.json) of the bundle which this NodeCG API instance is for.
+
+### extensions
+
+_Extension only_
+Object containing references to all other loaded extensions. To access another bundle's extension, it must be declared as a bundleDependency in your bundle's manifest.
+
+```js
+// bundles/my-bundle/package.json
+{
+    "name": "my-bundle"
+    ...
+    "bundleDependencies": {
+        "other-bundle": "^1.0.0"
+    }
+}
+
+// bundles/my-bundle/extension.js
+module.exports = function (nodecg) {
+    const otherBundle = nodecg.extensions['other-bundle'];
+    // Now I can use `otherBundle`!
+}
+```
+
+### Logger _:Object_
+
+Provides easy access to the Logger class. Useful in cases where you want to create your own custom logger.

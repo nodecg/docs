@@ -1,0 +1,81 @@
+---
+id: 1_what-is-nodecg
+title: What is NodeCG?
+sidebar_label: NodeCG
+---
+
+[![NodeCG](https://raw.githubusercontent.com/nodecg/nodecg/master/media/splash.png)](http://nodecg.com/)
+
+[![Discord](https://img.shields.io/discord/423233465643827211.svg?logo=discord)](https://discord.gg/NNmVz4x)
+[![Build Status](https://travis-ci.org/nodecg/nodecg.svg?branch=master)](https://travis-ci.org/nodecg/nodecg)
+[![Coverage Status](https://codecov.io/gh/nodecg/nodecg/branch/master/graph/badge.svg)](https://codecov.io/gh/nodecg/nodecg)
+[![Docker Build Status](https://img.shields.io/docker/build/nodecg/nodecg.svg)](https://hub.docker.com/r/nodecg/nodecg/tags/)
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40NodeCG)](https://twitter.com/NodeCG)
+
+NodeCG is a broadcast graphics framework and application. It enables you to write complex, dynamic broadcast graphics
+using the web platform. NodeCG has no graphics or drawing primitives of its own. Instead, NodeCG provides
+a structure for your code and an API to facilitate moving data between the dashboard, the server, and your graphics.
+It makes no assumptions about how to best code a graphic, and gives you complete freedom to use whatever libraries,
+frameworks, tools, and methodologies you want. As such, NodeCG graphics can be rendered in any environment that
+can render HTML, including:
+
+- [OBS Studio](https://obsproject.com/) (via the [obs-browser](https://github.com/kc5nra/obs-browser) plugin)
+- [vMix](http://www.vmix.com/)
+- [XSplit](https://www.xsplit.com/)
+- CasparCG [(v2.2.0 test builds only, at this time)](https://casparcg.com/builds/CasparCG%20Server/master/)
+
+:::note
+Don't see your preferred streaming software on this list? NodeCG graphics require Chrome 49 or newer. If your streaming software's implementation of browser source uses a build of CEF that is based on at least Chrome 49, chances are that NodeCG graphics will work in it. You can check what version of Chrome your streaming software uses for its browser sources by opening [whatversion.net/chrome](http://www.whatversion.net/chrome) as a browser source.
+:::
+
+Looking for a list of NodeCG bundles and resources? Check out [awesome-nodecg](https://github.com/nodecg/awesome-nodecg/blob/master/README.md).
+
+Have questions about NodeCG, or just want to say 'hi'? [Join our Discord server](https://discord.gg/NNmVz4x)!
+
+## Who should use NodeCG?
+
+NodeCG is a programming framework. As such, it's most useful to developers capable of creating their own graphics
+using HTML, CSS, and JavaScript. NodeCG's ecosystem of bundles is quite small.
+Those expecting to download NodeCG and use off-the-shelf bundles to get a complete stream overlay
+without writing any code may be disappointed.
+
+## Goals
+
+The NodeCG project exists to accomplish the following goals:
+
+- Make broadcast graphics (also known as "character generation" or "CG") more accessible.
+- Remain as close to the web platform as possible.
+- Support broadcasts of any size and ambition.
+
+Let's unpack what these statements mean:
+
+### > Make broadcast graphics (also known as "character generation" or "CG") more accessible
+
+Historically, broadcast graphics have been expensive. They either required expensive hardware, expensive software, or both. NodeCG was originally created to provide real-time broadcast graphics for Tip of the Hats, which is an all-volunteer charity fundraiser that had a budget of \$0 for its first several years.
+
+Now, it is possible to create an ambitious broadcast using entirely free software and consumer hardware. The NodeCG project embraces this democratization of broadcast technology.
+
+### > Remain as close to the web platform as possible
+
+NodeCG graphics are just webpages. There is absolutely nothing special or unique about them. This is their greatest strength.
+
+By building on the web platform, and not building too many abstractions on top of it, people developing broadcast graphics with NodeCG have access to the raw potential of the web. New APIs and capabilities are continually being added to the web platform, and NodeCG developers should have access to the entirety of what the web can offer.
+
+### > Support broadcasts of any size and ambition
+
+NodeCG's roots are in small broadcasts with no budget. More recently, NodeCG has begun seeing use in increasingly elaborate productions. We believe that one set of tools can and should be able to scale up from the smallest show all the way to the biggest fathomable show. Whether you're using OBS for everything, or a hardware switcher with a traditional key/fill workflow, NodeCG can be a part of any broadcast graphics system.
+
+## Maintainers
+
+- [Alex "Lange" Van Camp](https://alexvan.camp)
+- [Matt "Bluee" McNamara](https://mattmcn.com/)
+- [Keiichiro "Hoishin" Amemiya](https://hoish.in/)
+
+## Designers
+
+- [Chris Hanel](http://www.chrishanel.com)
+
+## Acknowledgements
+
+- [Atmo](https://github.com/atmosfar), original dashboard concept and code, the inspiration for toth-overlay
+- [Alex "Lange" Van Camp](http://alexvan.camp), designer & developer of [toth-overlay](https://github.com/TipoftheHats/toth-overlay), the base on which NodeCG was built
