@@ -38,6 +38,10 @@
   color: #f5f6f7;
 }
 
+.admonition-icon svg {
+  fill: #fff;
+}
+
 html[data-theme="dark"] {
   --ifm-background-color: #262b36;
   --ra-color-note: var(--ifm-color-primary-dark);
