@@ -89,7 +89,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/nodecg/nodecg/edit/master/website/',
+            'https://github.com/nodecg/docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
