@@ -11,7 +11,7 @@ for use in the bundle. To enable the Asset system in a bundle, add code like the
 {
   "name": "test-bundle",
   "nodecg": {
-  "assetCategories": [
+    "assetCategories": [
       {
         "name": "thumbnails",
         "title": "Thumbnails",
