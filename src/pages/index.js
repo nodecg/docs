@@ -21,23 +21,39 @@ const features = [
 		title: <>Compatible</>,
 		imageUrl: 'img/Compatible.svg',
 		description: (
-			<>
+			<div>
 				NodeCG is compatible with any environment that can render HTML such as:
-				<ul>
-					<li>
-						<a href="https://obsproject.com/">OBS Studio</a>
-					</li>
-					<li>
-						<a href="http://www.vmix.com/">vMix</a>
-					</li>
-					<li>
-						<a href="https://www.xsplit.com/">xSplit</a>
-					</li>
-					<li>
-						<a href="https://casparcg.com/">CasparCG</a>
-					</li>
-				</ul>
-			</>
+				<div className={classnames('container-small', styles.environments)}>
+					<div className="row">
+						<a
+							className={classnames('col', styles.environmentItem)}
+							href="https://obsproject.com/"
+						>
+							OBS Studio
+						</a>
+						<a
+							className={classnames('col', styles.environmentItem)}
+							href="http://www.vmix.com/"
+						>
+							vMix
+						</a>
+					</div>
+					<div className="row">
+						<a
+							className={classnames('col', styles.environmentItem)}
+							href="https://www.xsplit.com/"
+						>
+							xSplit
+						</a>
+						<a
+							className={classnames('col', styles.environmentItem)}
+							href="https://casparcg.com/"
+						>
+							CasparCG
+						</a>
+					</div>
+				</div>
+			</div>
 		)
 	},
 	{
@@ -45,12 +61,11 @@ const features = [
 		imageUrl: 'img/NoMatterTheSize.svg',
 		description: (
 			<>
-				We believe that one set of tools can and
-				should be able to scale up from the smallest show all the way to the biggest fathomable
-				show.
-        <br/>
-        Whether you're using OBS for everything, or a hardware switcher with a traditional
-				key/fill workflow, NodeCG can be a part of any broadcast graphics system.
+				We believe that one set of tools can and should be able to scale up from the smallest show
+				all the way to the biggest fathomable show.
+				<br />
+				Whether you're using OBS for everything, or a hardware switcher with a traditional key/fill
+				workflow, NodeCG can be a part of any broadcast graphics system.
 			</>
 		)
 	}
