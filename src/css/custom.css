@@ -20,6 +20,8 @@
   --ra-color-note: var(--ifm-color-primary-dark);
   --ra-admonition-icon-color: #ffffff;
 
+  --ifm-navbar-link-color: #f5f6f7;
+
   --ifm-navbar-background-color: var(--nodecg-background-primary);
 }
 
