@@ -47,7 +47,7 @@ module.exports = {
             },
             {
               label: 'Quick Start',
-              to: 'docs/3_quick-start.md',
+              to: 'docs/creating-bundles.md',
             },
           ],
         },
