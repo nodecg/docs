@@ -34,7 +34,7 @@ Run `node index.js` or `nodecg start` in the root nodecg folder.
 Open the dashboard (`http://localhost:9090` by default).
 
 :::note
-When running NodeCG in production, [pm2](https://github.com/Unitech/pm2) is recommended.
+When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
 :::
 
 ## Installing bundles

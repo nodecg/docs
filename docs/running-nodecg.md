@@ -12,7 +12,7 @@ sidebar_label: Running
 - Open a graphic from the "Graphics" menu.
 - You can configure NodeCG by creating and editing [cfg/nodecg.json](http://nodecg.com/tutorial-6_nodecg-configuration.html).
 
-To run NodeCG in production, [pm2](https://github.com/Unitech/pm2) is recommended.
+When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
 
 ### Configuration
 
