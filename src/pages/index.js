@@ -89,7 +89,7 @@ function Home() {
 								'button button--contained button--secondary button--lg',
 								styles.getStarted
 							)}
-							to={useBaseUrl('docs/3_quick-start')}
+							to={useBaseUrl('docs/installing')}
 						>
 							Get Started
 						</Link>
