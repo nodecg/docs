@@ -33,5 +33,5 @@
 }
 
 html[data-theme="dark"] {
-  --ifm-background-color: hsl(220, 17%, 18%);
+  --ifm-background-color: #262b36;
 }
