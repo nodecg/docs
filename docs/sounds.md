@@ -39,7 +39,7 @@ create a `nodecg.soundCues` array in your `package.json`:
 
 Your bundle will now have a card on the Mixer page of the Dashboard.
 
-<iframe src='https://gfycat.com/ifr/PrestigiousShyGoldeneye' frameBorder='0' scrolling='no' width='640' height='426.6666666666667' allowFullScreen></iframe>
+<iframe src='https://gfycat.com/ifr/possibleringedindianpalmsquirrel' frameBorder='0' scrolling='no' width='640' height='560' allowFullScreen></iframe>
 
 `defaultFile`s are audio files that you ship with your bundle. They will be available to that specific cue as a
 "Default" option in that cue's dropdown select on the Mixer.
