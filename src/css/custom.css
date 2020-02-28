@@ -8,8 +8,10 @@
 :root {
   --nodecg-background-primary: #232c3d;
   --nodecg-background-secondary: #2f3a4f;
+  --nodecg-light-primary: #47e7c6;
+  --nodecg-light-secondary: #23c8c0;
 
-  --ifm-color-primary: #23c8c0;
+  --ifm-color-primary: var(--nodecg-light-secondary);
   --ifm-color-primary-dark: var(--nodecg-background-primary);
   --ifm-color-primary-darker: #1eaaa3;
   --ifm-color-primary-darkest: #188c86;
@@ -17,8 +19,8 @@
   --ifm-color-primary-lighter: #33dbd3;
   --ifm-color-primary-lightest: #51e1da;
   --ifm-code-font-size: 95%;
-  --ra-color-note: var(--ifm-color-primary-dark);
-  --ra-admonition-icon-color: #ffffff;
+
+  /* --ra-color-note: var(--ifm-color-primary-dark); */
 
   --ifm-navbar-link-color: #f5f6f7;
 
@@ -38,4 +40,6 @@
 
 html[data-theme="dark"] {
   --ifm-background-color: #262b36;
+  --ra-color-note: var(--ifm-color-primary-dark);
+  --ra-admonition-icon-color: #ffffff;
 }
