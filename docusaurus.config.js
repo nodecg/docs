@@ -9,6 +9,10 @@ module.exports = {
   organizationName: 'nodecg', // Usually your GitHub org/user name.
   projectName: 'nodecg', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/vsDark'),
+    },
     navbar: {
       title: 'NodeCG',
       logo: {

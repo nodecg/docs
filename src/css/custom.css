@@ -40,7 +40,7 @@
 
 html[data-theme="dark"] {
   --ifm-background-color: #262b36;
-  --ra-color-note: var(--ifm-color-primary-dark);
+  --ra-color-note: var(--nodecg-background-secondary);
   --ra-admonition-icon-color: #ffffff;
 }
 
