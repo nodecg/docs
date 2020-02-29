@@ -27,7 +27,7 @@ for use in the bundle. To enable the Asset system in a bundle, add code like the
 }
 ```
 
-<video style={{width: '100%'}} controls preload><source src='/vid/AssetsVid.mkv' type='video/mp4' /></video>
+<video style={{width: '100%'}} controls preload><source src='/vid/AssetsVid.mp4' type='video/mp4' /></video>
 
 NodeCG will automatically create a Replicant for each `assetCategory` in a bundle. To access these asset Replicants,
 declare them as you would any other Replicant in your bundle. For example:
