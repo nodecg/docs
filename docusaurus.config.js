@@ -103,4 +103,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: [ require.resolve('./force-theme.js')]
 };

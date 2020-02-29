@@ -96,7 +96,7 @@ function Home() {
 		>
 			<header className={classnames('hero hero--primary', styles.heroBanner)}>
 				<div className="container">
-					<img src="img/splash.png" />
+					<img alt="Splash" src="img/splash.png" />
 					<p className="hero__subtitle">{siteConfig.tagline}</p>
 					<div className={styles.buttons}>
 						<Link

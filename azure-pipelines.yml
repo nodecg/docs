@@ -1,0 +1,52 @@
+variables:
+  - group: Secrets
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: npm i
+  displayName: 'Intall project deps'
+
+- bash: |
+    # https://github.com/microsoft/azure-pipelines-yaml/issues/135#issuecomment-532480446
+    set -e
+    set -o pipefail
+
+    cp src/pages/index.js src/pages/light.js
+    cp src/pages/index.js src/pages/dark.js
+    cd docs
+    sed '2 s/creating-bundles/creating-bundles-light/' creating-bundles.md > creating-bundles-light.md
+    sed '2 s/creating-bundles/creating-bundles-dark/' creating-bundles.md > creating-bundles-dark.md
+  displayName: 'Make light and dark variants'
+
+- script: npm run build
+  displayName: 'Build'
+
+- bash: |
+    # https://github.com/microsoft/azure-pipelines-yaml/issues/135#issuecomment-532480446
+    set -e
+    set -o pipefail
+
+    cd build
+    mv light/index.html light.html
+    mv dark/index.html dark.html
+    rmdir light
+    rmdir dark
+  displayName: 'Theme fixup'
+
+- bash: |
+    # https://github.com/microsoft/azure-pipelines-yaml/issues/135#issuecomment-532480446
+    set -e
+    set -o pipefail
+
+    export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=$(Build.SourceBranchName) 
+    export LHCI_BUILD_CONTEXT__GITHUB_REPO_SLUG=nodecg/docs
+    sudo npm install -g @lhci/cli@0.3.x
+    lhci autorun
+  displayName: 'Lighthouse CI'
+  env:
+      LHCI_GITHUB_APP_TOKEN: $(LHCI_GITHUB_APP_TOKEN)
