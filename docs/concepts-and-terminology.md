@@ -1,5 +1,5 @@
 ---
-id: 2_concepts-and-terminology
+id: concepts-and-terminology
 title: Concepts and Terminology
 sidebar_label: Concepts and Terminology
 ---

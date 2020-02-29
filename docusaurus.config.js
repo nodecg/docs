@@ -26,7 +26,7 @@ module.exports = {
             fontSize: 'calc(0.8 * var(--ifm-font-size-base))',
           },
         },
-        {to: 'docs/1_what-is-nodecg', label: 'Docs', position: 'left'},
+        {to: 'docs/what-is-nodecg', label: 'Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/nodecg/nodecg',
@@ -43,11 +43,11 @@ module.exports = {
           items: [
             {
               label: 'What is NodeCG',
-              to: 'docs/1_what-is-nodecg',
+              to: 'docs/what-is-nodecg',
             },
             {
               label: 'Quick Start',
-              to: 'docs/creating-bundles.md',
+              to: 'docs/creating-bundles',
             },
           ],
         },

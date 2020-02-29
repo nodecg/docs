@@ -1,5 +1,5 @@
 ---
-id: 5_manifest
+id: manifest
 title: package.json Manifest
 sidebar_label: Manifest
 ---

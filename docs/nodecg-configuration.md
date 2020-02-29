@@ -1,5 +1,5 @@
 ---
-id: 6_nodecg-configuration
+id: nodecg-configuration
 title: NodeCG Configuration
 sidebar_label: Configuration
 ---

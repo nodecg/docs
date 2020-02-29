@@ -1,5 +1,5 @@
 ---
-id: 7_using-npm
+id: using-npm
 title: Using npm Dependencies
 sidebar_label: Node Dependencies
 ---

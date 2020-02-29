@@ -1,5 +1,5 @@
 ---
-id: 9_bundle-configuration
+id: bundle-configuration
 title: Bundle Configuration
 sidebar_label: Bundle Configuration
 ---

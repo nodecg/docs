@@ -1,5 +1,5 @@
 ---
-id: 1_what-is-nodecg
+id: what-is-nodecg
 title: What is NodeCG?
 sidebar_label: NodeCG
 ---

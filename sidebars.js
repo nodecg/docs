@@ -1,19 +1,12 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 module.exports = {
 	mainSidebar: {
-		'Quick Start': ['1_what-is-nodecg', 'installing', 'creating-bundles'],
+		'Quick Start': ['what-is-nodecg', 'installing', 'creating-bundles'],
 		Guides: [
-			'2_concepts-and-terminology',
-			'5_manifest',
-			'6_nodecg-configuration',
-			'7_using-npm',
-			'9_bundle-configuration',
+			'concepts-and-terminology',
+			'manifest',
+			'nodecg-configuration',
+			'using-npm',
+			'bundle-configuration',
 			'assets',
 			'sounds',
 			'replicant-schemas',
@@ -21,7 +14,7 @@ module.exports = {
 			'making-dialogs',
 			'portable-nodecg'
 		],
-		Advanced: ['mounts', '4_security', 'screenshot-testing', 'custom-routes', 'sentry'],
+		Advanced: ['mounts', 'security', 'screenshot-testing', 'custom-routes', 'sentry'],
 		'Using Frameworks': [
 			'frameworks/using-bundlers',
 			'frameworks/typescript',
