@@ -9,7 +9,7 @@ Some markdown rules have been disabled:
 |----------------------------------------------------------------------------------- | ------------------------------- | --- |
 | [MD013](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md013) | Line length                     |     |
 | [MD026](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md026) | Trailing punctuation in heading | Various headings in the NodeCG readme have valid question marks in the header |
-| [MD033](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md033) | Inline HTML                     | Gfycat is used to demonstrate certain concepts and they requires iframes in order to show|
+| [MD033](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md033) | Inline HTML                     | Video tags are used to demonstrate certain concepts |
 
 ## Installation
 
