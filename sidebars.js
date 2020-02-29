@@ -36,6 +36,7 @@ module.exports = {
 			'classes/listenFor',
 			'classes/unlisten',
 			'classes/log',
+			'classes/router',
 			'classes/mount',
 			'classes/getDialog',
 			'classes/getDialogDocument',
