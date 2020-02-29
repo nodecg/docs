@@ -39,7 +39,7 @@ create a `nodecg.soundCues` array in your `package.json`:
 
 Your bundle will now have a card on the Mixer page of the Dashboard.
 
-<video style={{width: '100%'}} controls preload><source src='/vid/SoundsVid.mp4' type='video/mp4' /></video>
+<video style={{width: '100%'}} controls preload><source src='/vid/Sounds.mp4' type='video/mp4' /></video>
 
 `defaultFile`s are audio files that you ship with your bundle. They will be available to that specific cue as a
 "Default" option in that cue's dropdown select on the Mixer.
