@@ -47,3 +47,13 @@ html[data-theme="dark"] {
 html[data-theme="dark"] .admonition-icon svg {
   fill: #fff;
 }
+
+/* Change colour and underline links that are in code blocks */
+a code {
+  color: #00635e;
+  text-decoration: underline;
+}
+
+html[data-theme="dark"] a code {
+  color: var(--nodecg-light-secondary);
+}
