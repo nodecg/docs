@@ -105,7 +105,7 @@ If you have a really big panel that simply needs to be in its own workspace and 
 the `fullbleed` property. Fullbleed panels are put into their own workspace and have no margins around them. This is
 good for when you have a large, complex UI that you need more fine-grained control over.
 
-<iframe src='https://gfycat.com/ifr/SarcasticDeterminedFugu' frameborder='0' scrolling='no' width='640' height='402' allowfullscreen></iframe>
+<video style={{width: '100%'}} controls preload><source src='/vid/Fullbleed.mp4' type='video/mp4' /></video>
 
 To mark a panel as a dialog, it must have the `dialog` property set to `true`. Dialogs don't immediately display on the
 dashboard, and must be manually invoked. See {@tutorial making-dialogs} for more info.
