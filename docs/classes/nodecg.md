@@ -47,7 +47,10 @@ The version (from package.json) of the bundle which this NodeCG API instance is 
 
 ### extensions
 
-_Extension only_
+:::important Extension Only
+This can only be used in code which runs on the server.
+:::
+
 Object containing references to all other loaded extensions. To access another bundle's extension, it must be declared as a bundleDependency in your bundle's manifest.
 
 ```js

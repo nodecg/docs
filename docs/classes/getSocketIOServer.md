@@ -4,8 +4,10 @@ title: getSocketIOServer()
 sidebar_label: getSocketIOServer()
 ---
 
-`getSocketIOServer()`
+:::important Extension Only
+This can only be used in code which runs on the server.
+:::
 
-_Extension only_
+`getSocketIOServer()`
 
 Gets the server Socket.IO context.

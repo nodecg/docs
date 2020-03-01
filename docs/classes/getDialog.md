@@ -4,6 +4,10 @@ title: getDialog
 sidebar_label: getDialog
 ---
 
+:::important Browser Only
+This can only be used in code which runs in Dashboards and Graphics.
+:::
+
 `getDialog(name, *bundle)` _→ \{object\}_
 
 Returns the specified dialog element.

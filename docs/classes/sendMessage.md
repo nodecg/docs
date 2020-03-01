@@ -20,7 +20,9 @@ See [Socket.IO's docs](http://socket.io/docs/#sending-and-getting-data-%28acknow
 
 ### Returns
 
-_Browser only_
+:::important Browser Only
+This can only be used in code which runs in Dashboards and Graphics.
+:::
 
 A Promise that is rejected if the first argument provided to the acknowledgement is an Error, otherwise it is resolved with the remaining arguments provided to the acknowledgement.
 

@@ -4,9 +4,11 @@ title: Router
 sidebar_label: Router
 ---
 
-`Router`
+:::important Extension Only
+This can only be used in code which runs on the server.
+:::
 
-_Extension only_
+`Router`
 
 Creates a new express router.
 
@@ -18,10 +20,10 @@ Defining a simple GET route:
 
 ```js
 module.exports = function (nodecg) {
-	const app = nodecg.Router();
-	app.get('/my-bundle/example', (req, res) => {
-		res.send('custom route confirmed');
-	});
-	nodecg.mount(app);
+  const app = nodecg.Router();
+  app.get('/my-bundle/example', (req, res) => {
+    res.send('custom route confirmed');
+  });
+  nodecg.mount(app);
 }
 ```
