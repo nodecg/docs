@@ -30,13 +30,6 @@ Don't see your preferred streaming software on this list? NodeCG graphics requir
 
 Have questions about NodeCG, or just want to say 'hi'? [Join our Discord server](https://discord.gg/NNmVz4x)!
 
-## Who should use NodeCG?
-
-NodeCG is a programming framework. As such, it's most useful to developers capable of creating their own graphics
-using HTML, CSS, and JavaScript. NodeCG's ecosystem of bundles is quite small.
-Those expecting to download NodeCG and use off-the-shelf bundles to get a complete stream overlay
-without writing any code may be disappointed.
-
 ## Goals
 
 The NodeCG project exists to accomplish the following goals:
