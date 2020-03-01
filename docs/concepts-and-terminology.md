@@ -12,7 +12,7 @@ Every bundle needs a [`package.json`](https://docs.npmjs.com/files/package.json)
 
 ### Related Docs
 
-- [package.json Manifest](5_manifest.md)
+- [package.json Manifest](manifest.md)
 
 ## Graphics
 
@@ -30,8 +30,8 @@ Graphics are defined in your bundle's `package.json` file, in the `nodecg.graphi
 
 ### Related Docs
 
-- [package.json Manifest](5_manifest.md)
-- [Using npm](7_using-npm.md)
+- [package.json Manifest](manifest.md)
+- [Using npm](using-npm.md)
 - [Performance Tips](performance-tips.md)
 - [Screenshot Testing](screenshot-testing.md)
 
@@ -55,9 +55,9 @@ The dashboard is where all your controls for your graphics end up. Each panel is
 
 ### Related Docs
 
-- [package.json Manifest](5_manifest.md)
+- [package.json Manifest](manifest.md)
 - [Making dialogs](making-dialogs.md)
-- [Using npm](7_using-npm.md)
+- [Using npm](using-npm.md)
 - [Sounds](sounds.md)
 - [Assets](assets.md)
 
@@ -90,8 +90,8 @@ and keep all those files in a single `extension` folder. If using an `extension`
 ### Related Docs
 
 - [Extensions](classes/nodecg#extensions)
-- [package.json Manifest](5_manifest.md)
-- [Using npm](7_using-npm.md)
+- [package.json Manifest](manifest.md)
+- [Using npm](using-npm.md)
 - [Custom routes](custom-routes.md)
 - [Bundle configuration](bundle-configuration.md)
 - [Mounts](mounts.md)
