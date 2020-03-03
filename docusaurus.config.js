@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'nodecg',
   themeConfig: {
     prism: {
-      theme: require('prism-react-renderer/themes/duotoneLight'),
+      theme: require('./src/css/nodecg-light'),
       darkTheme: require('prism-react-renderer/themes/vsDark'),
     },
     navbar: {
