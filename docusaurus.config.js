@@ -84,7 +84,12 @@ module.exports = {
       ],
       copyright: ``,
     },
-    image: 'img/splash.png'
+    image: 'img/splash.png',
+    algolia: {
+      apiKey: '21171da7394be9a61a0174dd81b75b70',
+      indexName: 'nodecg',
+      algoliaOptions: {}
+    }
   },
   presets: [
     [
