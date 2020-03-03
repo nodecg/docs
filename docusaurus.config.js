@@ -6,11 +6,11 @@ module.exports = {
   url: 'https://nodecg.com/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'nodecg', // Usually your GitHub org/user name.
-  projectName: 'nodecg', // Usually your repo name.
+  organizationName: 'nodecg',
+  projectName: 'nodecg',
   themeConfig: {
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
+      theme: require('./src/css/nodecg-light'),
       darkTheme: require('prism-react-renderer/themes/vsDark'),
     },
     navbar: {
@@ -108,4 +108,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: [ require.resolve('./force-theme.js')]
 };

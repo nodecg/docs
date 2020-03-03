@@ -48,6 +48,11 @@
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
+  color: #11e2d8;
+}
+
+.environmentItem:hover {
+  color: #00b9b0;
 }
 
 .shadow1 {

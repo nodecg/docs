@@ -8,10 +8,10 @@
 :root {
   --nodecg-background-primary: #232c3d;
   --nodecg-background-secondary: #2f3a4f;
-  --nodecg-light-primary: #47e7c6;
-  --nodecg-light-secondary: #23c8c0;
+  --nodecg-light-secondary: #47e7c6;
+  --nodecg-light-primary: #23c8c0;
 
-  --ifm-color-primary: var(--nodecg-light-secondary);
+  --ifm-color-primary: var(--nodecg-light-primary);
   --ifm-color-primary-dark: var(--nodecg-background-primary);
   --ifm-color-primary-darker: #1eaaa3;
   --ifm-color-primary-darkest: #188c86;
@@ -19,12 +19,16 @@
   --ifm-color-primary-lighter: #33dbd3;
   --ifm-color-primary-lightest: #51e1da;
   --ifm-code-font-size: 95%;
-
-  --ra-color-important: #0092be;
-
+  
   --ifm-navbar-link-color: #f5f6f7;
-
+  --ifm-menu-color-active: var(--nodecg-background-primary);
+  --ifm-link-color: #0032e6;
+  
   --ifm-navbar-background-color: var(--nodecg-background-primary);
+  
+  /* Custom admonition colours */
+  --ra-color-important: #000000;
+  --ra-color-warning: #B9040A;
 }
 
 .docusaurus-highlight-code-line {
@@ -42,6 +46,9 @@ html[data-theme="dark"] {
   --ifm-background-color: #262b36;
   --ra-color-note: var(--nodecg-background-secondary);
   --ra-admonition-icon-color: #ffffff;
+  --ifm-menu-color-active: var(--nodecg-light-primary);
+  --ifm-link-color: var(--nodecg-light-secondary);
+  --ra-color-important: #ffffff;
 }
 
 html[data-theme="dark"] .admonition-icon svg {
@@ -50,10 +57,18 @@ html[data-theme="dark"] .admonition-icon svg {
 
 /* Change colour and underline links that are in code blocks */
 a code {
-  color: #00635e;
+  color: var(--ifm-link-color);
   text-decoration: underline;
 }
 
 html[data-theme="dark"] a code {
   color: var(--nodecg-light-secondary);
+}
+
+html[data-theme="dark"] .admonition-important {
+  color: #000000;
+}
+
+html[data-theme="dark"] .admonition-important .admonition-icon svg {
+  fill: #000000;
 }
