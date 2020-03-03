@@ -22,7 +22,7 @@
   
   --ifm-navbar-link-color: #f5f6f7;
   --ifm-menu-color-active: var(--nodecg-background-primary);
-  --ifm-link-color: #00635e;
+  --ifm-link-color: #0032e6;
   
   --ifm-navbar-background-color: var(--nodecg-background-primary);
   
@@ -57,7 +57,7 @@ html[data-theme="dark"] .admonition-icon svg {
 
 /* Change colour and underline links that are in code blocks */
 a code {
-  color: #00635e;
+  color: var(--ifm-link-color);
   text-decoration: underline;
 }
 
