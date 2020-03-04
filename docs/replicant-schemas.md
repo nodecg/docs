@@ -4,7 +4,7 @@ title: Replicant Validation
 sidebar_label: Replicant Validation
 ---
 
-As of 0.8.4, bundle authors may define an optional schema for the [Replicants]{@link NodeCG#Replicant} in their bundle.
+As of 0.8.4, bundle authors may define an optional schema for the [Replicants](/docs/classes/replicant) in their bundle.
 If present, NodeCG will validate every change made to the Replicant against this schema.
 If any change fails validation, either on the server or on the client, an error will be synchronously thrown.
 

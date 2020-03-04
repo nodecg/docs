@@ -53,9 +53,9 @@ If your panels relied on any of these default styles or helper classes such as `
 
 In the past, if you tried to reply to a `sendMessage` with an `Error`, you'd end up with just an empty Object at the other end (`{}`). This is because by default, JavaScript `Error`s are serialized as an empty Object by `JSON.stringify`.
 
-Now, if the first argument to a {@link NodeCG#sendMessage} acknowledgement is an error, it will be properly serialized and sent across the wire. As part of this, we are now strongly encouraging that all {@link NodeCG#sendMessage} acknowledgements always be treated as standard error-first Node.js-style callbacks.
+Now, if the first argument to a [`sendMessage`](/docs/classes/sendMessage) acknowledgement is an error, it will be properly serialized and sent across the wire. As part of this, we are now strongly encouraging that all [`sendMessage`](/docs/classes/sendMessage) acknowledgements always be treated as standard error-first Node.js-style callbacks.
 
-In addition, client-side {@link NodeCG#sendMessage} now also returns a `Promise`, so that you may use `.then`/`.catch` instead of a callback function. See the updated {@link NodeCG#sendMessage} documentation for more information.
+In addition, client-side [`sendMessage`](/docs/classes/sendMessage) now also returns a `Promise`, so that you may use `.then`/`.catch` instead of a callback function. See the updated [`sendMessage`](/docs/classes/sendMessage) documentation for more information.
 
 Please note that if you do not specify a callback to your `sendMessage`, then it will always return a Promise. Additionally, the first argument sent back in your acknowledgement is always assumed to be either an `Error` or `null`. If this value is truthy, then it will be used to `reject` the Promise. For this reason, it is strongly encouraged that all `sendMessage` acknowledgements strictly adhere to the error-first style of callbacks.
 

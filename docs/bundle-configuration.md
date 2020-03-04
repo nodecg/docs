@@ -16,7 +16,7 @@ Say we have a bundle named `test-bundle`. If we create`./cfg/test-bundle.json` w
 }
 ```
 
-... that data can be accessed from via {@link NodeCG#bundleConfig}:
+... that data can be accessed via [`bundleConfig`](/docs/bundle-configuration):
 
 ```js
 console.log(nodecg.bundleConfig.myData); // prints "hello"

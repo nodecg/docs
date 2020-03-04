@@ -85,7 +85,7 @@ This field's only job is to ensure that dependant bundles are loaded first.
 In the above example, `other-bundle` would be loaded before `example-bundle`, and if `other-bundle` fails to load
 then so will `example-bundle`.
 
-This field is only required if your bundle makes use of {@link NodeCG#extensions}.
+This field is only required if your bundle makes use of the [`nodecg.extensions`](/docs/classes/nodecg#extensions) API.
 
 ## nodecg.dashboardPanels
 
