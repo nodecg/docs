@@ -108,7 +108,7 @@ good for when you have a large, complex UI that you need more fine-grained contr
 <video style={{width: '100%'}} controls preload><source src='/vid/Fullbleed.mp4' type='video/mp4' /></video>
 
 To mark a panel as a dialog, it must have the `dialog` property set to `true`. Dialogs don't immediately display on the
-dashboard, and must be manually invoked. See {@tutorial making-dialogs} for more info.
+dashboard, and must be manually invoked. See [Making Dashboard Dialogs](/docs/making-dialogs) for more info.
 ([Screenshot of an open dialog](http://i.imgur.com/xA4mDvF.png))
 
 Dialogs have special buttons for confirmation and dismissal, which are defined in the `dialogButtons` property.

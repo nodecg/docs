@@ -47,7 +47,7 @@ Your bundle will now have a card on the Mixer page of the Dashboard.
 `channels` determines how many instances of a sound can be playing simultaneously. The default value is `100`. If set to `1`,
 only one instance can play at a time, and a new instance cannot be started until the currently playing instance has completed.
 
-If your bundle has at least one cue that is `assignable`, it will gain a "Sounds" [Asset]{@tutorial assets} category.
+If your bundle has at least one cue that is `assignable`, it will gain a "Sounds" [Asset](/docs/assets) category.
 This category accepts `.ogg` and `.mp3` files. Any audio files uploaded to this category will become available as options
 in all of your `assignable` cues' dropdown boxes.
 

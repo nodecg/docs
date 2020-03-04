@@ -69,4 +69,4 @@ Going forward, users will always need to manually run whatever dependency instal
 
 ### Removed Rollbar integration, replaced it with Sentry
 
-In NodeCG v0.8, we introduced a first-class integration with the Rollbar error tracking service. This was very helpful and made NodeCG safer to use in production, but we were unhappy with the level of service and features that Rollbar provided. In NodeCG v0.9, we have removed the Rollbar integration and replaced it with a Sentry integration. See the [Sentry tutorial]{@tutorial sentry} for more info on how to set up Sentry in your NodeCG deployment.
+In NodeCG v0.8, we introduced a first-class integration with the Rollbar error tracking service. This was very helpful and made NodeCG safer to use in production, but we were unhappy with the level of service and features that Rollbar provided. In NodeCG v0.9, we have removed the Rollbar integration and replaced it with a Sentry integration. See the [Sentry tutorial](/docs/sentry) for more info on how to set up Sentry in your NodeCG deployment.
