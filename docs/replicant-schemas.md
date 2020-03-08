@@ -37,7 +37,7 @@ If for any reason a Replicant's persisted value becomes invalid, NodeCG will dis
     "baz": {
       "type": "number",
       "description": "The value of baz, which is a Number.",
-      "default": "0"
+      "default": 0
     }
   },
   "required": ["bar", "baz"]
