@@ -2,11 +2,11 @@
 <g filter="url(#filter0_dd)">
 <path d="M119 420C125.873 333.766 131.674 322.752 133 328.142" stroke="black" stroke-width="3"/>
 <path d="M113 429C122.818 330.711 131.106 318.158 133 324.301" stroke="black" stroke-width="3"/>
-<path d="M254 317.5C178.5 317.5 156.173 332 140 375.5C118.12 434.349 129.039 494.508 126.5 487.5" stroke="black" stroke-width="3"/>
+<path d="M254 317.5C178.5 317.5 147.673 310 131.5 353.5C109.62 412.349 129.039 494.508 126.5 487.5" stroke="black" stroke-width="3"/>
 <path d="M344 311.217C344 314.963 340.194 318 335.5 318C330.806 318 327 314.963 327 311.217C327 307.47 328.619 302.495 335.5 304.433C341.5 305.5 344 307.47 344 311.217Z" fill="black"/>
 <rect x="38.5" y="311.5" width="360" height="24" fill="#F3F3F3" stroke="#DCDCDC"/>
 <rect x="59" y="336" width="19" height="249" fill="#2F3A4F"/>
-<rect x="72" y="336" width="3" height="249" fill="#4C5E80"/>
+<rect x="72" y="336" width="3" height="249" fill="#3E5174"/>
 <rect x="136.5" y="174.5" width="204.458" height="104.562" rx="6.5" fill="#C4C4C4" stroke="#2F2F2F" stroke-width="7"/>
 <rect x="223.417" y="282.562" width="30.625" height="28.4375" fill="#2F2F2F"/>
 <path d="M173.104 311C173.104 308.584 175.063 306.625 177.479 306.625H299.979C302.395 306.625 304.354 308.584 304.354 311H173.104Z" fill="#2F2F2F"/>
@@ -28,6 +28,7 @@
 <path d="M410 388H396V404C407.2 404 410 393.333 410 388Z" fill="#C4C4C4"/>
 <path d="M403.5 420.5C398.1 420.3 397.083 417.417 397 416L396 416V422H403.5V420.5Z" fill="#C4C4C4"/>
 <path d="M409.5 390.75C412.75 389.75 414.5 402.75 403.75 401" stroke="#C4C4C4"/>
+<rect x="396" y="403" width="1" height="13" fill="#C4C4C4"/>
 <rect x="476" y="345" width="305.766" height="108" fill="#2C2C2C"/>
 <g filter="url(#filter1_f)">
 <rect x="485.586" y="385.74" width="50.6758" height="26.7359" rx="3" fill="white"/>
@@ -103,7 +104,7 @@
 <g filter="url(#filter15_d)">
 <circle cx="840" cy="74" r="6" fill="#009CDF"/>
 </g>
-<rect x="378" y="19" width="18" height="564" fill="#06C0BE"/>
+<rect x="378" y="19" width="18" height="566" fill="#06C0BE"/>
 </g>
 <defs>
 <filter id="filter0_dd" x="0" y="0" width="900.025" height="642.307" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
