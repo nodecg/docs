@@ -27,8 +27,9 @@
   --ifm-navbar-background-color: var(--nodecg-background-primary);
   
   /* Custom admonition colours */
-  --ra-color-important: #000000;
-  --ra-color-warning: #B9040A;
+  --ifm-color-info: #000000;
+  --ifm-color-danger: #B4040A;
+  --ifm-color-success: #006600;
 }
 
 .docusaurus-highlight-code-line {
@@ -38,19 +39,42 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+/* Mobile hamburger colour */
 .navbar svg {
   color: #f5f6f7;
 }
 
 html[data-theme="dark"] {
   --ifm-background-color: #262b36;
-  --ra-color-note: var(--nodecg-background-secondary);
   --ra-admonition-icon-color: #ffffff;
   --ifm-menu-color-active: var(--nodecg-light-primary);
   --ifm-link-color: var(--nodecg-light-secondary);
   --ra-color-important: #ffffff;
+  --ifm-blockquote-color: #b7b7b7;
+  
+  --ifm-color-info: #ffffff;
 }
 
+/* Info admonition colour */
+.alert.alert--secondary {
+  --ifm-alert-background-color: #2e3b4e;
+  color: #ffffff;
+}
+
+.alert.alert--secondary a {
+  color: var(--nodecg-light-secondary);
+}
+
+.alert.alert--secondary svg {
+  fill: #ffffff;
+}
+
+/* Info admonition colour */
+.alert--danger {
+  --ifm-alert-background-color: #B4040A;
+}
+
+/* Keep most admonition logos white */
 html[data-theme="dark"] .admonition-icon svg {
   fill: #fff;
 }
@@ -65,10 +89,12 @@ html[data-theme="dark"] a code {
   color: var(--nodecg-light-secondary);
 }
 
-html[data-theme="dark"] .admonition-important {
+/* Information alert */
+html[data-theme="dark"] .alert.alert--info {
   color: #000000;
 }
 
-html[data-theme="dark"] .admonition-important .admonition-icon svg {
+/* Information admonition icon black */
+html[data-theme="dark"] .admonition-important svg {
   fill: #000000;
 }
