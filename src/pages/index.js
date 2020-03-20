@@ -12,8 +12,8 @@ const features = [
 		imageUrl: 'img/Browser.svg',
 		description: (
 			<>
-				NodeCG graphics are just webpages. There is absolutely nothing special or unique about them
-				allowing you to use any framework or web graphic style you like.
+				NodeCG graphics are just webpages. There is absolutely nothing special or unique about them,
+				and this allows you to use any framework or web graphic style you like.
 			</>
 		)
 	},
