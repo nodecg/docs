@@ -42,7 +42,7 @@ These Replicants are arrays. Each item in these arrays describes one of the uplo
 ```json
 {
   "base": "square.png",
-  "bundleName": "test-bundle",
+  "namespace": "test-bundle",
   "category": "thumbnails",
   "ext": ".png",
   "name": "square",
