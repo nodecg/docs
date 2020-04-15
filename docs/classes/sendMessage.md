@@ -69,7 +69,7 @@ module.exports = function (nodecg) {
 nodecg.sendMessage('multiplyByTwo', 2)
     .then(result => {
         console.log(result); // Will eventually print '4'
-    .catch(error => {
+    }).catch(error => {
         console.error(error);
     });
 
