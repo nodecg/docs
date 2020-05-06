@@ -117,9 +117,9 @@ use your HTML file with your scripts and stylesheets imported.
 </html>
 ```
 
-The entrypoint HTML file will also be compiled in the bundler. So you can many
+The entrypoint HTML file will also be compiled in the bundler. So you can have many
 kind of files in the `script` tag. Parcel will automatically detect file format
-and use appropriate library/compiler to bundle the file.
+and use an appropriate library/compiler to bundle the file.
 
 ```html
 <script src="./main.coffee"></script>
@@ -159,11 +159,11 @@ parcel build src/dashboard/index.html --out-dir dashboard --public-url ./
 
 (Replace `src/dashboard/index.html` with your entrypoint files.)
 
-You can use glob pattern to use multiple entrypoints, if you have multiple pages
+You can use a glob pattern to use multiple entrypoints, if you have multiple pages
 to compile
 
 ```sh
-parcel build src/graphics/*.html --out-dir dashboard --public-url ./
+parcel build src/dashboard/*.html --out-dir dashboard --public-url ./
 ```
 
 Details described in [the reference](https://parceljs.org/cli.html).
