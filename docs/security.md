@@ -6,7 +6,7 @@ sidebar_label: Security & Authentication
 
 ## Is NodeCG secure by default?
 
-**No.** By default, NodeCG has no authorization or authentication of any kind. To enable basic authentication, see the [How do I enable login security?](#enabling-login-security) section.
+**No.** By default, NodeCG has no authorization or authentication of any kind. To enable basic authentication, see the [How do I enable login security?](#how-do-i-enable-login-security) section.
 
 **Do not** put an unsecured NodeCG instance on the internet or a public network. Unsecured instances should only be used for local development and on trusted LANs.
 
