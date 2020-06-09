@@ -6,7 +6,7 @@ sidebar_label: sendMessageToBundle
 
 `sendMessageToBundle(messageName, bundleName, *data, *cb)` _→ \{Promise|undefined\}_
 
-Sends a message to a specific bundle. Also available as a static method. See [sendMessage](sendMessage) for usage details.
+Sends a message to a specific bundle. Also available as a static method. See [sendMessage](sendMessage.md) for usage details.
 
 ### Returns
 
