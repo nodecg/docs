@@ -44,6 +44,8 @@ jobs:
       - name: Deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
+          touch build/.nojekyll
+          echo "www.nodecg.dev" > build/CNAME
           npx gh-pages@3 \
             --dotfiles \
             --dist build \
