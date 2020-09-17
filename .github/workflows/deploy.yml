@@ -35,7 +35,7 @@ jobs:
         run: |
           export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=${GITHUB_REF##*/}
           export LHCI_BUILD_CONTEXT__GITHUB_REPO_SLUG=${GITHUB_REPOSITORY}
-          npx lhci autorun
+          npx @lhci/cli@^0.3.0 autorun
       - name: Deploy
         run: npm run deploy -- --skip-build
         env:

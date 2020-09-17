@@ -24,9 +24,11 @@ module.exports = {
 
         // Way too much of a pain in the ass.
         "uses-responsive-images": "warn",
+		"unused-css-rules": "warn",
+		"canonical": "warn",
 
         // This rule is broken, fails on pages that have perfectly valid description tags.
-        "meta-description": "off"
+		"meta-description": "off"
       }
     },
     upload: {
