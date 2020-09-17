@@ -35,7 +35,7 @@ jobs:
         run: |
           export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=$(Build.SourceBranchName)
           export LHCI_BUILD_CONTEXT__GITHUB_REPO_SLUG=nodecg/docs
-          lhci autorun
+          npx lhci autorun
       - name: Deploy
         run: npm run deploy -- --skip-build
         env:
