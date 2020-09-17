@@ -19,7 +19,7 @@ module.exports = {
         alt: 'NodeCG Logo',
         src: 'img/logo.png',
       },
-      links: [
+      items: [
         {
           href: 'https://github.com/nodecg/nodecg/releases',
           label: `v${latestVersion}`,
@@ -82,7 +82,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: ``,
+      copyright: 'Copyright (c) 2020 Alex Van Camp, Matthew McNamara, and contributors',
     },
     image: 'img/splash.png',
     algolia: {
@@ -108,5 +108,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [ require.resolve('./force-theme.js')]
+  plugins: [ require.resolve('./force-theme.js')],
+  // TODO: disable this option
+  onBrokenLinks: 'warn'
 };
