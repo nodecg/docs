@@ -45,6 +45,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
           npx gh-pages@3 \
+            --dotfiles \
             --dist build \
             --repo https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}.git \
             --user "GitHub Action <actions@github.com>"
