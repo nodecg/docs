@@ -16,7 +16,6 @@ module.exports = {
         "offscreen-images": "off",
         "uses-webp-images": "off",
 
-        // We deploy to netlify which handles this for us.
         // Our tests themselves are not http2.
         "uses-http2": "off",
 

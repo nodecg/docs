@@ -1,19 +1,10 @@
 {
-  "name": "nodecg",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "docusaurus start",
     "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
-  },
-  "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.48",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.48",
-    "classnames": "^2.2.6",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "deploy": "docusaurus deploy",
+    "start": "docusaurus start",
+    "swizzle": "docusaurus swizzle"
   },
   "browserslist": {
     "production": [
@@ -26,5 +17,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.48",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.48",
+    "classnames": "^2.2.6",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.3.0",
+    "gh-pages": "^3.1.0"
   }
 }

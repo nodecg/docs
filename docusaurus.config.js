@@ -3,11 +3,11 @@ const latestVersion = "1.6.0"
 module.exports = {
   title: 'NodeCG',
   tagline: 'Create broadcast graphics using Node.js and a browser',
-  url: 'https://nodecg.com/',
+  url: 'https://nodecg.dev/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'nodecg',
-  projectName: 'nodecg',
+  projectName: 'docs',
   themeConfig: {
     prism: {
       theme: require('./src/css/nodecg-light'),

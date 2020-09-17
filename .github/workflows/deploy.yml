@@ -1,0 +1,42 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Make light and dark variants
+        run: |
+          cp src/pages/index.js src/pages/light.js
+          cp src/pages/index.js src/pages/dark.js
+          cd docs
+          sed '2 s/creating-bundles/creating-bundles-light/' creating-bundles.md > creating-bundles-light.md
+          sed '2 s/creating-bundles/creating-bundles-dark/' creating-bundles.md > creating-bundles-dark.md
+      - name: Build
+        run: npm run build
+      - name: Theme fixup
+        run: |
+          cd build
+          mv light/index.html light.html
+          mv dark/index.html dark.html
+          rmdir light
+          rmdir dark
+      - name: Lighthouse CI
+        run: |
+          export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=$(Build.SourceBranchName)
+          export LHCI_BUILD_CONTEXT__GITHUB_REPO_SLUG=nodecg/docs
+          npx @lhci/cli@0.3.x autorun
+      - name: Deploy
+        run: npm run deploy -- --skip-build
+        env:
+          GIT_USER: hoishin
