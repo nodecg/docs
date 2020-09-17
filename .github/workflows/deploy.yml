@@ -43,4 +43,4 @@ jobs:
           git remote set-url origin https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}.git
           npm run deploy -- --skip-build
         env:
-          GIT_USER: ${{ secrets.GITHUB_ACTOR  }}
+          GIT_USER: ${{ github.actor  }}
