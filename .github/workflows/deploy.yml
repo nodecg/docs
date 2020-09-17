@@ -3,14 +3,17 @@ name: Deploy
 on:
   push:
     branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
         with:
           node-version: 12.x
       - name: Install dependencies
@@ -36,9 +39,17 @@ jobs:
           export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=${GITHUB_REF##*/}
           export LHCI_BUILD_CONTEXT__GITHUB_REPO_SLUG=${GITHUB_REPOSITORY}
           npx @lhci/cli@^0.3.0 autorun
+        env:
+          LHCI_GITHUB_TOKEN: ${{ github.token }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: [build]
+    steps:
       - name: Deploy
         run: |
-          npx gh-pages \
+          npx gh-pages@3 \
             --dist build \
             --repo https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}.git \
             --user "GitHub Action <actions@github.com>"
