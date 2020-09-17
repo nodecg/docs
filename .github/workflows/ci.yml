@@ -41,13 +41,8 @@ jobs:
           npx @lhci/cli@^0.3.0 autorun
         env:
           LHCI_GITHUB_TOKEN: ${{ github.token }}
-
-  deploy:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    needs: [build]
-    steps:
       - name: Deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
           npx gh-pages@3 \
             --dist build \
