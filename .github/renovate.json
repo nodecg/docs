@@ -1,0 +1,9 @@
+{
+	"extends": [
+		"config:base",
+		":semanticCommits",
+		":dependencyDashboardApproval"
+	],
+	"rangeStrategy": "pin",
+	"postUpdateOptions": ["npmDedupe"]
+}
