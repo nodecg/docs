@@ -39,4 +39,4 @@ Before continuing, you may find it helpful to look over our [collection of simpl
 
 4. That's it! You can click the "Graphics" button in the top right to see a list of graphics in your installed bundles.
 
-If you have more questions, want further guidance, or would just like to hang out with other NodeCG devs, [join our Discord server](https://discord.gg/GJ4r8a8)!
+If you have more questions, want further guidance, or would just like to hang out with other NodeCG devs, [join our Discord server](https://discord.com/invite/GJ4r8a8)!
