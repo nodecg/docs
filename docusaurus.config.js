@@ -1,4 +1,4 @@
-const latestVersion = "1.6.0"
+const latestVersion = "1.7.0"
 
 module.exports = {
   title: 'NodeCG',
@@ -60,7 +60,7 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/GJ4r8a8',
+              href: 'https://discord.com/invite/GJ4r8a8',
             },
           ],
         },
