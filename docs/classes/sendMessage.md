@@ -49,7 +49,7 @@ Sending a message and replying with an acknowledgement:
 module.exports = function (nodecg) {
     nodecg.listenFor('multiplyByTwo', (value, ack) => {
         if (value === 4) {
-            ack(new Error('I don\'t like multiplying the number 4!');
+            ack(new Error('I don\'t like multiplying the number 4!'));
             return;
         }
 
