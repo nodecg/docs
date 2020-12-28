@@ -22,10 +22,14 @@ nodecg setup
 Cloning from GitHub:
 
 ```bash
-git clone https://github.com/nodecg/nodecg.git
+git clone --branch legacy-1.x https://github.com/nodecg/nodecg.git
 cd nodecg
 npm install --production
 ```
+
+:::caution
+Ensure to specify a branch when cloning, as the master branch is in an unstable state while v2.0 is being developed.
+:::
 
 ## Start
 
