@@ -18,6 +18,7 @@ module.exports = {
       logo: {
         alt: 'NodeCG Logo',
         src: 'img/logo.png',
+        srcDark: 'img/logo.png',
       },
       items: [
         {
