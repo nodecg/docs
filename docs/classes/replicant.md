@@ -6,7 +6,7 @@ sidebar_label: Replicant
 
 `Replicant(name, *namespace, *opts)`
 
-Replicants are objcts which monitor changes to a variable's value. The changes are replicated across all extensions, graphics, and dashboard panels. When a Replicant changes in one of those places it is quickly updated in the rest, and a change event is emitted allowing bundles to react to the changes in the data.
+Replicants are objects which monitor changes to a variable's value. The changes are replicated across all extensions, graphics, and dashboard panels. When a Replicant changes in one of those places it is quickly updated in the rest, and a change event is emitted allowing bundles to react to the changes in the data.
 
 If a Replicant with a given name in a given bundle namespace has already been declared, the Replicant will automatically be assigned the existing value.
 
