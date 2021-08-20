@@ -17,9 +17,11 @@ NodeCG is configured via a `cfg/nodecg.json` file with the following schema:
   - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy.
   - `console` _Object_ Contains properties for console logging.
     - `enabled` _Boolean_ Whether to enable console logging.
+    - `timestamps` _Boolean_ Whether to add timestamps to the console logging.
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"trace"`, `"debug"`, `"info"`, `"warn"` or `"error"`
   - `file` _Object_ Contains properties for file logging.
     - `enabled` _Boolean_ Whether to enable file logging.
+    - `timestamps` _Boolean_ Whether to add timestamps to the file logging.
     - `path` _String_ The filepath to log to.
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"trace"`, `"debug"`, `"info"`, `"warn"` or `"error"`
 - `bundles` _Object_ Contains configuration for bundles.
@@ -83,10 +85,12 @@ NodeCG is configured via a `cfg/nodecg.json` file with the following schema:
         "replicants": false,
         "console": {
             "enabled": true,
+            "timestamps": false,
             "level": "trace"
         },
         "file": {
             "enabled": true,
+            "timestamps": true,
             "path": "logs/server.log",
             "level": "info"
         }
