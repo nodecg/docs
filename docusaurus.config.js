@@ -83,7 +83,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: 'Copyright (c) 2020 Alex Van Camp, Matthew McNamara, and contributors',
+      copyright: 'Copyright (c) 2022 Alex Van Camp, Matthew McNamara, and contributors',
     },
     image: 'img/splash.png',
     algolia: {
