@@ -1,4 +1,4 @@
-const latestVersion = "1.7.0"
+const latestVersion = "1.9.0"
 
 module.exports = {
   title: 'NodeCG',
