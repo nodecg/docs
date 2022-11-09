@@ -50,11 +50,11 @@ If you want to use NodeCG in production, it is recommended to build a own Docker
 
 Example Dockerfile:
 ```dockerfile
-FROM nodecg/nodecg:v1.5.0
+FROM nodecg/nodecg:v1.9.0
 
 USER root
 
-# Install dependencies like bower
+# Add commands to install global dependencies here, like Bower
 
 USER nodecg
 
@@ -81,9 +81,9 @@ This will create only one layer. But requires you to organize all your configura
 [More Information](https://docs.docker.com/engine/reference/builder/#copy)
 :::
 
-1. `FROM nodecg/nodecg:v1.5.0` Defines the parent image that should be used to build your Docker Image. We use `nodecg/nodecg` with the latest version tag `v1.5.0`. The parent image already include [NodeCG](https://nodecg.com) and [nodecg-cli](https://github.com/nodecg/nodecg-cli).
+1. `FROM nodecg/nodecg:v1.9.0` Defines the parent image that should be used to build your Docker Image. We use `nodecg/nodecg` with the latest version tag `v1.5.0`. The parent image already include [NodeCG](https://nodecg.com) and [nodecg-cli](https://github.com/nodecg/nodecg-cli).
 
-2. `# Install dependencies like bower` If you use bundles that require bower or any other external dependencies install them here. It will make the next build faster if these external dependencies dont change. To install bower use `RUN npm install -g bower`.
+2. `# Add commands to install global dependencies here, like Bower` If you use bundles that require Bower or any other external dependencies, install them here. It will make the next build faster if these external dependencies dont change. To install bower use `RUN npm install -g bower`.
 
 2. `RUN nodecg install ... && nodecg defaultconfig ...` Installs your bundles and generates the default configs for them. (if you include the configuration later, you dont need to generate the default configuration)
 
@@ -132,7 +132,7 @@ services:
 Build a new docker image for your deployment has the advantage, that it is safer (because it is run as a non-root user), more consistent (because the container wont keep changes, except your explicitly tell it to).
 
 To upgrade NodeCG just build a new image with the new parent.
-Replace `FROM nodecg/nodecg:1.5.0` with `FROM nodecg/nodecg:[newer version]`
+Replace `FROM nodecg/nodecg:1.9.0` with `FROM nodecg/nodecg:[newer version]`
 
 :::warning
 If you want to host your NodeCG instance on the internet (instead of just on a secure LAN), it is highly recommended to encrypt and secure NodeCG.
