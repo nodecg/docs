@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://nodecg.dev/blog</id>
+    <title>NodeCG Blog</title>
+    <updated>2020-02-26T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://nodecg.dev/blog"/>
+    <subtitle>NodeCG Blog</subtitle>
+    <icon>https://nodecg.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New Docs!]]></title>
+        <id>/2020/02/26/New-Docs</id>
+        <link href="https://nodecg.dev/blog/2020/02/26/New-Docs"/>
+        <updated>2020-02-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Docusaurus goes roar!]]></summary>
+        <content type="html"><![CDATA[<p>Docusaurus goes roar!</p><p>After all those years of JSDocs we have moved on to using <a href="https://v2.docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>!</p><p>This will allow us to give much more information in a clear manner as well as giving a better introduction to what NodeCG is.
+Expect to see the docs change a bit as we go through and make sure everything makes sense and looks good.</p><p>Docs <a href="https://github.com/nodecg/docs" target="_blank" rel="noopener noreferrer">GitHub</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks-to">Thanks to<a class="hash-link" href="#thanks-to" title="Direct link to heading">​</a></h2><ul><li>Everyone on the NodeCG discord for testing</li><li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Myself</a></li><li><a href="https://github.com/Lange" target="_blank" rel="noopener noreferrer">Lange</a></li></ul><p>for making this update happen!</p>]]></content>
+        <author>
+            <name>Ewan Lyon</name>
+            <uri>https://github.com/EwanLyon</uri>
+        </author>
+        <category label="update" term="update"/>
+        <category label="docs" term="docs"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v1.6.0]]></title>
+        <id>/2020/02/25/v1.6.0</id>
+        <link href="https://nodecg.dev/blog/2020/02/25/v1.6.0"/>
+        <updated>2020-02-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Minor version bump.]]></summary>
+        <content type="html"><![CDATA[<p>Minor version bump.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="new">New<a class="hash-link" href="#new" title="Direct link to heading">​</a></h2><ul><li>Docs now get automatically built <em>(old jsdocs)</em></li><li>Flexible mounts</li><li>Expose NodeCG router</li><li>p5.js Tutorial</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="update">Update<a class="hash-link" href="#update" title="Direct link to heading">​</a></h2><ul><li>Docket now on Node 10</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="fix">Fix<a class="hash-link" href="#fix" title="Direct link to heading">​</a></h2><ul><li>Check if bundle package.json has version</li><li>Typo in replicants description <em>(objcts → objects)</em></li><li>Clone replicant default value</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks-to">Thanks to<a class="hash-link" href="#thanks-to" title="Direct link to heading">​</a></h2><ul><li><a href="https://github.com/Seldszar" target="_blank" rel="noopener noreferrer">Seldszar</a></li><li><a href="https://github.com/Dan-Shields" target="_blank" rel="noopener noreferrer">Dan-Shields</a></li><li><a href="https://github.com/VodBox" target="_blank" rel="noopener noreferrer">VodBox</a></li><li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Myself</a></li><li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Hoishin</a></li><li><a href="https://github.com/Lange" target="_blank" rel="noopener noreferrer">Lange</a></li></ul><p>for making this update happen!</p><p><strong>Version comparison <a href="https://github.com/nodecg/nodecg/compare/v1.5.0...v1.6.0" target="_blank" rel="noopener noreferrer">here</a></strong></p>]]></content>
+        <author>
+            <name>Ewan Lyon</name>
+            <uri>https://github.com/EwanLyon</uri>
+        </author>
+        <category label="update" term="update"/>
+        <category label="v1.6.0" term="v1.6.0"/>
+    </entry>
+</feed>
