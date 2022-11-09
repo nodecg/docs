@@ -34,13 +34,13 @@ jobs:
           mv dark/index.html dark.html
           rmdir light
           rmdir dark
-      - name: Lighthouse CI
-        run: |
-          export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=${GITHUB_REF##*/}
-          export LHCI_BUILD_CONTEXT__GITHUB_REPO_SLUG=${GITHUB_REPOSITORY}
-          npx @lhci/cli@^0.3.0 autorun
-        env:
-          LHCI_GITHUB_TOKEN: ${{ github.token }}
+      # - name: Lighthouse CI
+      #   run: |
+      #     export LHCI_BUILD_CONTEXT__CURRENT_BRANCH=${GITHUB_REF##*/}
+      #     export LHCI_BUILD_CONTEXT__GITHUB_REPO_SLUG=${GITHUB_REPOSITORY}
+      #     npx @lhci/cli@^0.3.0 autorun
+      #   env:
+      #     LHCI_GITHUB_TOKEN: ${{ github.token }}
       - name: Deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
