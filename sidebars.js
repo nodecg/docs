@@ -14,7 +14,7 @@ module.exports = {
 			'making-dialogs',
 			'portable-nodecg'
 		],
-		Advanced: ['mounts', 'security', 'screenshot-testing', 'custom-routes', 'sentry'],
+		Advanced: ['mounts', 'security', 'screenshot-testing', 'custom-routes', 'sentry', 'docker'],
 		'Using Frameworks': [
 			'frameworks/using-bundlers',
 			'frameworks/typescript',
