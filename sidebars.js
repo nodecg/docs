@@ -44,7 +44,8 @@ module.exports = {
 			'classes/findCue',
 			'classes/playSound',
 			'classes/stopAllSounds',
-			'classes/stopSound'
+			'classes/stopSound',
+			'classes/socket'
 		]
 	}
 };
