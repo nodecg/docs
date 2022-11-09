@@ -6,95 +6,100 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --nodecg-background-primary: #232c3d;
-  --nodecg-background-secondary: #2f3a4f;
-  --nodecg-light-secondary: #47e7c6;
-  --nodecg-light-primary: #23c8c0;
+	--nodecg-background-primary: #232c3d;
+	--nodecg-background-secondary: #2f3a4f;
+	--nodecg-light-secondary: #47e7c6;
+	--nodecg-light-primary: #23c8c0;
 
-  --ifm-color-primary: var(--nodecg-light-primary);
-  --ifm-color-primary-dark: var(--nodecg-background-primary);
-  --ifm-color-primary-darker: #1eaaa3;
-  --ifm-color-primary-darkest: #188c86;
-  --ifm-color-primary-light: #29dad1;
-  --ifm-color-primary-lighter: #33dbd3;
-  --ifm-color-primary-lightest: #51e1da;
-  --ifm-code-font-size: 95%;
-  
-  --ifm-navbar-link-color: #f5f6f7;
-  --ifm-menu-color-active: var(--nodecg-background-primary);
-  --ifm-link-color: #0032e6;
-  
-  --ifm-navbar-background-color: var(--nodecg-background-primary);
-  
-  /* Custom admonition colours */
-  --ifm-color-info: #000000;
-  --ifm-color-danger: #B4040A;
-  --ifm-color-success: #006600;
+	--ifm-color-primary: var(--nodecg-light-primary);
+	--ifm-color-primary-dark: var(--nodecg-background-primary);
+	--ifm-color-primary-darker: #1eaaa3;
+	--ifm-color-primary-darkest: #188c86;
+	--ifm-color-primary-light: #29dad1;
+	--ifm-color-primary-lighter: #33dbd3;
+	--ifm-color-primary-lightest: #51e1da;
+	--ifm-code-font-size: 95%;
+
+	--ifm-navbar-link-color: #f5f6f7;
+	--ifm-menu-color-active: var(--nodecg-background-primary);
+	--ifm-link-color: #0032e6;
+
+	--ifm-navbar-background-color: var(--nodecg-background-primary);
+
+	/* Custom admonition colours */
+	--ifm-color-info: #000000;
+	--ifm-color-danger: #b4040a;
+	--ifm-color-success: #006600;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+	background-color: rgb(72, 77, 91);
+	display: block;
+	margin: 0 calc(-1 * var(--ifm-pre-padding));
+	padding: 0 var(--ifm-pre-padding);
 }
 
 /* Mobile hamburger colour */
 .navbar svg {
-  color: #f5f6f7;
+	color: #f5f6f7;
 }
 
 html[data-theme="dark"] {
-  --ifm-background-color: #262b36;
-  --ra-admonition-icon-color: #ffffff;
-  --ifm-menu-color-active: var(--nodecg-light-primary);
-  --ifm-link-color: var(--nodecg-light-secondary);
-  --ra-color-important: #ffffff;
-  --ifm-blockquote-color: #b7b7b7;
-  
-  --ifm-color-info: #ffffff;
+	--ifm-background-color: #262b36;
+	--ra-admonition-icon-color: #ffffff;
+	--ifm-menu-color-active: var(--nodecg-light-primary);
+	--ifm-link-color: var(--nodecg-light-secondary);
+	--ra-color-important: #ffffff;
+	--ifm-blockquote-color: #b7b7b7;
+
+	--ifm-color-info: #ffffff;
 }
 
 /* Info admonition colour */
 .alert.alert--secondary {
-  --ifm-alert-background-color: #2e3b4e;
-  color: #ffffff;
+	--ifm-alert-background-color: #2e3b4e;
+	color: #ffffff;
 }
 
 .alert.alert--secondary a {
-  color: var(--nodecg-light-secondary);
+	color: var(--nodecg-light-secondary);
 }
 
 .alert.alert--secondary svg {
-  fill: #ffffff;
+	fill: #ffffff;
 }
 
 /* Info admonition colour */
 .alert--danger {
-  --ifm-alert-background-color: #B4040A;
+	--ifm-alert-background-color: #b4040a;
 }
 
 /* Keep most admonition logos white */
 html[data-theme="dark"] .admonition-icon svg {
-  fill: #fff;
+	fill: #fff;
+}
+
+/* Keep some admonition texts white */
+html[data-theme="dark"] .admonition-tip {
+	color: #fff;
 }
 
 /* Change colour and underline links that are in code blocks */
 a code {
-  color: var(--ifm-link-color);
-  text-decoration: underline;
+	color: var(--ifm-link-color);
+	text-decoration: underline;
 }
 
 html[data-theme="dark"] a code {
-  color: var(--nodecg-light-secondary);
+	color: var(--nodecg-light-secondary);
 }
 
 /* Information alert */
 html[data-theme="dark"] .alert.alert--info {
-  color: #000000;
+	color: #000000;
 }
 
 /* Information admonition icon black */
 html[data-theme="dark"] .admonition-important svg {
-  fill: #000000;
+	fill: #000000;
 }
