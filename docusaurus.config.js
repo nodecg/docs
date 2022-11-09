@@ -85,12 +85,7 @@ module.exports = {
       ],
       copyright: 'Copyright (c) 2022 Alex Van Camp, Matthew McNamara, and contributors',
     },
-    image: 'img/splash.png',
-    algolia: {
-      apiKey: '21171da7394be9a61a0174dd81b75b70',
-      indexName: 'nodecg',
-      algoliaOptions: {}
-    }
+    image: 'img/splash.png'
   },
   presets: [
     [
@@ -109,7 +104,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [ require.resolve('./force-theme.js')],
+  plugins: [ require.resolve('./force-theme.js'), require.resolve('docusaurus-lunr-search')],
   // TODO: disable this option
   onBrokenLinks: 'warn'
 };
