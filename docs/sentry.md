@@ -9,14 +9,13 @@ Sentry is especially useful for developers whom manage multiple NodeCG instances
 of both server-side and client-side errors as they happen.
 
 To add Sentry to your NodeCG instance, you'll first need to create a Sentry account and a Sentry project.
-Then, add the following to your instance's `cfg/nodecg.json`:
+Then, add the following to your instance's [NodeCG config](nodecg-configuration):
 
 ```json
 {
   "sentry": {
     "enabled": true,
-    "dsn": "your project's DSN, used to report server-side errors",
-    "publicDsn": "your project's public DSN, used to report client-side errors"
+    "dsn": "your project's DSN, used as an API key to report errors"
   }
 }
 ```

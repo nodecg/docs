@@ -24,7 +24,8 @@ module.exports = {
 		Migrating: [
 			'migrating/migrating-0.7-to-0.8',
 			'migrating/migrating-0.8-to-0.9',
-			'migrating/migrating-0.9-to-1.0'
+			'migrating/migrating-0.9-to-1.0',
+			'migrating/migrating-1.x-to-2.x'
 		],
 		'API Reference': [
 			'classes/nodecg',

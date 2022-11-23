@@ -4,7 +4,7 @@ title: NodeCG Configuration
 sidebar_label: Configuration
 ---
 
-NodeCG is configured via a `cfg/nodecg.json` file with the following schema:
+NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.json` file with the following schema:
 
 ### Schema
 
@@ -69,77 +69,72 @@ NodeCG is configured via a `cfg/nodecg.json` file with the following schema:
 
 ### Example Config
 
-```json
-{
-    "host": "0.0.0.0",
-    "port": 9090,
-    "developer": false,
-    "bundles": {
-        "enabled": ["bundle-name"],
-        "paths": ["C:\\nodecg\\experimental-bundles"]
-    },
-    "login": {
-        "enabled": true,
-        "sessionSecret": "supersecret",
-        "steam": {
-            "enabled": true,
-            "apiKey": "YYYYY",
-            "allowedIds": ["11111111111111111", "22222222222222222"]
-        },
-        "twitch": {
-            "enabled": true,
-            "clientID": "your_app_id",
-            "clientSecret": "your_app_key",
-            "scope": "user_read",
-            "allowedUsernames": ["some_username"],
-            "allowedIds": ["11111111111111111", "22222222222222222"]
-        },
-        "discord": {
-            "enabled": true,
-            "clientID": "your_discord_app_client_id",
-            "clientSecret": "your_discord_app_client_secret",
-            "scope": "identify guilds",
-              "allowedUserIDs": [
-                "159600065017675778",
-                "54561421005950976"
-              ],
-            "allowedGuilds": [
-                {
-                    "guildID": "754749209722486814",
-                    "allowedRoleIDs": [
-                        "754751725457637546",
-                        "755012946400378910"
-                    ],
-                    "guildBotToken": "your_bot_token"
-                },
-                {
-                    "guildID": "754749209722486814"
-                }
-            ]
-    },
-    "logging": {
-        "replicants": false,
-        "console": {
-            "enabled": true,
-            "timestamps": false,
-            "level": "trace"
-        },
-        "file": {
-            "enabled": true,
-            "timestamps": true,
-            "path": "logs/server.log",
-            "level": "info"
-        }
-    },
-    "ssl": {
-        "enabled": false,
-        "keyPath": "",
-        "certificatePath": ""
-    },
-    "sentry": {
-        "enabled": true,
-        "dsn": "https://xxx:yyy@sentry.io/zzz",
-        "publicDsn": "https://xxx@sentry.io/zzz"
-    }
-}
+```js
+// cfg/nodecg.js
+module.exports = {
+	host: '0.0.0.0',
+	port: 9090,
+	developer: false,
+	bundles: {
+		enabled: ['bundle-name'],
+		paths: ['C:\\nodecg\\experimental-bundles'],
+	},
+	login: {
+		enabled: true,
+		sessionSecret: 'supersecret',
+		steam: {
+			enabled: true,
+			apiKey: 'YYYYY',
+			allowedIds: ['11111111111111111', '22222222222222222'],
+		},
+		twitch: {
+			enabled: true,
+			clientID: 'your_app_id',
+			clientSecret: 'your_app_key',
+			scope: 'user_read',
+			allowedUsernames: ['some_username'],
+			allowedIds: ['11111111111111111', '22222222222222222'],
+		},
+		discord: {
+			enabled: true,
+			clientID: 'your_discord_app_client_id',
+			clientSecret: 'your_discord_app_client_secret',
+			scope: 'identify guilds',
+			allowedUserIDs: ['159600065017675778', '54561421005950976'],
+			allowedGuilds: [
+				{
+					guildID: '754749209722486814',
+					allowedRoleIDs: ['754751725457637546', '755012946400378910'],
+					guildBotToken: 'your_bot_token',
+				},
+				{
+					guildID: '754749209722486814',
+				},
+			],
+		},
+		logging: {
+			replicants: false,
+			console: {
+				enabled: true,
+				timestamps: false,
+				level: 'verbose',
+			},
+			file: {
+				enabled: true,
+				timestamps: true,
+				path: 'logs/server.log',
+				level: 'info',
+			},
+		},
+		ssl: {
+			enabled: false,
+			keyPath: '',
+			certificatePath: '',
+		},
+		sentry: {
+			enabled: true,
+			dsn: 'https://xxx:yyy@sentry.io/zzz',
+		},
+	},
+};
 ```
