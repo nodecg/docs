@@ -4,6 +4,10 @@ title: Migrating from 1.x to 2.x
 sidebar_label: 1.x → 2.x
 ---
 
+:::warning
+If you use `nodecg-cli`, be sure to update to the latest version before upgrading to NodeCG v2.x.
+:::
+
 ## Breaking Changes
 
 - [Rewrote the entire core in TypeScript](#rewrote-the-entire-core-in-typescript)
