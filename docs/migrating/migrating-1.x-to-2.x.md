@@ -54,7 +54,7 @@ The config loader system has been rewritten and the new library unfortunately no
 
 ### Minimum supported Node.js version is now 16
 
-To keep up with the rapid pace of Node.js development, the supported Node.js versions are 16 and 18.
+To keep up with the rapid pace of Node.js development, the minimum supported Node.js version is now 16. We are working on supporting Node.js 18, but at this time it causes crashes in NodeCG.
 
 ### Minimum supported TypeScript version is now 4.7
 
