@@ -10,7 +10,6 @@ module.exports = {
 			'assets',
 			'sounds',
 			'replicant-schemas',
-			'performance-tips',
 			'making-dialogs',
 			'portable-nodecg'
 		],
