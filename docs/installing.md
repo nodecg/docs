@@ -22,7 +22,8 @@ nodecg setup
 Cloning from GitHub:
 
 ```bash
-git clone --depth 1 https://github.com/nodecg/nodecg.git
+# Be sure to clone a specific release's tag name.
+git clone --depth 1 --branch v2.0.0 https://github.com/nodecg/nodecg.git
 cd nodecg
 yarn install --production
 ```
