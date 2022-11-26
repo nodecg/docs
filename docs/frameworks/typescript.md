@@ -25,7 +25,8 @@ Optionally, you can define types of replicants using replicants' JSON schema.
 1. Import the type and pass it to type parameter like this:
 
 ```ts
-const rep = nodecg.Replicant<SchemaTypeDef>('schemaTypeDef')
+import { ExampleReplicant } from '../types/schemas/example_replicant';
+const rep = nodecg.Replicant<ExampleReplicant>('example_replicant')
 ```
 
 ## Using Type Definitions
