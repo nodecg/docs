@@ -8,7 +8,7 @@ sidebar_label: Installing
 
 There are two methods to install NodeCG: cloning from GitHub or using the [nodecg-cli](https://github.com/nodecg/nodecg-cli).
 
-Install [Node.js (version 14.17.3 or greater)](http://nodejs.org/) & [yarn 1.x](https://classic.yarnpkg.com/en/docs/install).  
+Install [Node.js (version 16 or 18)](http://nodejs.org/) & [yarn 1.x](https://classic.yarnpkg.com/en/docs/install).  
 
 Using [nodecg-cli](https://github.com/nodecg/nodecg-cli):
 
