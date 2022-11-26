@@ -17,7 +17,7 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Socket.IO messages (i.e. sendMessage) now use the `broadcast` flag](#socketio-messages-ie-sendmessage-now-use-the-broadcast-flag)
 - [To enable "trace" logging, set the log level to "verbose"](#to-enable-trace-logging-set-the-log-level-to-verbose)
 - [Support for JSON5 in config files has been removed](#support-for-json5-in-config-files-has-been-removed)
-- [Minimum supported Node.js version is now 16](#minimum-supported-nodejs-version-is-now-16)
+- [Supported Node.js version is now 16](#supported-nodejs-version-is-now-16)
 - [Minimum supported TypeScript version is now 4.7](#minimum-supported-typescript-version-is-now-47)
 - [NodeCG core now uses `yarn` instead of `npm`](#nodecg-core-now-uses-yarn-instead-of-npm)
 
@@ -52,9 +52,9 @@ The logging system has changed slightly, and to view `log.trace` output, you mus
 
 The config loader system has been rewritten and the new library unfortunately no longer supports JSON5. However, it does support YAML and CommonJS, both of which support comments. This means that instead of needing to write `cfg/nodecg.json`, you could instead write `cfg/nodecg.yaml` or `cfg/nodecg.js` (with a `module.exports = {}` statement). The same goes for bundle configs.
 
-### Minimum supported Node.js version is now 16
+### Supported Node.js version is now 16
 
-To keep up with the rapid pace of Node.js development, the minimum supported Node.js version is now 16. We are working on supporting Node.js 18, but at this time it causes crashes in NodeCG.
+To keep up with the rapid pace of Node.js development, the supported Node.js version is now 16. We are working on also supporting Node.js 18, but at this time it causes crashes in NodeCG.
 
 ### Minimum supported TypeScript version is now 4.7
 
