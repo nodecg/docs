@@ -11,7 +11,8 @@ module.exports = {
 			'sounds',
 			'replicant-schemas',
 			'making-dialogs',
-			'portable-nodecg'
+			'portable-nodecg',
+			'working-on-nodecg-core'
 		],
 		Advanced: ['mounts', 'security', 'screenshot-testing', 'custom-routes', 'sentry', 'docker'],
 		'Using Frameworks': [
