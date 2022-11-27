@@ -29,7 +29,7 @@ Docker provides a lot of useful features for NodeCG:
 # Simple Deployment & Testing
 If you want to use containerized NodeCG in the simplest possible deployment, all you have to do is run:
 
-```sh
+```bash
 # If on Windows: run this command in Git Bash, not Command Prompt or PowerShell.
 docker run \
 	-p 9090:9090/tcp \
@@ -47,7 +47,7 @@ This command will bind the `cfg`, `bundles`, `logs`, `db`, and `assets` folders 
 For more advanced deployments, you may also build your own Docker image to hold all your bundles and configuration.
 
 Example Dockerfile:
-```dockerfile
+```docker
 # Specifies the base image to build on top of.
 # This base image includes nodecg-cli, so you don't need to install it separately.
 # It also creates a nodecg user with appropriate permissions.
@@ -84,14 +84,14 @@ COPY --chown=nodecg:nodecg ./cfg /opt/nodecg/cfg
 
 Now use Docker to build your image from the Dockerfile you just created:
 
-```sh
+```bash
 # Be sure to replace [your-image-name]  with an actual name and remove the brackets ([]).
 # Do not omit the "." at the end of the command.
 docker build -t [your-image-name] .
 ```
 
 And run it with:
-```sh
+```bash
 # If on Windows: run this command in Git Bash, not Command Prompt or PowerShell.
 docker run \
 	-p 9090:9090/tcp \

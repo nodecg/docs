@@ -10,7 +10,7 @@ NodeCG is natively written in TypeScript and has type definitions for all APIs.
 
 Install TypeScript as your bundle's dev dependency.
 
-```sh
+```bash
 npm install -D typescript
 # or
 yarn add -D typescript
@@ -33,7 +33,7 @@ const rep = nodecg.Replicant<ExampleReplicant>('example_replicant')
 
 To use NodeCG's type definitions, you'll need to first install them, as they are distributed as a separate package to keep things light and portable:
 
-```sh
+```bash
 npm install -D @nodecg/types
 # or
 yarn add -D @nodecg/types

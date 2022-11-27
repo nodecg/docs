@@ -9,20 +9,20 @@ NodeCG is an open-source project written by a core group of maintainers and a co
 1. Install [Node.js (version 16)](http://nodejs.org/) & [yarn 1.x](https://classic.yarnpkg.com/en/docs/install). 
 2. Clone NodeCG:
 
-	```sh
+	```bash
 	git clone https://github.com/nodecg/nodecg.git
 	```
 
 3. Open NodeCG in your editor of choice. Most of the devteam uses [VS Code](https://code.visualstudio.com/).
 4. Install NodeCG's dependencies:
 
-	```sh
+	```bash
 	yarn
 	```
 
 5. Run NodeCG's development script, which automatically recompiles the client and server code whenever the source files on disk change. It also automatically restarts the server. It does **not** automatically refresh open browser pages.
 
-	```sh
+	```bash
 	yarn dev
 	```
 
@@ -30,7 +30,7 @@ NodeCG is an open-source project written by a core group of maintainers and a co
 7. If applicable, add tests for your changes by editing the appropriate file(s) in the [`test`](https://github.com/nodecg/nodecg/tree/master/test) directory.
 8. Run the test suite:
 
-	```sh
+	```bash
 	# Be sure that you have re-built NodeCG before running the tests!
 	# If you're not sure, run `yarn build` before `yarn test`.
 	yarn test

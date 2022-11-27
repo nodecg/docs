@@ -76,7 +76,7 @@ missing packages for you if there is any.
 
 #### Locally
 
-```sh
+```bash
 npm install --save-dev parcel-bundler
 # or
 yarn add -D parcel-bundler
@@ -87,7 +87,7 @@ npm scripts, or `npx parcel`/`yarn parcel`.
 
 #### Globally
 
-```sh
+```bash
 npm install -g parcel-bundler
 # or
 yarn global add parcel-bundler
@@ -147,13 +147,13 @@ html
 
 For development, with file change detection and hot-reloading:
 
-```sh
+```bash
 parcel watch src/dashboard/index.html --out-dir dashboard --public-url ./
 ```
 
 For production build, with optimized output:
 
-```sh
+```bash
 parcel build src/dashboard/index.html --out-dir dashboard --public-url ./
 ```
 
@@ -162,7 +162,7 @@ parcel build src/dashboard/index.html --out-dir dashboard --public-url ./
 You can use a glob pattern to use multiple entrypoints, if you have multiple pages
 to compile
 
-```sh
+```bash
 parcel build src/dashboard/*.html --out-dir dashboard --public-url ./
 ```
 
