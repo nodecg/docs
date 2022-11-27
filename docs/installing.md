@@ -25,7 +25,8 @@ Cloning from GitHub:
 # Be sure to clone a specific release's tag name.
 git clone --depth 1 --branch v2.0.0 https://github.com/nodecg/nodecg.git
 cd nodecg
-yarn install --production
+yarn install
+yarn build
 ```
 
 ## Start
@@ -35,7 +36,7 @@ Run `node index.js` or `nodecg start` in the root nodecg folder.
 Open the dashboard (`http://localhost:9090` by default).
 
 :::note
-When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
+When running NodeCG in production, [Docker](docker) or [pm2](https://github.com/Unitech/pm2) are recommended.
 :::
 
 ## Installing bundles
