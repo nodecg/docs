@@ -4,7 +4,7 @@ title: Bundle Configuration
 sidebar_label: Bundle Configuration
 ---
 
-Bundles can be configured via `\*.js`, `\*.yaml`, or `\*.json` config files in the `cfg` directory of NodeCG.
+Bundles can be configured via `*.js`, `*.yaml`, or `*.json` config files in the `cfg` directory of NodeCG.
 
 ## Example
 

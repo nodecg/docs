@@ -10,7 +10,7 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
 
 - `host` _String_ The IP address or hostname that NodeCG should bind to.
 - `port` _Integer_ The port that NodeCG should listen on.
-- `baseURL` _String_ The URL of this instance. Used for things like cookies. Defaults to HOST:PORT. If you use a reverse proxy, you\'ll likely need to set this value.
+- `baseURL` _String_ The URL of this instance. Used for things like cookies. Defaults to HOST:PORT. If you use a reverse proxy, you'll likely need to set this value.
 - `developer` _Boolean_ Whether to enable features that speed up development. Not suitable for production.
 - `exitOnUncaught` _Boolean_ Whether or not to exit on uncaught exceptions.
 - `logging` _Object_ Contains other configuration properties.
