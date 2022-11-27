@@ -32,7 +32,6 @@ Graphics are defined in your bundle's `package.json` file, in the `nodecg.graphi
 
 - [package.json Manifest](manifest.md)
 - [Using npm](using-npm.md)
-- [Performance Tips](performance-tips.md)
 - [Screenshot Testing](screenshot-testing.md)
 
 ## Dashboard
