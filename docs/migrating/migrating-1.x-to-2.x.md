@@ -23,6 +23,7 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 
 ## Features
 - All configs may now be written in JSON, CommonJS, or YAML.
+- [Worker clients are now supported.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 
 ### Rewrote the entire core in TypeScript
 
