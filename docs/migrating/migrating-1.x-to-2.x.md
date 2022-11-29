@@ -41,6 +41,33 @@ For [Sentry](https://sentry.io/) users, the SDK has been updated and `publicDsn`
 
 The login system has been rewritten to be backed by a real database with users and roles, to pave the way for future improvements to security and account handling, with per-user permissions. However, at this time, it still functions mostly the same way it did in 1.x. That said, given the massive changes to this system, any bundles which built additional functionality on top of the login system may break. If your use case is no longer supported, please [open an issue](https://github.com/nodecg/nodecg/issues).
 
+If your bundle relied on the `accessToken` and `refreshToken` properties available from the old login lib, use these alternatives instead:
+
+```ts
+import type NodeCG from '@nodecg/types';
+
+export = (nodecg: NodeCG.ServerAPI) => {
+	nodecg.on('login', (user) => {
+		console.log(user.id, user.name);
+	});
+	
+	nodecg.on('logout', (user) => {
+		console.log(user.id, user.name);
+	});
+
+	nodecg.mount((req, _res, _next) => {
+		if (req.user) {
+			const ident = req.user.identities[0];
+			switch (ident.provider_type) {
+				case 'discord':
+				case 'twitch':
+					console.log(ident.provider_access_token, ident.provider_refresh_token);
+			}
+		}
+	});
+};
+```
+
 ### Socket.IO messages (i.e. sendMessage) now use the `broadcast` flag
 
 Previously, NodeCG naively did not use Socket.IO's `broadcast` flag to emit messages to all clients. This caused some issues such as messages sometimes being received by the context that sent them. This bug should be fixed, but it is considered a breaking change because it is possible that some bundles relied on this bug.
