@@ -20,6 +20,7 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Supported Node.js versions are now 16 and 18](#supported-nodejs-versions-are-now-16-and-18)
 - [Minimum supported TypeScript version is now 4.7](#minimum-supported-typescript-version-is-now-47)
 - [NodeCG core now uses `yarn` instead of `npm`](#nodecg-core-now-uses-yarn-instead-of-npm)
+- [All config and replicant schemas must now be authored in JSON Schema Draft 07 instead of Draft 04](#all-config-and-replicant-schemas-must-now-be-authored-in-json-schema-draft-07-instead-of-draft-04)
 
 ## Features
 - All configs may now be written in JSON, CommonJS, or YAML.
@@ -91,3 +92,7 @@ If your bundle uses TypeScript, it needs to use version 4.7 or greater to have c
 ### NodeCG core now uses `yarn` instead of `npm`
 
 Due to issues with certain core dependencies when using `npm`, NodeCG core now uses [`yarn` (version 1.x)](https://classic.yarnpkg.com/en/docs/install) to install dependencies. 
+
+### All config and replicant schemas must now be authored in JSON Schema Draft 07 instead of Draft 04
+
+See [here](https://json-schema.org/draft-06/json-schema-release-notes.html) and [here](https://json-schema.org/draft-07/json-schema-release-notes.html) for migration instructions.
