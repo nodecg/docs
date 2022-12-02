@@ -20,11 +20,11 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Supported Node.js versions are now 16 and 18](#supported-nodejs-versions-are-now-16-and-18)
 - [Minimum supported TypeScript version is now 4.7](#minimum-supported-typescript-version-is-now-47)
 - [NodeCG core now uses `yarn` instead of `npm`](#nodecg-core-now-uses-yarn-instead-of-npm)
-- [All config and replicant schemas must now be authored in JSON Schema Draft 07 instead of Draft 04](#all-config-and-replicant-schemas-must-now-be-authored-in-json-schema-draft-07-instead-of-draft-04)
 
 ## Features
 - All configs may now be written in JSON, CommonJS, or YAML.
 - [Worker clients are now supported.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+- [All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12](#all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12)
 
 ### Rewrote the entire core in TypeScript
 
@@ -93,6 +93,6 @@ If your bundle uses TypeScript, it needs to use version 4.7 or greater to have c
 
 Due to issues with certain core dependencies when using `npm`, NodeCG core now uses [`yarn` (version 1.x)](https://classic.yarnpkg.com/en/docs/install) to install dependencies. 
 
-### All config and replicant schemas must now be authored in JSON Schema Draft 07 instead of Draft 04
+### All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12
 
-See [here](https://json-schema.org/draft-06/json-schema-release-notes.html) and [here](https://json-schema.org/draft-07/json-schema-release-notes.html) for migration instructions.
+Previously, only Draft 04 was supported.
