@@ -20,6 +20,11 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Supported Node.js versions are now 16 and 18](#supported-nodejs-versions-are-now-16-and-18)
 - [Minimum supported TypeScript version is now 4.7](#minimum-supported-typescript-version-is-now-47)
 - [NodeCG core now uses `yarn` instead of `npm`](#nodecg-core-now-uses-yarn-instead-of-npm)
+- [Fullbleed workspace labels now use the panel title instead of the panel name](#fullbleed-workspace-labels-now-use-the-panel-title-instead-of-the-panel-name)
+- [Fixed Replicant assignment sometimes being applied out-of-order](#fixed-replicant-assignment-sometimes-being-applied-out-of-order)
+- [Removed support for `pkg`](#removed-support-for-pkg)
+- [Replicants now properly parse falsey values](#replicants-now-properly-parse-falsey-values)
+- [NodeCG will now only exit with code 0 if there isn't already an exit code](#nodecg-will-now-only-exit-with-code-0-if-there-isnt-already-an-exit-code)
 
 ## Features
 - All configs may now be written in JSON, CommonJS, or YAML.
@@ -96,3 +101,18 @@ Due to issues with certain core dependencies when using `npm`, NodeCG core now u
 ### All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12
 
 Previously, only Draft 04 was supported.
+
+### Fullbleed workspace labels now use the panel title instead of the panel name
+Previously, there was a bug where workspace labels used the wrong data for their user-facing labels.
+
+### Fixed Replicant assignment sometimes being applied out-of-order
+There was an obscure bug that could cause assignment operations on Replicants to be applied _before_ preceeding change events. This is no longer the case. It is technically a breaking change, but is is unlikely that many bundles relied on this broken behavior.
+
+### Removed support for `pkg`
+[`pkg`](https://github.com/vercel/pkg) is a tool for packaging Node.js projects into an executable that NodeCG used to have undocumented support for. This support has been removed. Instead, follow the instructions on the [Portable NodeCG](portable-nodecg) page.
+
+### Replicants now properly parse falsey values
+If you have a Replicant that tries to save values like `0` or `undefined`, it will now properly do so.
+
+### NodeCG will now only exit with code 0 if there isn't already an exit code
+NodeCG used to clobber previously-set exit codes at times. This is no longer the case.
