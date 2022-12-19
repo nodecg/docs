@@ -1,20 +1,33 @@
 ---
 id: using-bundlers
-title: Using Bundlers
-sidebar_label: Bundlers
+title: Bundlers & Developer Setup
+sidebar_label: Bundlers & Dev Environments
 ---
 
-If you don't know why you should use bundlers, read up
-[Why webpack](https://webpack.js.org/concepts/why-webpack/).
+:::note December 2022 Update
 
-There are currently three JavaScript bundlers.
+Bundlers are one option for serving dev servers & are a wonderful tool for releasing code into production. However, there are now many alternatives that are helpful for speedy local development. Speed comparisons vary depending on what metrics are being used, and like any other framework, there are tradeoffs across any tooling choices.
+
+Vite is currently the leading project for an unbundled development environment. Vite provides a [comparison writeup](https://vitejs.dev/guide/why.html) that may be worth checking out when starting a new NodeCG project. The Vue Mastery team also provides a [comparison between Vite and Webpack](https://www.vuemastery.com/blog/vite-vs-webpack/) that may be helpful in making your bundling / module choices. 
+
+NodeCG usage is currently not limited to any of these options! Make your choice(s) as you will for what you are comfortable with.
+
+:::
+
+## Bundlers
+
+Webpack, the most used bundler, has some good documentation for [why to use Webpack](https://webpack.js.org/concepts/why-webpack).
+
+There are several JavaScript bundlers.
 
 - [webpack](https://github.com/webpack/webpack)
-  - By far the most used bundler with a lot of community made extensions
+  - By far the most used bundler with a lot of community made extensions.
 - [rollup](https://github.com/rollup/rollup)
-  - Primarily used by libraries like React, Vue
+  - Primarily used by libraries like React, Vue - utilizes ES Modules for splitting code
 - [parcel](https://github.com/parcel-bundler/parcel)
-  - New bundler famous for zero-config, and super fast building process
+  - Bundler famous for zero-config and super fast building process
+- [esbuild](https://esbuild.github.io/)
+  - Extremely fast bundler written in Go, however currently the maintainers state that it is [unstable for production usage](https://esbuild.github.io/faq/#production-readiness). 
 
 These bundlers allows you to
 
@@ -25,9 +38,15 @@ These bundlers allows you to
 - write in other languages like TypeScript
 - and many more
 
-This tutorial goes through the setup using parcel.
+## Tutorial: Using Parcel
 
-## Directory Structure
+:::caution
+
+The below tutorial focuses **solely** on bundler tooling with NodeCG and was last updated in **November 2020**; functionality may be limited due to updates in underlying tools, particularly Parcel. If you run into issues, feel free to put in a pull request.
+
+:::
+
+### Directory Structure
 
 Basically you will have parcel to output the whole `dashboard` and `graphics`
 directory. Your project would look like this
@@ -67,14 +86,14 @@ foo-layouts
 The random string for each generated files are automatically generated to
 refresh cache when the files change.
 
-## Setup
+### Setup
 
 As I said, parcel is (literally) zero-configuration required. It even installs
 missing packages for you if there is any.
 
-### Add parcel to your bundle
+#### Add parcel to your bundle
 
-#### Locally
+##### Locally
 
 ```sh
 npm install --save-dev parcel-bundler
@@ -85,7 +104,7 @@ yarn add -D parcel-bundler
 The `parcel` command will be available locally. You can run it either adding
 npm scripts, or `npx parcel`/`yarn parcel`.
 
-#### Globally
+##### Globally
 
 ```sh
 npm install -g parcel-bundler
@@ -96,7 +115,7 @@ yarn global add parcel-bundler
 With this, `parcel` command should be available globally. Just run `parcel` to
 run the bundler.
 
-### Make an entrypoint
+#### Make an entrypoint
 
 When building front-end, HTML file is usually used as entrypoint. You can just
 use your HTML file with your scripts and stylesheets imported.
@@ -143,7 +162,7 @@ html
     script(src="./views/ds.ts")
 ```
 
-### Run the command
+#### Run the command
 
 For development, with file change detection and hot-reloading:
 
@@ -166,14 +185,14 @@ to compile
 parcel build src/dashboard/*.html --out-dir dashboard --public-url ./
 ```
 
-Details described in [the reference](https://parceljs.org/cli.html).
+A detailed reference can be found in [the Parcel CLI reference documentation](https://parceljs.org/features/cli).
 
-### Recommended Configuration
+#### Recommended Configuration
 
 Even though it already works for most cases (!), a bit of configuration might be
 recommended/required.
 
-#### browserslist
+##### browserslist
 
 Parcel uses [babel](https://babeljs.io/) out of box, and the default supported
 browsers are `>0.25%` which includes old browsers like IE.
@@ -194,7 +213,7 @@ For example,
 Refer to [this page](https://github.com/browserslist/browserslist#full-list) for
 detailed `browserslist` syntax.
 
-### Going further
+#### Going further
 
 Due to the huge amount of features parcel offers out of box, at this point you
 already have a lot more options for your front-end development. For example:
@@ -204,5 +223,4 @@ already have a lot more options for your front-end development. For example:
 - TypeScript or other alternative languages
 
 Also, if your project becomes too advanced for parcel to handle, you can switch
-to webpack. It produces a bit more optimized code, and has a lot more features
-supported.
+to webpack - there are tools that can do this configuration conversion, to either Webpack or other tools like Vite, WMR, or Turbopack.
