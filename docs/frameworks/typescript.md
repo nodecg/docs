@@ -21,7 +21,7 @@ yarn add -D typescript
 Optionally, you can define types of replicants using replicants' JSON schema.
 
 1. Define schema for replicants
-1. Use <https://github.com/bcherny/json-schema-to-typescript> to convert JSON schema to TypeScript type definitions
+1. Use [`nodecg-cli`](https://github.com/nodecg/nodecg-cli)'s `nodecg schema-types` command to convert JSON schema to TypeScript type definitions
 1. Import the type and pass it to type parameter like this:
 
 ```ts
