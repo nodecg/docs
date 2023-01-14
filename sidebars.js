@@ -14,7 +14,15 @@ module.exports = {
 			'portable-nodecg',
 			'working-on-nodecg-core'
 		],
-		Advanced: ['mounts', 'security', 'screenshot-testing', 'custom-routes', 'sentry', 'docker'],
+		Advanced: [
+			'mounts', 
+			'security', 
+			'screenshot-testing', 
+			'custom-routes', 
+			'sentry', 
+			'docker',
+			'editing-the-database',
+		],
 		'Using Frameworks': [
 			'frameworks/using-bundlers',
 			'frameworks/typescript',
