@@ -10,6 +10,7 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 
 ## Breaking Changes
 
+- [NodeCG no longer ships a built/compiled version of itself](#nodecg-no-longer-ships-a-builtcompiled-version-of-itself)
 - [Rewrote the entire core in TypeScript](#rewrote-the-entire-core-in-typescript)
 - [Removed undocumented `rawManifest` property from bundle objects](#removed-undocumented-rawmanifest-property-from-bundle-objects)
 - [Updated the Sentry SDK and removed publicDsn from the config](#updated-the-sentry-sdk-and-removed-publicdsn-from-the-config)
@@ -30,6 +31,10 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - All configs may now be written in JSON, CommonJS, or YAML.
 - [Worker clients are now supported.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 - [All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12](#all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12)
+
+### NodeCG no longer ships a built/compiled version of itself
+
+To help make the repository cleaner, we no longer commit a built version of NodeCG to it. As such, users cloning NodeCG must build it using `npm run build` every time they update NodeCG (running `npm install` after each update is also required). This is done automatically when using `nodecg setup`.
 
 ### Rewrote the entire core in TypeScript
 
