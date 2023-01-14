@@ -20,7 +20,6 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Support for JSON5 in config files has been removed](#support-for-json5-in-config-files-has-been-removed)
 - [Supported Node.js versions are now 16 and 18](#supported-nodejs-versions-are-now-16-and-18)
 - [Minimum supported TypeScript version is now 4.7](#minimum-supported-typescript-version-is-now-47)
-- [NodeCG core now uses `yarn` instead of `npm`](#nodecg-core-now-uses-yarn-instead-of-npm)
 - [Fullbleed workspace labels now use the panel title instead of the panel name](#fullbleed-workspace-labels-now-use-the-panel-title-instead-of-the-panel-name)
 - [Fixed Replicant assignment sometimes being applied out-of-order](#fixed-replicant-assignment-sometimes-being-applied-out-of-order)
 - [Removed support for `pkg`](#removed-support-for-pkg)
@@ -98,10 +97,6 @@ To keep up with the rapid pace of Node.js development, the supported Node.js ver
 ### Minimum supported TypeScript version is now 4.7
 
 If your bundle uses TypeScript, it needs to use version 4.7 or greater to have compatibility with NodeCG v2.x.
-
-### NodeCG core now uses `yarn` instead of `npm`
-
-Due to issues with certain core dependencies when using `npm`, NodeCG core now uses [`yarn` (version 1.x)](https://classic.yarnpkg.com/en/docs/install) to install dependencies. 
 
 ### All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12
 

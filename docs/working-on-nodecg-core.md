@@ -6,7 +6,7 @@ sidebar_label: Working on NodeCG Core
 
 NodeCG is an open-source project written by a core group of maintainers and a community of contributors. If you'd like to contribute to NodeCG itself, here's how to get started:
 
-1. Install [Node.js (18)](http://nodejs.org/) & [yarn 1.x](https://classic.yarnpkg.com/en/docs/install). 
+1. Install [Node.js (18)](http://nodejs.org/). 
 2. Clone NodeCG:
 
 	```bash
@@ -17,13 +17,13 @@ NodeCG is an open-source project written by a core group of maintainers and a co
 4. Install NodeCG's dependencies:
 
 	```bash
-	yarn
+	npm install
 	```
 
 5. Run NodeCG's development script, which automatically recompiles the client and server code whenever the source files on disk change. It also automatically restarts the server. It does **not** automatically refresh open browser pages.
 
 	```bash
-	yarn dev
+	npm run dev
 	```
 
 6. Make your changes.
@@ -32,8 +32,8 @@ NodeCG is an open-source project written by a core group of maintainers and a co
 
 	```bash
 	# Be sure that you have re-built NodeCG before running the tests!
-	# If you're not sure, run `yarn build` before `yarn test`.
-	yarn test
+	# If you're not sure, run `npm run build` before `npm test`.
+	npm test
 	```
 
 9. Once tests pass, push your changes and open a [pull request](https://github.com/nodecg/nodecg/pulls)!
