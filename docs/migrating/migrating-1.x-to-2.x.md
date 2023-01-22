@@ -37,7 +37,7 @@ To help make the repository cleaner, we no longer commit a built version of Node
 
 ### Rewrote the entire core in TypeScript
 
-NodeCG has been completely rewritten in TypeScript! We've kept the breaking changes to a minimum and most bundles should need very few code changes, but given the sheer scope of this change it is possible that we haven't accounted for every single breaking change. If you run across a breaking change not mentioned in this document, please [open an issue](https://github.com/nodecg/docs/issues).
+NodeCG has been completely rewritten in TypeScript! We've kept the breaking changes to a minimum and most bundles should need very few code changes, but given the sheer scope of this change it is possible that we haven't accounted for every single breaking change. If you run across a breaking change not mentioned in this document, please [open an issue](https://github.com/nodecg/docs/issues). Please note that this does *not* mean that all bundles must now be written in TypeScript. Plain JavaScript is and always will be supported.
 
 ### Removed undocumented `rawManifest` property from bundle objects
 
