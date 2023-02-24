@@ -25,6 +25,7 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Removed support for `pkg`](#removed-support-for-pkg)
 - [Replicants now properly parse falsey values](#replicants-now-properly-parse-falsey-values)
 - [NodeCG will now only exit with code 0 if there isn't already an exit code](#nodecg-will-now-only-exit-with-code-0-if-there-isnt-already-an-exit-code)
+- [Replicant logging is now configured separately for Console and File outputs](#replicant-logging-is-now-configured-separately-for-console-and-file-outputs)
 
 ## Features
 - All configs may now be written in JSON, CommonJS, or YAML.
@@ -116,3 +117,6 @@ If you have a Replicant that tries to save values like `0` or `undefined`, it wi
 
 ### NodeCG will now only exit with code 0 if there isn't already an exit code
 NodeCG used to clobber previously-set exit codes at times. This is no longer the case.
+
+### Replicant logging is now configured separately for Console and File outputs
+Previously, Replicant logging was a direct child of the `logging` property, and it was one setting that controlled logging Replicant debug into to both Console *and* File outputs. Now, these two things can be configured separately as `logging.console.replicants` and/or `logging.file.replicants`.
