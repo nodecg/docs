@@ -73,3 +73,40 @@ module.exports = function (nodecg) {
 ### Logger _:Object_
 
 Provides easy access to the Logger class. Useful in cases where you want to create your own custom logger.
+
+### Events
+
+:::important Extension Only
+This can only be used in code which runs on the server.
+:::
+
+In your extension code, there are several events emitted on the `nodecg` object that are available to listen to:
+
+```ts
+module.exports = function (nodecg) {
+    nodecg.on('extensionsLoaded', () => {
+        // all bundle extensions have finished loading
+        // this event is probably not that necessary because serverStarted is emitted shortly after
+    })
+
+    nodecg.on('serverStarted', () => {
+        // the web and socket.io servers have started and will accept connections
+    })
+
+    nodecg.on('serverStopping', () => {
+        // the server is shutting down and you can perform cleanup operations here
+    })
+
+    nodecg.on('login', (user) => {
+        // a user has logged in
+        // use Intellisense (autocomplete) to explore the other properties available on the `user` object
+		console.log(user.id, user.name);
+	});
+	
+	nodecg.on('logout', (user) => {
+        // a user has logged out
+        // use Intellisense (autocomplete) to explore the other properties available on the `user` object
+		console.log(user.id, user.name);
+	});
+}
+```
