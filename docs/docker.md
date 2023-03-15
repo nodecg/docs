@@ -38,7 +38,7 @@ docker run \
 	-v "/$PWD/logs:/opt/nodecg/logs" \
 	-v "/$PWD/db:/opt/nodecg/db" \
 	-v "/$PWD/assets:/opt/nodecg/assets" \
-	-it nodecg/nodecg:v2.0.0
+	-it ghcr.io/nodecg/nodecg:latest
 ```
 
 This command will bind the `cfg`, `bundles`, `logs`, `db`, and `assets` folders from the current working directory into the NodeCG Docker container, making them available to NodeCG at runtime. This is one way to get bundles into a containerized instance of NodeCG. Likewise, NodeCG can write the database, logs, and assets back into these directories on the host filesystem, allowing for persistence.
@@ -51,7 +51,7 @@ Example Dockerfile:
 # Specifies the base image to build on top of.
 # This base image includes nodecg-cli, so you don't need to install it separately.
 # It also creates a nodecg user with appropriate permissions.
-FROM nodecg/nodecg:v2.0.0
+FROM ghcr.io/nodecg/nodecg:latest
 
 # Switches to the nodecg user created by the base image.
 USER nodecg
@@ -115,8 +115,7 @@ services:
       - '[absolute path to assets dir on host filesystem]:/opt/nodecg/assets'
 ```
 
-To upgrade NodeCG just build a new image with the new parent.
-Replace `FROM nodecg/nodecg:v2.0.0` with `FROM nodecg/nodecg:[newer version]`
+To pin NodeCG to a specific version, replace `FROM ghcr.io/nodecg/nodecg:latest` with `FROM ghcr.io/nodecg/nodecg:release:[specific version]`
 
 :::warning
 If you want to host your NodeCG instance on the internet (instead of just on a secure LAN), it is highly recommended to encrypt and secure NodeCG.
