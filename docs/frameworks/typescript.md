@@ -45,7 +45,7 @@ The first approach is to use [`include`](https://www.typescriptlang.org/tsconfig
 
 ```json
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx", "node_modules/@nodecg/types/augment-window.d.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "node_modules/@nodecg/types/client/types/augment-window.d.ts"]
 }
 ```
 
@@ -53,7 +53,7 @@ If you use Vue, be sure to include your `*.vue` files as well:
 
 ```json
 {
-  "include": ["src/**/*.ts", "**/*.vue", "node_modules/@nodecg/types/augment-window.d.ts"]
+  "include": ["src/**/*.ts", "**/*.vue", "node_modules/@nodecg/types/client/types/augment-window.d.ts"]
 }
 ```
 
@@ -62,7 +62,7 @@ The second approach is to use [`types`](https://www.typescriptlang.org/tsconfig#
 ```json
 {
   "compilerOptions": {
-    "types": ["node", "jest", "express", "@nodecg/types/augment-window"]
+    "types": ["node", "jest", "express", "@nodecg/types/client/types/augment-window"]
   }
 }
 ```
