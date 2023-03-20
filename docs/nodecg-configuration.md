@@ -113,17 +113,18 @@ module.exports = {
 			],
 		},
 		logging: {
-			replicants: false,
 			console: {
 				enabled: true,
 				timestamps: false,
 				level: 'verbose',
+				replicants: false,
 			},
 			file: {
 				enabled: true,
 				timestamps: true,
 				path: 'logs/server.log',
 				level: 'info',
+				replicants: false,
 			},
 		},
 		ssl: {
