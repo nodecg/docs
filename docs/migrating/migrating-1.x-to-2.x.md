@@ -110,7 +110,7 @@ Previously, there was a bug where workspace labels used the wrong data for their
 There was an obscure bug that could cause assignment operations on Replicants to be applied _before_ preceeding change events. This is no longer the case. It is technically a breaking change, but is is unlikely that many bundles relied on this broken behavior.
 
 ### Removed support for `pkg`
-[`pkg`](https://github.com/vercel/pkg) is a tool for packaging Node.js projects into an executable that NodeCG used to have undocumented support for. This support has been removed. Instead, follow the instructions on the [Portable NodeCG](portable-nodecg) page.
+[`pkg`](https://github.com/vercel/pkg) is a tool for packaging Node.js projects into an executable that NodeCG used to have undocumented support for. This support has been removed. Instead, follow the instructions on the [Portable NodeCG](../portable-nodecg) page.
 
 ### Replicants now properly parse falsey values
 If you have a Replicant that tries to save values like `0` or `undefined`, it will now properly do so.
