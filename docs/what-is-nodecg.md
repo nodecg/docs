@@ -12,12 +12,7 @@ sidebar_label: NodeCG
 [![Docker Build Status](https://img.shields.io/docker/build/nodecg/nodecg.svg)](https://hub.docker.com/r/nodecg/nodecg/tags/)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40NodeCG)](https://twitter.com/NodeCG)
 
-NodeCG is a broadcast graphics framework and application. It enables you to write complex, dynamic broadcast graphics
-using the web platform. NodeCG has no graphics or drawing primitives of its own. Instead, NodeCG provides
-a structure for your code and an API to facilitate moving data between the dashboard, the server, and your graphics.
-It makes no assumptions about how to best code a graphic, and gives you complete freedom to use whatever libraries,
-frameworks, tools, and methodologies you want. As such, NodeCG graphics can be rendered in any environment that
-can render HTML, including:
+NodeCG is a broadcast graphics framework and application. It enables you to write complex, dynamic broadcast graphics using the web platform. NodeCG has no graphics or drawing primitives of its own. Instead, NodeCG provides a structure for your code and an API to facilitate moving data between the dashboard, the server, and your graphics. It makes few assumptions about how to best code a graphic, and gives you freedom to use whatever libraries, frameworks, tools, and methodologies you want. As such, NodeCG graphics can be rendered in any environment that can render HTML, including:
 
 - [OBS Studio](https://obsproject.com/)
 - [vMix](http://www.vmix.com/)
@@ -25,7 +20,7 @@ can render HTML, including:
 - [CasparCG](https://github.com/CasparCG/server/releases) (v2.2.0+)
 
 :::note
-Don't see your preferred streaming software on this list? NodeCG graphics require Chrome 49 or newer. If your streaming software's implementation of browser source uses a build of CEF that is based on at least Chrome 49, chances are that NodeCG graphics will work in it. You can check what version of Chrome your streaming software uses for its browser sources by opening [whatversion.net/chrome](http://www.whatversion.net/chrome) as a browser source.
+Don't see your preferred streaming software on this list? NodeCG graphics require a modern browser engine. If your streaming software's implementation of browser source uses a recent-ish browser engine, chances are that NodeCG graphics will work in it. You can check what version your streaming software uses for its browser sources by opening [whatversion.net/chrome](https://www.whatversion.net/browser/) as a browser source.
 :::
 
 Have questions about NodeCG, or just want to say 'hi'? [Join our Discord server](https://discord.com/invite/GJ4r8a8)!
@@ -42,7 +37,7 @@ Let's unpack what these statements mean:
 
 ### > Make broadcast graphics (also known as "character generation" or "CG") more accessible
 
-Historically, broadcast graphics have been expensive. They either required expensive hardware, expensive software, or both. NodeCG was originally created to provide real-time broadcast graphics for Tip of the Hats, which is an all-volunteer charity fundraiser that had a budget of \$0 for its first several years.
+Historically, broadcast graphics have been expensive. They either required expensive hardware, expensive software, or both. NodeCG was originally created to provide real-time broadcast graphics for Tip of the Hats, which is an all-volunteer charity fundraiser that had a budget of $0 for its first several years.
 
 Now, it is possible to create an ambitious broadcast using entirely free software and consumer hardware. The NodeCG project embraces this democratization of broadcast technology.
 

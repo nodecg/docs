@@ -12,7 +12,7 @@ This can only be used in code which runs in Dashboards and Graphics.
 
 Provides a reference to the Socket.IO client socket instances.
 
-See the [Socket.IO docs](https://socket.io/docs/v3/client-api) for full usage details.
+See the [Socket.IO docs](https://socket.io/docs/v4/client-api) for full usage details.
 
 ### Example
 

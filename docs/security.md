@@ -46,10 +46,13 @@ Anyone who gets sent a link which includes a `key` will have full authorization 
 
 If you are unable to reach the owner of the leaked key:
 
-1. Shutdown your NodeCG instance.
-2. Locate the `nodecg/db/tokens.db` file.
-3. Either completely delete this file (which will log out every user and reset their keys), or edit out the specific line containing the key which was leaked.
-4. Restart NodeCG.
+1. **Shut down your NodeCG instance.**
+2. Locate the `nodecg/db/nodecg.sqlite3` file.
+3. Open this file using any tool that can open an edit SQLite3 databases, such as [DB Browser](https://sqlitebrowser.org/).
+4. Open the `api_key` table and delete the row which contains the leaked key.
+5. Restart your NodeCG instance.
+
+In an emergency, you may want to completely delete your database file. The consequences of doing this are that all users will need to log in again and all persisted Replicant values will be lost.
 
 ## How do I enable login security?
 

@@ -8,7 +8,7 @@ sidebar_label: Installing
 
 There are two methods to install NodeCG: cloning from GitHub or using the [nodecg-cli](https://github.com/nodecg/nodecg-cli).
 
-Install [Node.js (version 8.3 or greater) & npm (version 2 or greater)](http://nodejs.org/).  
+Install [Node.js (version 18)](http://nodejs.org/).  
 
 Using [nodecg-cli](https://github.com/nodecg/nodecg-cli):
 
@@ -22,14 +22,12 @@ nodecg setup
 Cloning from GitHub:
 
 ```bash
-git clone --depth 1 --branch legacy-1.x https://github.com/nodecg/nodecg.git
+# Be sure to clone a specific release's tag name.
+git clone --depth 1 --branch v2.0.0 https://github.com/nodecg/nodecg.git
 cd nodecg
-npm install --production
+npm install
+npm run build
 ```
-
-:::caution
-Ensure to specify a branch when cloning, as the master branch is in an unstable state while v2.0 is being developed.
-:::
 
 ## Start
 
@@ -38,7 +36,7 @@ Run `node index.js` or `nodecg start` in the root nodecg folder.
 Open the dashboard (`http://localhost:9090` by default).
 
 :::note
-When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
+When running NodeCG in production, [Docker](docker) or [pm2](https://github.com/Unitech/pm2) are recommended.
 :::
 
 ## Installing bundles

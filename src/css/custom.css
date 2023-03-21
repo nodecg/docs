@@ -96,7 +96,7 @@ html[data-theme="dark"] a code {
 
 /* Information alert */
 html[data-theme="dark"] .alert.alert--info {
-	color: #000000;
+	/* color: #000000; */
 }
 
 /* Information admonition icon black */

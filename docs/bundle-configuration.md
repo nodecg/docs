@@ -4,15 +4,15 @@ title: Bundle Configuration
 sidebar_label: Bundle Configuration
 ---
 
-Bundles can be configured via \*.json config files in the `cfg` directory of NodeCG.
+Bundles can be configured via `*.js`, `*.yaml`, or `*.json` config files in the `cfg` directory of NodeCG.
 
 ## Example
 
-Say we have a bundle named `test-bundle`. If we create`./cfg/test-bundle.json` with the following contents:
+Say we have a bundle named `test-bundle`. If we create`./cfg/test-bundle.js` with the following contents:
 
-```json
-{
- "myData": "hello"
+```js
+module.exports = {
+	myData: "hello"
 }
 ```
 

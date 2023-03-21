@@ -12,6 +12,7 @@ module.exports = {
     prism: {
       theme: require('./src/css/nodecg-light'),
       darkTheme: require('./src/css/nodecg-dark'),
+      additionalLanguages: ['docker'],
     },
     navbar: {
       title: 'NodeCG',
