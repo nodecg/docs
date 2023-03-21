@@ -5,7 +5,7 @@ sidebar_label: 1.x → 2.x
 ---
 
 :::warning
-If you use `nodecg-cli`, be sure to update to the latest version before upgrading to NodeCG v2.x.
+If you use `nodecg-cli`, be sure to update to the latest version before upgrading to NodeCG v2.x (`npm i -g nodecg-cli@latest`).
 :::
 
 ## Breaking Changes
