@@ -72,6 +72,7 @@ html[data-theme="dark"] {
 /* Info admonition colour */
 .alert--danger {
 	--ifm-alert-background-color: #b4040a;
+	--ifm-alert-foreground-color: #ffffff;
 }
 
 /* Keep most admonition logos white */
