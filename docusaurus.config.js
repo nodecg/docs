@@ -43,10 +43,10 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
