@@ -1,6 +1,6 @@
 // @ts-check
 
-const latestVersion = "1.9.0"
+const latestVersion = "2.0.0"
 
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
