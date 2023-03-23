@@ -14,7 +14,7 @@ NodeCG usage is currently not limited to any of these options! Make your choice(
 
 :::
 
-## Bundlers
+## Bundlers {#bundlers}
 
 Webpack, the most used bundler, has some good documentation for [why to use Webpack](https://webpack.js.org/concepts/why-webpack).
 
@@ -38,7 +38,7 @@ These bundlers allows you to
 - write in other languages like TypeScript
 - and many more
 
-## Tutorial: Using Parcel
+## Tutorial: Using Parcel {#parcel}
 
 :::caution
 
@@ -46,7 +46,7 @@ The below tutorial focuses **solely** on bundler tooling with NodeCG and was las
 
 :::
 
-### Directory Structure
+### Directory Structure {#parcel-structure}
 
 Basically you will have parcel to output the whole `dashboard` and `graphics`
 directory. Your project would look like this
@@ -86,14 +86,14 @@ foo-layouts
 The random string for each generated files are automatically generated to
 refresh cache when the files change.
 
-### Setup
+### Setup {#parcel-setup}
 
 As I said, parcel is (literally) zero-configuration required. It even installs
 missing packages for you if there is any.
 
-#### Add parcel to your bundle
+#### Add parcel to your bundle {#parcel-add}
 
-##### Locally
+##### Locally {#parcel-add-local}
 
 ```bash
 npm install --save-dev parcel-bundler
@@ -104,7 +104,7 @@ yarn add -D parcel-bundler
 The `parcel` command will be available locally. You can run it either adding
 npm scripts, or `npx parcel`/`yarn parcel`.
 
-##### Globally
+##### Globally {#parcel-add-global}
 
 ```bash
 npm install -g parcel-bundler
@@ -115,7 +115,7 @@ yarn global add parcel-bundler
 With this, `parcel` command should be available globally. Just run `parcel` to
 run the bundler.
 
-#### Make an entrypoint
+#### Make an entrypoint {#parcel-entrypoint}
 
 When building front-end, HTML file is usually used as entrypoint. You can just
 use your HTML file with your scripts and stylesheets imported.
@@ -162,7 +162,7 @@ html
     script(src="./views/ds.ts")
 ```
 
-#### Run the command
+#### Run the command {#parcel-run}
 
 For development, with file change detection and hot-reloading:
 
@@ -187,12 +187,12 @@ parcel build src/dashboard/*.html --out-dir dashboard --public-url ./
 
 A detailed reference can be found in [the Parcel CLI reference documentation](https://parceljs.org/features/cli).
 
-#### Recommended Configuration
+#### Recommended Configuration {#parcel-recommended}
 
 Even though it already works for most cases (!), a bit of configuration might be
 recommended/required.
 
-##### browserslist
+##### browserslist {#parcel-browserslist}
 
 Parcel uses [babel](https://babeljs.io/) out of box, and the default supported
 browsers are `>0.25%` which includes old browsers like IE.
@@ -213,7 +213,7 @@ For example,
 Refer to [this page](https://github.com/browserslist/browserslist#full-list) for
 detailed `browserslist` syntax.
 
-#### Going further
+#### Going further {#parcel-further}
 
 Due to the huge amount of features parcel offers out of box, at this point you
 already have a lot more options for your front-end development. For example:

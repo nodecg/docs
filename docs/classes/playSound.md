@@ -12,14 +12,14 @@ This can only be used in code which runs in Dashboards and Graphics.
 
 Plays the sound cue of the provided `cueName` in the current bundle. Does nothing if the cue doesn't exist or if the cue has no assigned file to play.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name    | Type   | Attributes    | Description |
 | ------- | ------ | ------------- | ----------- |
 | cueName | String |               |             |
 | opts    | Object | &lt;optional> |             |
 
-#### Opts
+#### Opts {#opts}
 
 | Name         | Type    | Attributes    | Default | Description                                                                                                         |
 | ------------ | ------- | ------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |

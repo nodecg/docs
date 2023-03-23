@@ -8,7 +8,7 @@ sidebar_label: readReplicant
 
 Reads the value of a replicant once, and doesn't create a subscription to it. Also available as a static method.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name   | Type     | Attributes    | Default   | Description                                                                              |
 | ------ | -------- | ------------- | --------- | ---------------------------------------------------------------------------------------- |
@@ -16,7 +16,7 @@ Reads the value of a replicant once, and doesn't create a subscription to it. Al
 | bundle | string   | &lt;optional> | CURR_BNDL | The bundle namespace to in which to look for this replicant.                             |
 | cb     | function |               |           | _Browser only_ The callback that handles the server's response which contains the value. |
 
-### Example
+### Example {#example}
 
 From an extension:
 

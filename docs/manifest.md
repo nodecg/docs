@@ -70,14 +70,14 @@ The `nodecg` object in a bundle's `package.json` must follow this structure:
 }
 ```
 
-## nodecg.compatibleRange
+## nodecg.compatibleRange {#compatible-range}
 
 A [semver](http://semver.org/) range that defines which version(s) of NodeCG this bundle is compatible with.
 This bundle will not load in NodeCG versions outside the specified range.
 
 This field is required.
 
-## nodecg.bundleDependencies
+## nodecg.bundleDependencies {#bundle-dependencies}
 
 Formatted identically to npm's `dependencies` field, but behaves differently.
 Bundles declared as `bundleDependencies` are not automatically installed.
@@ -87,7 +87,7 @@ then so will `example-bundle`.
 
 This field is only required if your bundle makes use of the [`nodecg.extensions`](/docs/classes/nodecg#extensions) API.
 
-## nodecg.dashboardPanels
+## nodecg.dashboardPanels {#dashboard-panels}
 
 An array of objects, each object describing an individual dashboard panel or dialog.
 Every panel and dialog must have a `name`, `title`, and `file`. `file` is relative to the bundle's `dashboard` folder.
@@ -118,7 +118,7 @@ less boilerplate.
 
 This field is only required if your bundle has dashboard panels.
 
-## nodecg.graphics
+## nodecg.graphics {#graphics}
 
 An array of objects, each object describing a graphic.
 Each graphic must have a `file`, `width`, and `height`. `file` is relative to the bundle's `graphics` folder.

@@ -4,7 +4,7 @@ title: Running NodeCG
 sidebar_label: Running
 ---
 
-## Usage
+## Usage {#usage}
 
 - Install a bundle to the `bundles` folder.
 - Start NodeCG (`node index.js` or `nodecg start` if you have [nodecg-cli](https://www.npmjs.com/package/nodecg-cli) installed).
@@ -14,7 +14,7 @@ sidebar_label: Running
 
 When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
 
-### Configuration
+### Configuration {#configuration}
 
 `./cfg/nodecg.json` is an optional file that you can create to configure NodeCG.
 See the [NodeCG Configuration tutorial](/docs/nodecg-configuration) for more information on configuring NodeCG.

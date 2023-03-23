@@ -14,7 +14,7 @@ Provides a reference to the Socket.IO client socket instances.
 
 See the [Socket.IO docs](https://socket.io/docs/v4/client-api) for full usage details.
 
-### Example
+### Example {#example}
 
 Listening for socket disconnect events:
 

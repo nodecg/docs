@@ -35,33 +35,33 @@ The NodeCG project exists to accomplish the following goals:
 
 Let's unpack what these statements mean:
 
-### > Make broadcast graphics (also known as "character generation" or "CG") more accessible
+### > Make broadcast graphics (also known as "character generation" or "CG") more accessible {#goal-accessible}
 
 Historically, broadcast graphics have been expensive. They either required expensive hardware, expensive software, or both. NodeCG was originally created to provide real-time broadcast graphics for Tip of the Hats, which is an all-volunteer charity fundraiser that had a budget of $0 for its first several years.
 
 Now, it is possible to create an ambitious broadcast using entirely free software and consumer hardware. The NodeCG project embraces this democratization of broadcast technology.
 
-### > Remain as close to the web platform as possible
+### > Remain as close to the web platform as possible {#goal-web}
 
 NodeCG graphics are just webpages. There is absolutely nothing special or unique about them. This is their greatest strength.
 
 By building on the web platform, and not building too many abstractions on top of it, people developing broadcast graphics with NodeCG have access to the raw potential of the web. New APIs and capabilities are continually being added to the web platform, and NodeCG developers should have access to the entirety of what the web can offer.
 
-### > Support broadcasts of any size and ambition
+### > Support broadcasts of any size and ambition {#goal-size}
 
 NodeCG's roots are in small broadcasts with no budget. More recently, NodeCG has begun seeing use in increasingly elaborate productions. We believe that one set of tools can and should be able to scale up from the smallest show all the way to the biggest fathomable show. Whether you're using OBS for everything, or a hardware switcher with a traditional key/fill workflow, NodeCG can be a part of any broadcast graphics system.
 
-## Maintainers
+## Maintainers {#maintainers}
 
 - [Alex "Lange" Van Camp](https://alexvan.camp)
 - [Matt "Bluee" McNamara](https://mattmcn.com/)
 - [Keiichiro "Hoishin" Amemiya](https://hoish.in/)
 
-## Designers
+## Designers {#designers}
 
 - [Chris Hanel](http://www.chrishanel.com)
 
-## Acknowledgements
+## Acknowledgements {#acknowledgement}
 
 - [Atmo](https://github.com/atmosfar), original dashboard concept and code, the inspiration for toth-overlay
 - [Alex "Lange" Van Camp](http://alexvan.camp), designer & developer of [toth-overlay](https://github.com/TipoftheHats/toth-overlay), the base on which NodeCG was built

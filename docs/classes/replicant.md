@@ -16,7 +16,7 @@ By default Replicants will be saved to disk, meaning they will automatically be 
 
 As of NodeCG 0.8.4, Replicants can also be automatically validated against a JSON Schema that you provide. See [Replicant Validation](../replicant-schemas.md) for more information.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name      | Type   | Attributes    | Description                                                                                       |
 | --------- | ------ | ------------- | ------------------------------------------------------------------------------------------------- |
@@ -24,7 +24,7 @@ As of NodeCG 0.8.4, Replicants can also be automatically validated against a JSO
 | namespace | string | &lt;optional> | The namespace to in which to look for this replicant. Defaults to the name of the current bundle. |
 | opts      | object | &lt;optional> | The options for this replicant.                                                                   |
 
-#### Opts
+#### Opts {#opts}
 
 | Name                | Type    | Attributes    | Default                      | Description                                                                                                                                                                                                                                        |
 | ------------------- | ------- | ------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -33,7 +33,7 @@ As of NodeCG 0.8.4, Replicants can also be automatically validated against a JSO
 | persistenceInterval | number  | &lt;optional> | 100			       | Interval between each persistence, in milliseconds.                                                                                                                                                                                                |
 | schemaPath          | string  | &lt;optional> |                              | The filepath at which to look for a JSON Schema for this Replicant. Defaults to `nodecg/bundles/${bundleName}/schemas/${replicantName}.json`. Please note that this default path will be URIEncoded to ensure that it results in a valid filename. |
 
-### Example
+### Example {#example}
 
 ```js
 const myRep = nodecg.Replicant('myRep', { defaultValue: 123 });

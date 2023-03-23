@@ -8,7 +8,7 @@ sidebar_label: log()
 
 An instance of NodeCG's Logger, with the following methods. The logging level is set in cfg/nodecg.json, NodeCG's global config file.
 
-### Example
+### Example {#example}
 
 ```js
 nodecg.log.trace('trace level logging');

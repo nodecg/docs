@@ -8,7 +8,7 @@ sidebar_label: sendMessageToBundle
 
 Sends a message to a specific bundle. Also available as a static method. See [sendMessage](sendMessage.md) for usage details.
 
-### Returns
+### Returns {#returns}
 
 :::important Browser Only
 This can only be used in code which runs in Dashboards and Graphics.
@@ -16,7 +16,7 @@ This can only be used in code which runs in Dashboards and Graphics.
 
 A Promise that is rejected if the first argument provided to the acknowledgement is an Error, otherwise it is resolved with the remaining arguments provided to the acknowledgement. But, if a callback was provided, this return value will be undefined, and there will be no Promise.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name       | Type     | Attributes    | Description                                                                                                                                                               |
 | ---------- | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

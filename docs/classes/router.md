@@ -14,7 +14,7 @@ Creates a new express router.
 
 See the [express docs](http://expressjs.com/en/api.html#express.router) for full usage details.
 
-### Example
+### Example {#example}
 
 Defining a simple GET route:
 

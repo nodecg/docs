@@ -6,7 +6,7 @@ sidebar_label: Bundle Configuration
 
 Bundles can be configured via `*.js`, `*.yaml`, or `*.json` config files in the `cfg` directory of NodeCG.
 
-## Example
+## Example {#example}
 
 Say we have a bundle named `test-bundle`. If we create`./cfg/test-bundle.js` with the following contents:
 
@@ -22,7 +22,7 @@ module.exports = {
 console.log(nodecg.bundleConfig.myData); // prints "hello"
 ```
 
-## JSON Schema
+## JSON Schema {#json-schema}
 
 If your bundle has a `configschema.json` file in its root, NodeCG will validate the config file (if any) for your bundle
 against this JSON Schema, and will throw errors on startup if the config file fails to pass validation. This is often

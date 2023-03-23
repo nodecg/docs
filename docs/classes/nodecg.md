@@ -13,21 +13,21 @@ Creates a new NodeCG API instance. It should never be necessary to use this cons
 | bundle | object | The bundle object to build an API instance from.   |
 | socket | object | The Socket.IO socket instance to communicate with. |
 
-## Members
+## Members {#members}
 
-### _(static)_ declaredReplicants
+### _(static)_ declaredReplicants {#declared-replicants}
 
 An object containing references to all Replicants that have been declared in this `window`, sorted by bundle. E.g., `NodeCG.declaredReplicants.myBundle.myRep`
 
-### bundleConfig
+### bundleConfig {#bundle-config}
 
 An object containing the parsed content of cfg/&lt;bundle-name>.json, the contents of which are read once when NodeCG starts up. Used to quickly access per-bundle configuration properties.
 
-### _(readonly)_ bundleGit
+### _(readonly)_ bundleGit {#bundle-git}
 
 Provides information about the current git status of this bundle, if found.
 
-#### Properties
+#### Properties {#properties}
 
 |    Name   |  Type  |   Attribues   |                  Description                    |
 | --------- | ------ | ------------- | ----------------------------------------------- |
@@ -37,15 +37,15 @@ Provides information about the current git status of this bundle, if found.
 | date      | Date   | &lt;optional> | The date of the commit this bundle is on.       |
 | message   | String | &lt;optional> | The message of the commit this bundle is on.    |
 
-### bundleName
+### bundleName {#bundle-name}
 
 The name of the bundle which this NodeCG API instance is for.
 
-### bundleVersion
+### bundleVersion {#bundle-version}
 
 The version (from package.json) of the bundle which this NodeCG API instance is for.
 
-### extensions
+### extensions {#extensions}
 
 :::important Extension Only
 This can only be used in code which runs on the server.
@@ -70,11 +70,11 @@ module.exports = function (nodecg) {
 }
 ```
 
-### Logger _:Object_
+### Logger _:Object_ {#logger}
 
 Provides easy access to the Logger class. Useful in cases where you want to create your own custom logger.
 
-### Events
+### Events {#events}
 
 :::important Extension Only
 This can only be used in code which runs on the server.

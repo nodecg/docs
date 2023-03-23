@@ -13,7 +13,7 @@ system for displaying dialogs.
 A dialog is defined the same as any other dashboard panel would be in [package.json](/docs/manifest), with an
 additional `dialog: true` property.
 
-## Opening dialogs
+## Opening dialogs {#opening}
 
 To open a dialog, add a `nodecg-dialog` attribute to any clickable element on one of your panels. For example, this
 [`<paper-button>`](https://elements.polymer-project.org/elements/paper-button) element will open the `edit-total` dialog when clicked:
@@ -33,7 +33,7 @@ When a dialog is opened, NodeCG will emit a `dialog-opened` event on your dialog
 </script>
 ```
 
-## Closing dialogs
+## Closing dialogs {#closing}
 
 By default, a dialog can only be closed by clicking outside of it. Optional confirmation and dismissal buttons can be
 added via `package.json`. See the [package.json tutorial](/docs/manifest) for information on the `dialogButtons`

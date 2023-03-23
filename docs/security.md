@@ -4,13 +4,13 @@ title: Security & Authentication
 sidebar_label: Security & Authentication
 ---
 
-## Is NodeCG secure by default?
+## Is NodeCG secure by default? {#security}
 
 **No.** By default, NodeCG has no authorization or authentication of any kind. To enable basic authentication, see the [How do I enable login security?](#how-do-i-enable-login-security) section.
 
 **Do not** put an unsecured NodeCG instance on the internet or a public network. Unsecured instances should only be used for local development and on trusted LANs.
 
-## What levels of authorization does NodeCG have?
+## What levels of authorization does NodeCG have? {#authorization}
 
 NodeCG has a fairly naive permissions model. There are only two permission levels:
 
@@ -29,7 +29,7 @@ This is something we want to improve in the future, but right now this is how th
 
 Therefore, untrusted users must never be given any degree of authorization in your NodeCG instance. They must never be allowed to successfully authenticate with the socket server. If they do, they will have full control over your entire NodeCG instance.
 
-## How are users authorized?
+## How are users authorized? {#authorization-method}
 
 NodeCG has two ways of authorizing a user:
 
@@ -39,7 +39,7 @@ NodeCG has two ways of authorizing a user:
 
 Anyone who gets sent a link which includes a `key` will have full authorization and access to your NodeCG instance. Treat these links with the same secrecy as you would a password, because that's essentially what they are.
 
-## What do I do if one of my keys got leaked?
+## What do I do if one of my keys got leaked? {#leak}
 
 1. Have the owner of the leaked key navigate to the "Settings" tab on the Dashboard.
 2. Click "RESET KEY", and accept the confirmation dialog.
@@ -54,7 +54,7 @@ If you are unable to reach the owner of the leaked key:
 
 In an emergency, you may want to completely delete your database file. The consequences of doing this are that all users will need to log in again and all persisted Replicant values will be lost.
 
-## How do I enable login security?
+## How do I enable login security? {#enable}
 
 NodeCG has support for four authentication providers:
 
@@ -65,7 +65,7 @@ NodeCG has support for four authentication providers:
 
 You may have multiple authentication providers enabled simultaneously.
 
-### Local Auth
+### Local Auth {#local}
 
 Configure your `nodecg/cfg/nodecg.json` as such:
 
@@ -122,7 +122,7 @@ Example:
 }
 ```
 
-### Twitch Auth
+### Twitch Auth {#twitch}
 
 1. [Create a new application on your Twitch Developer Dashboard](https://glass.twitch.tv/console/apps/create)
 2. Give it whatever values you want for Name, Category, and Other Details
@@ -158,11 +158,13 @@ Example:
 }
 ```
 
-### Discord Auth
+### Discord Auth {#discord}
 
 You can use two different kinds of authentication, by user or by server.
 You can use one of them or both (in which case matching one of them will grant access).
-#### By user
+
+#### By user {#discord-user}
+
 1. [Create a new application on your Discord Developer Dashboard](https://discord.com/developers/applications)
 2. Give it whatever value you want for the Name
 3. Click on OAuth2 on the left and Set the OAuth Redirect URL to `https://YOUR_DEPLOYMENT_URL/login/auth/discord`.
@@ -192,7 +194,9 @@ To get a Discord user ID, enable Discord developer mode and then right click on 
   }
 }
 ```
-#### By Server (Guild)
+
+#### By Server (Guild) {#discord-server}
+
 1. [Create a new application on your Discord Developer Dashboard](https://discord.com/developers/applications)
 2. Give it whatever value you want for the Name
 3. Use the Client ID and Client Secret from general information for your configuration
@@ -243,7 +247,7 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 }
 ```
 
-### Steam Auth
+### Steam Auth {#steam}
 
 1. [Create/copy your Steam Web API Key](https://steamcommunity.com/dev/apikey)
 2. Obtain the SteamID64 string for each of the accounts you wish to allow.
@@ -268,7 +272,7 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 }
 ```
 
-## How do I enable HTTPS/SSL encryption?
+## How do I enable HTTPS/SSL encryption? {#ssl}
 
 1. Create an SSL certificate if you don't already have one.
 

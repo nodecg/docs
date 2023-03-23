@@ -6,7 +6,7 @@ sidebar_label: TypeScript
 
 NodeCG is natively written in TypeScript and has type definitions for all APIs.
 
-## Setup
+## Setup {#setup}
 
 Install TypeScript as your bundle's dev dependency.
 
@@ -16,7 +16,7 @@ npm install -D typescript
 yarn add -D typescript
 ```
 
-## Typing Replicants
+## Typing Replicants {#typing-replicants}
 
 Optionally, you can define types of replicants using replicants' JSON schema.
 
@@ -29,7 +29,7 @@ import { ExampleReplicant } from '../types/schemas/example_replicant';
 const rep = nodecg.Replicant<ExampleReplicant>('example_replicant')
 ```
 
-## Using Type Definitions
+## Using Type Definitions {#type-definitions}
 
 To use NodeCG's type definitions, you'll need to first install them, as they are distributed as a separate package to keep things light and portable:
 
@@ -69,7 +69,7 @@ The second approach is to use [`types`](https://www.typescriptlang.org/tsconfig#
 
 Both of these approaches have pros and cons, so be sure to read their corresponding [TypeScript tsconfig.json docs](https://www.typescriptlang.org/tsconfig) thoroughly.
 
-### extension
+### extension {#extension}
 
 ```ts
 import NodeCG from '@nodecg/types'
@@ -79,7 +79,7 @@ export = (nodecg: NodeCG.ServerAPI) => {
 }
 ```
 
-### dashboard/graphics
+### dashboard/graphics {#dashboard}
 
 ```ts
 // Some types get automatically injected into the global scope by our tsconfig.json.

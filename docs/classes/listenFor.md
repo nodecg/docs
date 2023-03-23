@@ -12,7 +12,7 @@ Messages are namespaced by bundle. To listen to a message in another bundle's na
 
 You may define multiple listenFor handlers for a given message. They will be called in the order they were registered.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name        | Type     | Attributes    | Default   | Description                                                  |
 | ----------- | -------- | ------------- | --------- | ------------------------------------------------------------ |

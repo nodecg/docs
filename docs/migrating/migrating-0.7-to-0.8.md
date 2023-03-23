@@ -4,13 +4,14 @@ title: Migrating from 0.7 to 0.8
 sidebar_label: 0.7 → 0.8
 ---
 
-## Breaking Changes
+## Breaking Changes {#breaking-changes}
 
-- [The order of arguments to the Replicant `change` event handler has been swapped](#replicant-change-event)
-- [Dashboard panels are now served from `/panel/:bundleName/:panelFile` routes](#panel-routes)
-- [Uploads have been renamed to Assets, now have Categories](#assets-and-categories)
+- [Breaking Changes](#breaking-changes)
+  - [Replicant Change Event](#replicant-change-event)
+  - [Panel Routes](#panel-routes)
+  - [Assets & Asset Categories](#assets--asset-categories)
 
-### Replicant Change Event
+### Replicant Change Event {#replicant-change-event}
 
 Prior to NodeCG v0.8, the Replicant change handler had the following signature:
 
@@ -26,7 +27,7 @@ In v0.8, `newVal` and `oldVal` have been swapped, as `newVal` is frequently used
 myRep.on('change', function(newVal, oldVal, operations) {});
 ```
 
-### Panel Routes
+### Panel Routes {#panel-routes}
 
 Dashboard panels are now served from `/panel/:bundleName/:panelFile` routes. Prior to v0.8, they were served from the
 `/panel/:bundleName/:panelName` route.
@@ -69,7 +70,7 @@ the URL it uses would have to change:
 <link rel="import" href="../components/paper-button/paper-button.html" />
 ```
 
-### Assets & Asset Categories
+### Assets & Asset Categories {#assets--asset-categories}
 
 NodeCG v0.7.2 introduced the Uploads system. NodeCG v0.8 has renamed this system to "Assets", and introduces
 the concept of categories. See the [Assets tutorial]tutorial assets for more information on how to configure Assets for your bundle.

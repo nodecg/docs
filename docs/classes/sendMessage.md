@@ -18,7 +18,7 @@ If your server-side code has multiple listenFor handlers for your message, you m
 
 See [Socket.IO's docs](http://socket.io/docs/#sending-and-getting-data-%28acknowledgements%29) for more information on how acknowledgements work under the hood.
 
-### Returns
+### Returns {#returns}
 
 :::important Browser Only
 This can only be used in code which runs in Dashboards and Graphics.
@@ -26,7 +26,7 @@ This can only be used in code which runs in Dashboards and Graphics.
 
 A Promise that is rejected if the first argument provided to the acknowledgement is an Error, otherwise it is resolved with the remaining arguments provided to the acknowledgement.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name | Type     | Attributes    | Description                                                                                     |
 | ---- | -------- | ------------- | ----------------------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ A Promise that is rejected if the first argument provided to the acknowledgement
 | data | mixed    | &lt;optional> | The data to send.                                                                               |
 | cb   | function | &lt;optional> | _Browser only_ The error-first callback to handle the server's acknowledgement message, if any. |
 
-### Example
+### Example {#example}
 
 Sending a normal message:
 

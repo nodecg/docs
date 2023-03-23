@@ -12,7 +12,7 @@ This can only be used in code which runs in Dashboards and Graphics.
 
 Returns the specified dialog element.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name   | Type   | Attributes    | Default   | Description                                 |
 | ------ | ------ | ------------- | --------- | ------------------------------------------- |

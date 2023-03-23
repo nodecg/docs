@@ -4,11 +4,11 @@ title: Creating Bundles
 sidebar_label: Creating Bundles
 ---
 
-## Examples
+## Examples {#examples}
 
 Before continuing, you may find it helpful to look over our [collection of simple example bundles](https://github.com/nodecg/nodecg-simple-examples).
 
-## Using Yeoman
+## Using Yeoman {#yeoman}
 
 1. Use Yeoman and generator-nodecg to generate the beginnings of your new bundle:
 

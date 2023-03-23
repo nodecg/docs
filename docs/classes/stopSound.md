@@ -12,7 +12,7 @@ This can only be used in code which runs in Dashboards and Graphics.
 
 Stops all currently playing instances of the provided `cueName`.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name    | Type   | Description |
 | ------- | ------ | ----------- |

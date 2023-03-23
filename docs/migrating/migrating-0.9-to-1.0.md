@@ -4,34 +4,35 @@ title: Migrating from 0.9 to 1.0
 sidebar_label: 0.9 → 1.0
 ---
 
-## Breaking Changes
+## Breaking Changes {#breaking-changes}
 
-- [**dashboard**: The undocumented `[dialog-confirm]` and `[dialog-dismiss]` attribute click handlers have been removed.](#undocumented-dialog-confirm-and-dialog-dismiss-attribute-click-handlers-have-been-removed)
-- [**dashboard**: The undocumented (and broken) `panelClick` event has been removed.](#undocumented-and-broken-panelclick-event-has-been-removed)
-- [**sounds:** The undocumented customCues system has been removed.](#undocumented-customcues-system-has-been-removed)
-- [**api:** A given context (server, client) can now declare multiple listenFor handlers for a given message. Handlers are called in the order they were registered.](#multiple-listenfor-handlers-for-a-given-message)
-- [**api:** sendMessage can now trigger listenFor handlers in the same context (extension, webpage, etc).](#sendmessage-can-now-trigger-listenfor-handlers-in-the-same-context)
-- [**login:** Twitch auth now uses the "New Twitch API", instead of the deprecated "v5" API.](#twitch-auth-now-uses-the-new-twitch-api-instead-of-the-deprecated-v5-api)
+- [Breaking Changes](#breaking-changes)
+  - [Undocumented `[dialog-confirm]` and `[dialog-dismiss]` attribute click handlers have been removed](#undocumented-dialog-confirm-and-dialog-dismiss-attribute-click-handlers-have-been-removed)
+  - [Undocumented (and broken) `panelClick` event has been removed](#undocumented-and-broken-panelclick-event-has-been-removed)
+  - [Undocumented customCues system has been removed](#undocumented-customcues-system-has-been-removed)
+  - [Multiple listenFor handlers for a given message](#multiple-listenfor-handlers-for-a-given-message)
+  - [sendMessage can now trigger listenFor handlers in the same context](#sendmessage-can-now-trigger-listenfor-handlers-in-the-same-context)
+  - [Twitch auth now uses the "New Twitch API", instead of the deprecated "v5" API](#twitch-auth-now-uses-the-new-twitch-api-instead-of-the-deprecated-v5-api)
 
-### Undocumented `[dialog-confirm]` and `[dialog-dismiss]` attribute click handlers have been removed
+### Undocumented `[dialog-confirm]` and `[dialog-dismiss]` attribute click handlers have been removed {#undocumented-dialog-confirm-and-dialog-dismiss-attribute-click-handlers-have-been-removed}
 
 Previously, NodeCG had an undocumented feature where _any_ element in a Dialog with a `[dialog-confirm]` or `[dialog-dismiss]` attribute would close the panel (with an appropriate `confirmed` or `dismissed` event) when clicked.
 
 This undocumented feature has been removed. If your bundle relied on it, you will need to re-implement similar functionality in your bundle's code.
 
-### Undocumented (and broken) `panelClick` event has been removed
+### Undocumented (and broken) `panelClick` event has been removed {#undocumented-and-broken-panelclick-event-has-been-removed}
 
 Previously, NodeCG had an undocumented feature where any click event on any panel (or dialog) would emit a `panelClick` event on that panel's `document`.
 
 This undocumented feature has been removed, and never really worked properly to begin with. If your bundle relied on it, you will need to re-implement similar functionality in your bundle's code.
 
-### Undocumented customCues system has been removed
+### Undocumented customCues system has been removed {#undocumented-customcues-system-has-been-removed}
 
 Previously, NodeCG had an undocumented and extremely complex feature for defining and editing Sound Cues during runtime.
 
 This undocumented feature has been removed. If your bundle relied on it, you will need to re-implement similar functionality in your bundle's code.
 
-### Multiple listenFor handlers for a given message
+### Multiple listenFor handlers for a given message {#multiple-listenfor-handlers-for-a-given-message}
 
 Previously, NodeCG only allowed your bundle to specify one `listenFor` handler, per message, per context.
 
@@ -63,7 +64,7 @@ Calling an `acknowledgement` more than once will throw an error.
 
 In short: **most bundles won't need to change any of their code** to be compatible with this change, but you should give everything a once-over to make sure things aren't behaving unexpectedly due to this new behavior.
 
-### sendMessage can now trigger listenFor handlers in the same context
+### sendMessage can now trigger listenFor handlers in the same context {#sendmessage-can-now-trigger-listenfor-handlers-in-the-same-context}
 
 Previously, NodeCG messages were inter-context only. That meant that they were _only_ sent out over the network, and were not sent to other listeners in the same process context (extension, graphic, panel, etc).
 
@@ -98,7 +99,7 @@ module.exports = function(nodecg) {
 };
 ```
 
-### Twitch auth now uses the "New Twitch API", instead of the deprecated "v5" API
+### Twitch auth now uses the "New Twitch API", instead of the deprecated "v5" API {#twitch-auth-now-uses-the-new-twitch-api-instead-of-the-deprecated-v5-api}
 
 Previously, NodeCG used the deprecated "v5" Twitch API.
 

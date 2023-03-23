@@ -19,7 +19,7 @@ declaration.
 
 If for any reason a Replicant's persisted value becomes invalid, NodeCG will discard this value on startup.
 
-## Example
+## Example {#example}
 
 `nodecg/bundles/my-bundle/schemas/foo.json`
 

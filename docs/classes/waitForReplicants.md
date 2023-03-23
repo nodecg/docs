@@ -12,13 +12,13 @@ Returns a promise which is resolved once all provided Replicants have emitted a 
 
 This method is only useful in client-side code. Server-side code never has to wait for Replicants.
 
-### Parameters
+### Parameters {#parameters}
 
 |    Name    |    Type   | Description |
 | ---------- | --------- | ----------- |
 | replicants | Replicant |             |
 
-### Example
+### Example {#example}
 
 From a graphic or dashboard panel:
 

@@ -12,7 +12,7 @@ This can only be used in code which runs in Dashboards and Graphics.
 
 Returns the specified dialog's iframe document.
 
-### Parameters
+### Parameters {#parameters}
 
 | Name   | Type   | Attributes    | Default   | Description                                 |
 | ------ | ------ | ------------- | --------- | ------------------------------------------- |

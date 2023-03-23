@@ -4,7 +4,7 @@ title: Docker
 sidebar_label: Docker
 ---
 
-# Introduction
+# Introduction {#introduction}
 > Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.
 > 
 > Containerization is increasingly popular because containers are:
@@ -23,10 +23,10 @@ Docker provides a lot of useful features for NodeCG:
  - Run it everywhere.
  - Easy upgrades.
 
-# Prerequisites
+# Prerequisites {#prerequisites}
 - [Docker](https://docs.docker.com/install/) (modern versions of Docker Desktop come with the `docker compose` command and it no longer needs to be separately installed)
 
-# Simple Deployment & Testing
+# Simple Deployment & Testing {#deployment}
 If you want to use containerized NodeCG in the simplest possible deployment, all you have to do is run:
 
 ```bash
@@ -43,7 +43,7 @@ docker run \
 
 This command will bind the `cfg`, `bundles`, `logs`, `db`, and `assets` folders from the current working directory into the NodeCG Docker container, making them available to NodeCG at runtime. This is one way to get bundles into a containerized instance of NodeCG. Likewise, NodeCG can write the database, logs, and assets back into these directories on the host filesystem, allowing for persistence.
 
-# Advanced Deployment
+# Advanced Deployment {#advanced-deployment}
 For more advanced deployments, you may also build your own Docker image to hold all your bundles and configuration.
 
 Example Dockerfile:

@@ -6,7 +6,7 @@ sidebar_label: Working on NodeCG Core
 
 NodeCG is an open-source project written by a core group of maintainers and a community of contributors. If you'd like to contribute to NodeCG itself, here's how to get started:
 
-1. Install [Node.js (18)](http://nodejs.org/). 
+1. Install [Node.js (18)](http://nodejs.org/).
 2. Clone NodeCG:
 
 	```bash

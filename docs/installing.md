@@ -4,7 +4,7 @@ title: Installing NodeCG
 sidebar_label: Installing
 ---
 
-## Install
+## Install {#install}
 
 There are two methods to install NodeCG: cloning from GitHub or using the [nodecg-cli](https://github.com/nodecg/nodecg-cli).
 
@@ -29,7 +29,7 @@ npm install
 npm run build
 ```
 
-## Start
+## Start {#start}
 
 Run `node index.js` or `nodecg start` in the root nodecg folder.
 
@@ -39,7 +39,7 @@ Open the dashboard (`http://localhost:9090` by default).
 When running NodeCG in production, [Docker](docker) or [pm2](https://github.com/Unitech/pm2) are recommended.
 :::
 
-## Installing bundles
+## Installing bundles {#installing-bundles}
 
 NodeCG's individual graphics packages are called _bundles_. They can be installed either from the command-line
 (via [_nodecg-cli_](https://www.npmjs.com/package/nodecg-cli)), or by simply placing the folder into the `./bundles` directory.
@@ -48,19 +48,19 @@ The easiest way to install bundles is via the command-line using [nodecg-cli](ht
 You will need to install [nodecg-cli](https://www.npmjs.com/package/nodecg-cli) before you can use the `nodecg`
 terminal commands.
 
-### GitHub
+### GitHub {#installing-bundles-github}
 
 ```bash
 nodecg install lange/lange-notify
 ```
 
-### BitBucket
+### BitBucket {#installing-bundles-bitbucket}
 
 ```bash
 nodecg install bitbucket:username/repo-name
 ```
 
-### Other Providers
+### Other Providers {#installing-bundles-other}
 
 Enter the git URL.
 

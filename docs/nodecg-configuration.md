@@ -6,7 +6,7 @@ sidebar_label: Configuration
 
 NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.json` file with the following schema:
 
-### Schema
+### Schema {#schema}
 
 - `host` _String_ The IP address or hostname that NodeCG should bind to.
 - `port` _Integer_ The port that NodeCG should listen on.
@@ -67,7 +67,7 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
   - `passphrase` _String_ The passphrase for the provided key file.
 - `sentry` _Object_ Contains [Sentry](https://sentry.io/welcome/) configuration properties. - `enabled` _Boolean_ Whether to enable Sentry error reporting. - `dsn` _String_ Your private DSN, for server-side error reporting. - `publicDsn` _String_ Your public sentry DSN, for browser error reporting.
 
-### Example Config
+### Example {#example} Config {#example}
 
 ```js
 // cfg/nodecg.js
