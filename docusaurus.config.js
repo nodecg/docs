@@ -1,5 +1,8 @@
+// @ts-check
+
 const latestVersion = "1.9.0"
 
+/** @type {import('@docusaurus/types').Config} */
 module.exports = {
   title: 'NodeCG',
   tagline: 'Create broadcast graphics using Node.js and a browser',
@@ -9,6 +12,7 @@ module.exports = {
   organizationName: 'nodecg',
   projectName: 'docs',
   themeConfig: {
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     prism: {
       theme: require('./src/css/nodecg-light'),
       darkTheme: require('./src/css/nodecg-dark'),
@@ -37,6 +41,10 @@ module.exports = {
         {
           href: 'https://github.com/nodecg/nodecg',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
@@ -91,6 +99,7 @@ module.exports = {
   presets: [
     [
       '@docusaurus/preset-classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -107,5 +116,5 @@ module.exports = {
   ],
   plugins: [ require.resolve('./force-theme.js'), require.resolve('docusaurus-lunr-search')],
   // TODO: disable this option
-  onBrokenLinks: 'warn'
+  onBrokenLinks: 'warn',
 };
