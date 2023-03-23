@@ -116,5 +116,14 @@ module.exports = {
   ],
   plugins: [ require.resolve('./force-theme.js'), require.resolve('docusaurus-lunr-search')],
   // TODO: disable this option
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'warn', 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ja', 'fr'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-US',
+      },
+    }
+  }
 };

@@ -1,38 +1,57 @@
-import React from 'react';
-import classnames from 'classnames';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import React from "react";
+import classnames from "classnames";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./styles.module.css";
+
+import Translate, { translate } from "@docusaurus/Translate";
 
 const features = [
 	{
 		title: <>Web Based</>,
-		imageUrl: 'img/Browser.svg',
+		imageUrl: "img/Browser.svg",
 		description: (
-			<>
-				NodeCG graphics are just webpages. There is absolutely nothing special or unique about them,
-				and this allows you to use any framework or web graphic style you like.
-			</>
-		)
+			<Translate id="homepage.features.webBase">
+				NodeCG graphics are just webpages. There is absolutely nothing
+				special or unique about them, and this allows you to use any
+				framework or web graphic style you like.
+			</Translate>
+		),
 	},
 	{
 		title: <>Compatible</>,
-		imageUrl: 'img/Compatible.svg',
+		imageUrl: "img/Compatible.svg",
 		description: (
 			<div>
-				NodeCG is compatible with any environment that can render HTML such as:
-				<div className={classnames('container-small', styles.environments)}>
+				<Translate id="homepage.features.environments">
+					NodeCG is compatible with any environment that can render
+					HTML such as:
+				</Translate>
+				<div
+					className={classnames(
+						"container-small",
+						styles.environments
+					)}
+				>
 					<div className="row">
 						<a
-							className={classnames('col', styles.environmentItem, styles.shadow2)}
+							className={classnames(
+								"col",
+								styles.environmentItem,
+								styles.shadow2
+							)}
 							href="https://obsproject.com/"
 						>
 							OBS Studio
 						</a>
 						<a
-							className={classnames('col', styles.environmentItem, styles.shadow2)}
+							className={classnames(
+								"col",
+								styles.environmentItem,
+								styles.shadow2
+							)}
 							href="http://www.vmix.com/"
 						>
 							vMix
@@ -40,13 +59,21 @@ const features = [
 					</div>
 					<div className="row">
 						<a
-							className={classnames('col', styles.environmentItem, styles.shadow2)}
+							className={classnames(
+								"col",
+								styles.environmentItem,
+								styles.shadow2
+							)}
 							href="https://www.xsplit.com/"
 						>
 							xSplit
 						</a>
 						<a
-							className={classnames('col', styles.environmentItem, styles.shadow2)}
+							className={classnames(
+								"col",
+								styles.environmentItem,
+								styles.shadow2
+							)}
 							href="https://casparcg.com/"
 						>
 							CasparCG
@@ -54,30 +81,40 @@ const features = [
 					</div>
 				</div>
 			</div>
-		)
+		),
 	},
 	{
 		title: <>No broadcast too big or small</>,
-		imageUrl: 'img/NoMatterTheSize.svg',
+		imageUrl: "img/NoMatterTheSize.svg",
 		description: (
 			<>
-				We believe that one set of tools can and should be able to scale up from the smallest show
-				all the way to the biggest fathomable show.
+				<Translate id="homepage.features.sizeOfShow">
+					We believe that one set of tools can and should be able to
+					scale up from the smallest show all the way to the biggest
+					fathomable show.
+				</Translate>
 				<br />
-				Whether you're using OBS for everything, or a hardware switcher with a traditional key/fill
-				workflow, NodeCG can be a part of any broadcast graphics system.
+				<Translate id="homepage.features.sizeOfShow2">
+					Whether you're using OBS for everything, or a hardware
+					switcher with a traditional key/fill workflow, NodeCG can be
+					a part of any broadcast graphics system.
+				</Translate>
 			</>
-		)
-	}
+		),
+	},
 ];
 
 function Feature({ imageUrl, title, description }) {
 	const imgUrl = useBaseUrl(imageUrl);
 	return (
-		<div className={classnames('col col--4', styles.feature)}>
+		<div className={classnames("col col--4", styles.feature)}>
 			{imgUrl && (
 				<div className="text--center">
-					<img className={styles.featureImage} src={imgUrl} alt={title} />
+					<img
+						className={styles.featureImage}
+						src={imgUrl}
+						alt={title}
+					/>
 				</div>
 			)}
 			<h3>{title}</h3>
@@ -93,19 +130,26 @@ function Home() {
 			title={`Broadcast Graphics`}
 			description="Browser-based broadcast graphics and controls"
 		>
-			<header className={classnames('hero hero--primary', styles.heroBanner)}>
+			<header
+				className={classnames("hero hero--primary", styles.heroBanner)}
+			>
 				<div className="container">
 					<img alt="Splash" src="img/splash.png" />
-					<p className="hero__subtitle">{siteConfig.tagline}</p>
+					<p className="hero__subtitle">
+						<Translate>
+							Create broadcast graphics using Node.js and a
+							browser
+						</Translate>
+					</p>
 					<div className={styles.buttons}>
 						<Link
 							className={classnames(
-								'button button--contained button--secondary button--lg',
+								"button button--contained button--secondary button--lg",
 								styles.getStarted
 							)}
-							to={useBaseUrl('docs/installing')}
+							to={useBaseUrl("docs/installing")}
 						>
-							Get Started
+							<Translate>Get Started</Translate>
 						</Link>
 					</div>
 				</div>

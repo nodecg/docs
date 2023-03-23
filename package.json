@@ -10,6 +10,8 @@
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "write-translations": "docusaurus write-translations",
+    "write-translations:french": "docusaurus write-translations --locale fr",
+    "write-translations:japanese": "docusaurus write-translations --locale ja",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc"
   },

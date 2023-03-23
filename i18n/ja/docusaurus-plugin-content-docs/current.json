@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.mainSidebar.category.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for category Quick Start in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.category.Using Frameworks": {
+    "message": "Using Frameworks",
+    "description": "The label for category Using Frameworks in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.category.Migrating": {
+    "message": "Migrating",
+    "description": "The label for category Migrating in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category API Reference in sidebar mainSidebar"
+  }
+}
