@@ -13,7 +13,7 @@ Install [Node.js (version 18)](http://nodejs.org/).
 Using [nodecg-cli](https://github.com/nodecg/nodecg-cli):
 
 ```bash
-npm install --global nodecg-cli
+npm install --global nodecg-cli@latest
 mkdir nodecg
 cd nodecg
 nodecg setup
@@ -23,7 +23,7 @@ Cloning from GitHub:
 
 ```bash
 # Be sure to clone a specific release's tag name.
-git clone --depth 1 --branch v2.0.0 https://github.com/nodecg/nodecg.git
+git clone --depth 1 --branch v2.0.3 https://github.com/nodecg/nodecg.git
 cd nodecg
 npm install
 npm run build

@@ -14,13 +14,14 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
 - `developer` _Boolean_ Whether to enable features that speed up development. Not suitable for production.
 - `exitOnUncaught` _Boolean_ Whether or not to exit on uncaught exceptions.
 - `logging` _Object_ Contains other configuration properties.
-  - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy.
   - `console` _Object_ Contains properties for console logging.
     - `enabled` _Boolean_ Whether to enable console logging.
+  	- `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy.
     - `timestamps` _Boolean_ Whether to add timestamps to the console logging.
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"trace"`, `"debug"`, `"info"`, `"warn"` or `"error"`
   - `file` _Object_ Contains properties for file logging.
     - `enabled` _Boolean_ Whether to enable file logging.
+    - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy.
     - `timestamps` _Boolean_ Whether to add timestamps to the file logging.
     - `path` _String_ The filepath to log to.
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"trace"`, `"debug"`, `"info"`, `"warn"` or `"error"`
