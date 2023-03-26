@@ -23,7 +23,7 @@ Cloning from GitHub:
 
 ```bash
 # Be sure to clone a specific release's tag name.
-git clone --depth 1 --branch v2.0.3 https://github.com/nodecg/nodecg.git
+git clone --depth 1 --branch v2.1.0 https://github.com/nodecg/nodecg.git
 cd nodecg
 npm install
 npm run build
