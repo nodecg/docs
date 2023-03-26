@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[6918],{2249:function(e){e.exports=JSON.parse('[{"label":"update","permalink":"/fr/blog/tags/update","count":4},{"label":"docs","permalink":"/fr/blog/tags/docs","count":2},{"label":"v1.6.0","permalink":"/fr/blog/tags/v-1-6-0","count":1}]')}}]);

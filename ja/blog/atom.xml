@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nodecg.dev/ja/blog</id>
     <title>NodeCG Blog</title>
-    <updated>2023-03-23T00:00:00.000Z</updated>
+    <updated>2023-03-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nodecg.dev/ja/blog"/>
     <subtitle>NodeCG Blog</subtitle>
     <icon>https://nodecg.dev/ja/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[NodeCG v2.1.0]]></title>
+        <id>https://nodecg.dev/ja/blog/2023/03/26/v2.1.0</id>
+        <link href="https://nodecg.dev/ja/blog/2023/03/26/v2.1.0"/>
+        <updated>2023-03-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Updates covering between 2.0.1 and 2.1.0]]></summary>
+        <content type="html"><![CDATA[<p>Updates covering between 2.0.1 and 2.1.0</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="#features" class="hash-link" aria-label="Features への直接リンク" title="Features への直接リンク">​</a></h2><ul><li>Smaller docker image <a href="https://github.com/nodecg/nodecg/issues/631" target="_blank" rel="noopener noreferrer">#631</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug fixes<a href="#bug-fixes" class="hash-link" aria-label="Bug fixes への直接リンク" title="Bug fixes への直接リンク">​</a></h2><ul><li>v2.0.1<ul><li>Remove package-lock.json from dependency files <a href="https://github.com/nodecg/nodecg/issues/620" target="_blank" rel="noopener noreferrer">#620</a></li><li>Fix docker file <a href="https://github.com/nodecg/nodecg/issues/617" target="_blank" rel="noopener noreferrer">#617</a></li></ul></li><li>v2.0.2<ul><li>Include templates in server build output <a href="https://github.com/nodecg/nodecg/issues/625" target="_blank" rel="noopener noreferrer">#625</a></li><li>Make node-fetch-commonjs a production dependency <a href="https://github.com/nodecg/nodecg/issues/623" target="_blank" rel="noopener noreferrer">#623</a></li></ul></li><li>v2.0.3<ul><li>Make @sentry/browser, @sentry/node, socket.io-client and tslib production dependencies <a href="https://github.com/nodecg/nodecg/issues/627" target="_blank" rel="noopener noreferrer">#627</a></li></ul></li><li>v2.0.4<ul><li>Fix authenticated URLs <a href="https://github.com/nodecg/nodecg/issues/629" target="_blank" rel="noopener noreferrer">#629</a></li></ul></li><li>v2.1.0<ul><li>Allow socket authentication with a token <a href="https://github.com/nodecg/nodecg/issues/635" target="_blank" rel="noopener noreferrer">#635</a></li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks-to">Thanks to<a href="#thanks-to" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2><ul><li><a href="https://github.com/alvancamp" target="_blank" rel="noopener noreferrer">Lange</a></li><li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Keiichiro Amemiya</a></li></ul>]]></content>
+        <author>
+            <name>Ewan Lyon</name>
+            <email>ewan@ewanlyon.com</email>
+            <uri>https://github.com/EwanLyon</uri>
+        </author>
+        <category label="update" term="update"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NodeCG v2!]]></title>
         <id>https://nodecg.dev/ja/blog/2023/03/23/v2.0.0</id>
