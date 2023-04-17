@@ -18,13 +18,13 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
     - `enabled` _Boolean_ Whether to enable console logging.
   	- `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy.
     - `timestamps` _Boolean_ Whether to add timestamps to the console logging.
-    - `level` _String_ Lowest importance of messages which should be logged. Must be `"trace"`, `"debug"`, `"info"`, `"warn"` or `"error"`
+    - `level` _String_ Lowest importance of messages which should be logged. Must be `"verbose"`, `"debug"`, `"info"`, `"warn"` or `"error"`
   - `file` _Object_ Contains properties for file logging.
     - `enabled` _Boolean_ Whether to enable file logging.
     - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy.
     - `timestamps` _Boolean_ Whether to add timestamps to the file logging.
     - `path` _String_ The filepath to log to.
-    - `level` _String_ Lowest importance of messages which should be logged. Must be `"trace"`, `"debug"`, `"info"`, `"warn"` or `"error"`
+    - `level` _String_ Lowest importance of messages which should be logged. Must be `"verbose"`, `"debug"`, `"info"`, `"warn"` or `"error"`
 - `bundles` _Object_ Contains configuration for bundles.
   - `enabled` _Array of strings_ A whitelist array of bundle names that will be the only ones loaded at startup. Cannot be used with `bundles.disabled`.
   - `disabled` _Array of strings_ A blacklist array of bundle names that will not be loaded at startup. Cannot be used with `bundles.enabled`.
