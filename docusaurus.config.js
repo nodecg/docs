@@ -104,7 +104,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/nodecg/docs/edit/master/',
+            'https://github.com/nodecg/docs/edit/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
