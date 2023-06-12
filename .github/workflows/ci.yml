@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
       #   env:
       #     LHCI_GITHUB_TOKEN: ${{ github.token }}
       - name: Deploy
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           touch build/.nojekyll
           echo "www.nodecg.dev" > build/CNAME
