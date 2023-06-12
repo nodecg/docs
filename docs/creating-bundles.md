@@ -10,7 +10,7 @@ Before continuing, you may find it helpful to look over our [collection of simpl
 
 ## Using Yeoman {#yeoman}
 
-1. Use Yeoman and generator-nodecg to generate the beginnings of your new bundle:
+1. Use Yeoman and [generator-nodecg](https://github.com/nodecg/generator-nodecg) to generate the beginnings of your new bundle:
 
    ```bash
    npm install --global yo generator-nodecg
