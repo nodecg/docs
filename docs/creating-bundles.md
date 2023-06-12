@@ -20,9 +20,16 @@ Before continuing, you may find it helpful to look over our [collection of simpl
    yo nodecg
    ```
 
-   Answer the prompts one-by-one as they come up.
+   Answer the prompts one-by-one as they come up. If you wish to access the TypeScript boilerplate, just answer yes to the TypeScript prompt. If you wish to access the React boilerplate, first answer yes to the TypeScript prompt and then also answer yes to the React prompt (we currently have a TypeScript+React template but not a plain JavaScript+React template).
 
-2. Once your template bundle has been generated, start NodeCG:
+2. If you generated your bundle with TypeScript, you can use the "dev" script to start NodeCG, automatically re-compile your code when it changes, and also automatically restart NodeCG when specifically server-side code changes (such as your extension):
+
+   ```bash
+   # From the root of your new bundle's folder
+   npm run dev
+   ```
+
+   Else, you can start NodeCG the old-fashioned way with `nodecg-cli`:
 
    ```bash
    cd ../..
