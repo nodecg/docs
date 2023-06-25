@@ -25,13 +25,13 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
     - `path` _String_ The filepath to log to. [DEFAULT: `"logs/nodecg.log"`]
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"verbose"`, `"debug"`, `"info"`, `"warn"` or `"error"` [DEFAULT: `"info"`]
 - `bundles` _Object_ Contains configuration for bundles.
-  - `enabled` _Array of strings_ A whitelist array of bundle names that will be the only ones loaded at startup. Cannot be used with `bundles.disabled`. [DEFAULT: `null` -> this bundle wwhitelist feature is disabled -> load all bundles]
+  - `enabled` _Array of strings_ A whitelist array of bundle names that will be the only ones loaded at startup. Cannot be used with `bundles.disabled`. [DEFAULT: `null` -> this bundle whitelist feature is disabled -> load all bundles]
   - `disabled` _Array of strings_ A blacklist array of bundle names that will not be loaded at startup. Cannot be used with `bundles.enabled`. [DEFAULT: `null` -> no bundle blacklisted from loading / all bundles are loaded]
   - `paths` _Array of strings_ An array of additional ABSOLUTE paths where bundles are located. [DEFAULT: `[]` (empty array)]
 - `login` _Object_ Contains other configuration properties.
   - `enabled` _Boolean_ Whether to enable login security. [DEFAULT: `false`]
   - `sessionSecret` _String_ The secret used to salt sessions. This option is required when `login.enabled = true`! [NO DEFAULT!]
-  - `forceHttpsReturn` _Boolean_ orces Steam & Twitch login return URLs to use HTTPS instead of HTTP. Useful in reverse proxy setups. [DEFAULT: `false`]
+  - `forceHttpsReturn` _Boolean_ Forces Steam & Twitch login return URLs to use HTTPS instead of HTTP. Useful in reverse proxy setups. [DEFAULT: `false`]
   - `local` _Object_ Contains local username & password login configuration properties.
     - `enabled` _Boolean_ Whether to enable Local authentication. [DEFAULT: `false`]
     - `allowedUsers` _Array of objects_ Which usernames and passwords to allow. Example: `{"username": "admin", "password": "foo123"}`. This option is required when `login.local.enabled = true`! [NO DEFAULT!]
