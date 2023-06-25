@@ -36,8 +36,8 @@ module.exports = {
             fontSize: 'calc(0.8 * var(--ifm-font-size-base))',
           },
         },
-        {to: 'docs/what-is-nodecg', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'docs/what-is-nodecg', label: 'Docs', position: 'left' },
+        { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/nodecg/nodecg',
           label: 'GitHub',
@@ -69,8 +69,9 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
+              label: 'Discord (Stats loading...)',
               href: 'https://discord.com/invite/GJ4r8a8',
+              id: 'footer-discord-link'
             },
           ],
         },
@@ -114,9 +115,9 @@ module.exports = {
       },
     ],
   ],
-  plugins: [ require.resolve('./force-theme.js'), require.resolve('docusaurus-lunr-search')],
+  plugins: [require.resolve('./force-theme.js'), require.resolve('docusaurus-lunr-search')],
   // TODO: disable this option
-  onBrokenLinks: 'warn', 
+  onBrokenLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ja', 'fr'],
@@ -125,5 +126,6 @@ module.exports = {
         htmlLang: 'en-US',
       },
     }
-  }
+  },
+  clientModules: [require.resolve("./clientModule.js")]
 };
