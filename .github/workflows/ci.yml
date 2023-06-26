@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install MDL
-        run: apt install ruby-mdl
+        run: sudo apt install -y ruby-mdl
 
       - name: Lint
         run: |
