@@ -15,9 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install MDL
-        run: |
-          sudo apt install -y rubygems
-          gem install mdl
+        run: sudo gem install mdl
 
       - name: Lint
         run: |
