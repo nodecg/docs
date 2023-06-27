@@ -5,11 +5,12 @@ These docs are built using [Docusaurus 2](https://v2.docusaurus.io/).
 The [Markdown lint tool](https://github.com/DavidAnson/markdownlint) is used for linting.
 
 Some markdown rules have been disabled:
-| #                                                                                  | Rule                            | Why |
-|----------------------------------------------------------------------------------- | ------------------------------- | --- |
-| [MD013](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md013) | Line length                     |     |
-| [MD026](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md026) | Trailing punctuation in heading | Various headings in the NodeCG readme have valid question marks in the header |
-| [MD033](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md033) | Inline HTML                     | Video tags are used to demonstrate certain concepts |
+| #                                                                                  | Rule                                      | Why |
+|----------------------------------------------------------------------------------- | ----------------------------------------- | --- |
+| [MD002](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md002) | First header should be a top level header | First headers are made by Docusaurus [Front matter](https://docusaurus.io/docs/markdown-features#front-matter)  |
+| [MD013](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md013) | Line length                               |     |
+| [MD026](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md026) | Trailing punctuation in heading           | Various headings in the NodeCG readme have valid question marks in the header |
+| [MD033](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md033) | Inline HTML                               | Video tags are used to demonstrate certain concepts |
 
 ## Installation
 
