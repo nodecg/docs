@@ -35,7 +35,7 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Worker clients are now supported.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 - [All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12](#all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12)
 
-### All authentication keys will be revoked and replaced with new ones
+### All authentication keys will be revoked and replaced with new ones {#all-authentication-keys-will-be-revoked-and-replaced-with-new-ones}
 
 Since the entire login system has been rewritten, none of the prior authenticaon keys are valid. As such, new ones will be generated for all users, and any `?key=xxx` URLs in use will need to be updated.
 

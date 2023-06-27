@@ -11,6 +11,7 @@ Some markdown rules have been disabled:
 | [MD013](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md013) | Line length                               |     |
 | [MD026](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md026) | Trailing punctuation in heading           | Various headings in the NodeCG readme have valid question marks in the header |
 | [MD033](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md033) | Inline HTML                               | Video tags are used to demonstrate certain concepts |
+| [MD051](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md051) | Link fragments should be valid            | Innerpage links done using anchor tags, not following GitHub heading algorithm |
 
 ## Installation
 

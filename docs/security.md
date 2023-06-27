@@ -6,7 +6,7 @@ sidebar_label: Security & Authentication
 
 ## Is NodeCG secure by default? {#security}
 
-**No.** By default, NodeCG has no authorization or authentication of any kind. To enable basic authentication, see the [How do I enable login security?](#how-do-i-enable-login-security) section.
+**No.** By default, NodeCG has no authorization or authentication of any kind. To enable basic authentication, see the [How do I enable login security?](#enable) section.
 
 **Do not** put an unsecured NodeCG instance on the internet or a public network. Unsecured instances should only be used for local development and on trusted LANs.
 
@@ -65,7 +65,7 @@ NodeCG has support for four authentication providers:
 
 You may have multiple authentication providers enabled simultaneously.
 
-### Local Auth {#local}
+### Local Auth {#local-auth}
 
 Configure your `nodecg/cfg/nodecg.json` as such:
 
@@ -122,7 +122,7 @@ Example:
 }
 ```
 
-### Twitch Auth {#twitch}
+### Twitch Auth {#twitch-auth}
 
 1. [Create a new application on your Twitch Developer Dashboard](https://glass.twitch.tv/console/apps/create)
 2. Give it whatever values you want for Name, Category, and Other Details
@@ -158,7 +158,7 @@ Example:
 }
 ```
 
-### Discord Auth {#discord}
+### Discord Auth {#discord-auth}
 
 You can use two different kinds of authentication, by user or by server.
 You can use one of them or both (in which case matching one of them will grant access).
@@ -253,7 +253,7 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 }
 ```
 
-### Steam Auth {#steam}
+### Steam Auth {#steam-auth}
 
 1. [Create/copy your Steam Web API Key](https://steamcommunity.com/dev/apikey)
 2. Obtain the SteamID64 string for each of the accounts you wish to allow.
