@@ -5,48 +5,54 @@ sidebar_label: Docker
 ---
 
 # Introduction {#introduction}
+>
 > Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers. The use of Linux containers to deploy applications is called containerization. Containers are not new, but their use for easily deploying applications is.
-> 
+>
 > Containerization is increasingly popular because containers are:
-> 
->   - Flexible: Even the most complex applications can be containerized.
->   - Lightweight: Containers leverage and share the host kernel.
->   - Interchangeable: You can deploy updates and upgrades on-the-fly.
->   - Portable: You can build locally, deploy to the cloud, and run anywhere.
->   - Scalable: You can increase and automatically distribute container replicas.
->   - Stackable: You can stack services vertically and on-the-fly.
+>
+> - Flexible: Even the most complex applications can be containerized.
+> - Lightweight: Containers leverage and share the host kernel.
+> - Interchangeable: You can deploy updates and upgrades on-the-fly.
+> - Portable: You can build locally, deploy to the cloud, and run anywhere.
+> - Scalable: You can increase and automatically distribute container replicas.
+> - Stackable: You can stack services vertically and on-the-fly.
 >
 > Source [Get Started - docs.docker.com](https://docs.docker.com/get-started/)
 
 Docker provides a lot of useful features for NodeCG:
- - No need to care about dependencies; they are all bundled with the Docker image.
- - Run it everywhere.
- - Easy upgrades.
+
+- No need to care about dependencies; they are all bundled with the Docker image.
+- Run it everywhere.
+- Easy upgrades.
 
 # Prerequisites {#prerequisites}
+
 - [Docker](https://docs.docker.com/install/) (modern versions of Docker Desktop come with the `docker compose` command and it no longer needs to be separately installed)
 
 # Simple Deployment & Testing {#deployment}
+
 If you want to use containerized NodeCG in the simplest possible deployment, all you have to do is run:
 
 ```bash
 # If on Windows: run this command in Git Bash, not Command Prompt or PowerShell.
 docker run \
-	-p 9090:9090/tcp \
-	-v "/$PWD/cfg:/opt/nodecg/cfg" \
-	-v "/$PWD/bundles:/opt/nodecg/bundles" \
-	-v "/$PWD/logs:/opt/nodecg/logs" \
-	-v "/$PWD/db:/opt/nodecg/db" \
-	-v "/$PWD/assets:/opt/nodecg/assets" \
-	-it ghcr.io/nodecg/nodecg:latest
+ -p 9090:9090/tcp \
+ -v "/$PWD/cfg:/opt/nodecg/cfg" \
+ -v "/$PWD/bundles:/opt/nodecg/bundles" \
+ -v "/$PWD/logs:/opt/nodecg/logs" \
+ -v "/$PWD/db:/opt/nodecg/db" \
+ -v "/$PWD/assets:/opt/nodecg/assets" \
+ -it ghcr.io/nodecg/nodecg:latest
 ```
 
 This command will bind the `cfg`, `bundles`, `logs`, `db`, and `assets` folders from the current working directory into the NodeCG Docker container, making them available to NodeCG at runtime. This is one way to get bundles into a containerized instance of NodeCG. Likewise, NodeCG can write the database, logs, and assets back into these directories on the host filesystem, allowing for persistence.
 
 # Advanced Deployment {#advanced-deployment}
+
 For more advanced deployments, you may also build your own Docker image to hold all your bundles and configuration.
 
 Example Dockerfile:
+
 ```docker
 # Specifies the base image to build on top of.
 # This base image includes nodecg-cli, so you don't need to install it separately.
@@ -91,14 +97,15 @@ docker build -t [your-image-name] .
 ```
 
 And run it with:
+
 ```bash
 # If on Windows: run this command in Git Bash, not Command Prompt or PowerShell.
 docker run \
-	-p 9090:9090/tcp \
-	-v "/$PWD/logs:/opt/nodecg/logs" \
-	-v "/$PWD/db:/opt/nodecg/db" \
-	-v "/$PWD/assets:/opt/nodecg/assets" \
-	-it [your-image-name]
+ -p 9090:9090/tcp \
+ -v "/$PWD/logs:/opt/nodecg/logs" \
+ -v "/$PWD/db:/opt/nodecg/db" \
+ -v "/$PWD/assets:/opt/nodecg/assets" \
+ -it [your-image-name]
 ```
 
 Or create a docker-compose.yml like this:
@@ -121,6 +128,7 @@ To pin NodeCG to a specific version, replace `FROM ghcr.io/nodecg/nodecg:latest`
 If you want to host your NodeCG instance on the internet (instead of just on a secure LAN), it is highly recommended to encrypt and secure NodeCG.
 
 To encrypt the traffic, you can use a [TLS/SSL termination proxy](https://en.wikipedia.org/wiki/TLS_termination_proxy) like:
+
 - [Traefik](https://github.com/containous/traefik) - Really neat if you host a lot of services in Docker.
 - [Docker Flow Proxy](https://proxy.dockerflow.com/) - Similar to Traefik.
 - [Caddy](https://caddyserver.com) - Be aware of the licensing of the binaries. It should be ok if you build it yourself e.g. in a Docker image. No guarantee.

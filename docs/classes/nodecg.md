@@ -100,13 +100,13 @@ module.exports = function (nodecg) {
     nodecg.on('login', (user) => {
         // a user has logged in
         // use Intellisense (autocomplete) to explore the other properties available on the `user` object
-		console.log(user.id, user.name);
-	});
-	
-	nodecg.on('logout', (user) => {
+  console.log(user.id, user.name);
+ });
+ 
+ nodecg.on('logout', (user) => {
         // a user has logged out
         // use Intellisense (autocomplete) to explore the other properties available on the `user` object
-		console.log(user.id, user.name);
-	});
+  console.log(user.id, user.name);
+ });
 }
 ```

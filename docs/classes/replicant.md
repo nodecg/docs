@@ -30,7 +30,7 @@ As of NodeCG 0.8.4, Replicants can also be automatically validated against a JSO
 | ------------------- | ------- | ------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | defaultValue        | any     | &lt;optional> |                              | The default value to instantiate this Replicant with. The default value is only applied if this Replicant has not previously been declared and if it has no persisted value.                                                                       |
 | persistent          | boolean | &lt;optional> | true                         | Whether to persist the Replicant's value to disk on every change. Persisted values are re-loaded on startup.                                                                                                                                       |
-| persistenceInterval | number  | &lt;optional> | 100			       | Interval between each persistence, in milliseconds.                                                                                                                                                                                                |
+| persistenceInterval | number  | &lt;optional> | 100          | Interval between each persistence, in milliseconds.                                                                                                                                                                                                |
 | schemaPath          | string  | &lt;optional> |                              | The filepath at which to look for a JSON Schema for this Replicant. Defaults to `nodecg/bundles/${bundleName}/schemas/${replicantName}.json`. Please note that this default path will be URIEncoded to ensure that it results in a valid filename. |
 
 ### Example {#example}
@@ -39,7 +39,7 @@ As of NodeCG 0.8.4, Replicants can also be automatically validated against a JSO
 const myRep = nodecg.Replicant('myRep', { defaultValue: 123 });
 
 myRep.on('change', (newValue, oldValue) => {
-	console.log(`myRep changed from ${oldValue} to ${newValue}`);
+ console.log(`myRep changed from ${oldValue} to ${newValue}`);
 });
 
 myRep.value = 'Hello!';
