@@ -36,9 +36,9 @@ Before continuing, you may find it helpful to look over our [collection of simpl
    nodecg start
    ```
 
-  :::note
-  When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
-  :::
+   :::note
+   When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
+   :::
 
 3. Open the NodeCG Dashboard, which will be located at [http://localhost:9090](http://localhost:9090) by default. You should see a page like this:
 

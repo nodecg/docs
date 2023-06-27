@@ -15,7 +15,7 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
 - `logging` _Object_ Contains other configuration properties.
   - `console` _Object_ Contains properties for console logging.
     - `enabled` _Boolean_ Whether to enable console logging. [DEFAULT: `true`]
-   - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy. [DEFAULT: `false`]
+  - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy. [DEFAULT: `false`]
     - `timestamps` _Boolean_ Whether to add timestamps to the console logging. [DEFAULT: `true`]
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"verbose"`, `"debug"`, `"info"`, `"warn"` or `"error"` [DEFAULT: `"info"`]
   - `file` _Object_ Contains properties for file logging.

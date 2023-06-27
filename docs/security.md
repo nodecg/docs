@@ -169,12 +169,12 @@ You can use one of them or both (in which case matching one of them will grant a
 2. Give it whatever value you want for the Name
 3. Click on OAuth2 on the left and Set the OAuth Redirect URL to `https://YOUR_DEPLOYMENT_URL/login/auth/discord`.
 
-- If you're testing locally, use `http://localhost:9090/login/auth/discord`
+   - If you're testing locally, use `http://localhost:9090/login/auth/discord`
 
 4. Use the Client ID and Client Secret from general information for your configuration
 5. Configure your `nodecg/cfg/nodecg.json` like below
 
-- See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
+   - See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
 
 To get a Discord user ID, enable Discord developer mode and then right click on a user to copy it.
 
@@ -206,11 +206,11 @@ To get a Discord user ID, enable Discord developer mode and then right click on 
 3. Use the Client ID and Client Secret from general information for your configuration
 4. Click on OAuth2 on the left and Set the OAuth Redirect URL to `https://YOUR_DEPLOYMENT_URL/login/auth/discord`.
 
-- If you're testing locally, use `http://localhost:9090/login/auth/discord`
+   - If you're testing locally, use `http://localhost:9090/login/auth/discord`
 
 5. Configure your `nodecg/cfg/nodecg.json` like below
 
-- See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
+   - See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
 
 Any user in the server will be allowed to use nodecg.
 
