@@ -9,17 +9,14 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
-
-      - name: Install MDL
-        run: sudo gem install mdl
-
+        
       - name: Lint
-        run: |
-          npm run lint
+        uses: DavidAnson/markdownlint-cli2-action@v11
+        with:
+          globs: '**/*.md'
   build:
     runs-on: ubuntu-latest
     steps:

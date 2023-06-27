@@ -2,7 +2,7 @@
 
 These docs are built using [Docusaurus 2](https://v2.docusaurus.io/).
 
-The [Markdown lint tool](https://github.com/markdownlint/markdownlint) is used for linting.
+The [Markdown lint tool](https://github.com/DavidAnson/markdownlint) is used for linting.
 
 Some markdown rules have been disabled:
 | #                                                                                  | Rule                            | Why |
