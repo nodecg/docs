@@ -123,16 +123,15 @@ use your HTML file with your scripts and stylesheets imported.
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-
-  <body>
-    <div id="tech"></div>
-    <!-- Or a lot of pre-defined elements -->
-    <script src="./index.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="tech"></div>
+        <!-- Or a lot of pre-defined elements -->
+        <script src="./index.js"></script>
+    </body>
 </html>
 ```
 
@@ -204,9 +203,9 @@ For example,
 
 ```json
 {
-  // ...
-  "browserslist": "last 2 chrome versions",
-  "nodecg": //...
+    // ...
+    "browserslist": "last 2 chrome versions",
+    "nodecg": //...
 }
 ```
 

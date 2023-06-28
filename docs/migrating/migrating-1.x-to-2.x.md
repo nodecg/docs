@@ -10,24 +10,26 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 
 ## Breaking Changes {#breaking-changes}
 
-- [All authentication keys will be revoked and replaced with new ones](#all-authentication-keys-will-be-revoked-and-replaced-with-new-ones)
-- [NodeCG no longer commits build outputs to the repository](#nodecg-no-longer-commits-build-outputs-to-the-repository)
-- [Rewrote the entire core in TypeScript](#rewrote-the-entire-core-in-typescript)
-- [Removed undocumented `rawManifest` property from bundle objects](#removed-undocumented-rawmanifest-property-from-bundle-objects)
-- [Updated the Sentry SDK and removed `publicDsn` from the config](#updated-the-sentry-sdk-and-removed-publicdsn-from-the-config)
-- [Rewrote the login system, advanced integrations with it may no longer work](#rewrote-the-login-system-advanced-integrations-with-it-may-no-longer-work)
-- [Socket.IO messages (i.e. sendMessage) now use the `broadcast` flag](#socketio-messages-ie-sendmessage-now-use-the-broadcast-flag)
-- [To enable "trace" logging, set the log level to "verbose"](#to-enable-trace-logging-set-the-log-level-to-verbose)
-- [Support for JSON5 in config files has been removed](#support-for-json5-in-config-files-has-been-removed)
-- [Supported Node.js versions are now 16 and 18](#supported-nodejs-versions-are-now-16-and-18)
-- [Minimum supported TypeScript version is now 4.7](#minimum-supported-typescript-version-is-now-47)
-- [All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12](#all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12)
-- [Fullbleed workspace labels now use the panel title instead of the panel name](#fullbleed-workspace-labels-now-use-the-panel-title-instead-of-the-panel-name)
-- [Fixed Replicant assignment sometimes being applied out-of-order](#fixed-replicant-assignment-sometimes-being-applied-out-of-order)
-- [Removed support for `pkg`](#removed-support-for-pkg)
-- [Replicants now properly parse falsey values](#replicants-now-properly-parse-falsey-values)
-- [NodeCG will now only exit with code 0 if there isn't already an exit code](#nodecg-will-now-only-exit-with-code-0-if-there-isnt-already-an-exit-code)
-- [Replicant logging is now configured separately for Console and File outputs](#replicant-logging-is-now-configured-separately-for-console-and-file-outputs)
+- [Breaking Changes {#breaking-changes}](#breaking-changes-breaking-changes)
+- [Features {#features}](#features-features)
+  - [All authentication keys will be revoked and replaced with new ones {#all-authentication-keys-will-be-revoked-and-replaced-with-new-ones}](#all-authentication-keys-will-be-revoked-and-replaced-with-new-ones-all-authentication-keys-will-be-revoked-and-replaced-with-new-ones)
+  - [NodeCG no longer commits build outputs to the repository {#nodecg-no-longer-commits-build-outputs-to-the-repository}](#nodecg-no-longer-commits-build-outputs-to-the-repository-nodecg-no-longer-commits-build-outputs-to-the-repository)
+  - [Rewrote the entire core in TypeScript {#rewrote-the-entire-core-in-typescript}](#rewrote-the-entire-core-in-typescript-rewrote-the-entire-core-in-typescript)
+  - [Removed undocumented `rawManifest` property from bundle objects  {#removed-undocumented-rawmanifest-property-from-bundle-objects}](#removed-undocumented-rawmanifest-property-from-bundle-objects--removed-undocumented-rawmanifest-property-from-bundle-objects)
+  - [Updated the Sentry SDK and removed `publicDsn` from the config {#updated-the-sentry-sdk-and-removed-publicdsn-from-the-config}](#updated-the-sentry-sdk-and-removed-publicdsn-from-the-config-updated-the-sentry-sdk-and-removed-publicdsn-from-the-config)
+  - [Rewrote the login system, advanced integrations with it may no longer work {#rewrote-the-login-system-advanced-integrations-with-it-may-no-longer-work}](#rewrote-the-login-system-advanced-integrations-with-it-may-no-longer-work-rewrote-the-login-system-advanced-integrations-with-it-may-no-longer-work)
+  - [Socket.IO messages (i.e. sendMessage) now use the `broadcast` flag {#socketio-messages-ie-sendmessage-now-use-the-broadcast-flag}](#socketio-messages-ie-sendmessage-now-use-the-broadcast-flag-socketio-messages-ie-sendmessage-now-use-the-broadcast-flag)
+  - [To enable "trace" logging, set the log level to "verbose" {#to-enable-trace-logging-set-the-log-level-to-verbose}](#to-enable-trace-logging-set-the-log-level-to-verbose-to-enable-trace-logging-set-the-log-level-to-verbose)
+  - [Support for JSON5 in config files has been removed {#support-for-json5-in-config-files-has-been-removed}](#support-for-json5-in-config-files-has-been-removed-support-for-json5-in-config-files-has-been-removed)
+  - [Supported Node.js versions are now 16 and 18 {#supported-nodejs-versions-are-now-16-and-18}](#supported-nodejs-versions-are-now-16-and-18-supported-nodejs-versions-are-now-16-and-18)
+  - [Minimum supported TypeScript version is now 4.7 {#minimum-supported-typescript-version-is-now-47}](#minimum-supported-typescript-version-is-now-47-minimum-supported-typescript-version-is-now-47)
+  - [All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12 {#all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12}](#all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12-all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12)
+  - [Fullbleed workspace labels now use the panel title instead of the panel name {#fullbleed-workspace-labels-now-use-the-panel-title-instead-of-the-panel-name}](#fullbleed-workspace-labels-now-use-the-panel-title-instead-of-the-panel-name-fullbleed-workspace-labels-now-use-the-panel-title-instead-of-the-panel-name)
+  - [Fixed Replicant assignment sometimes being applied out-of-order {#fixed-replicant-assignment-sometimes-being-applied-out-of-order}](#fixed-replicant-assignment-sometimes-being-applied-out-of-order-fixed-replicant-assignment-sometimes-being-applied-out-of-order)
+  - [Removed support for `pkg` {#removed-support-for-pkg}](#removed-support-for-pkg-removed-support-for-pkg)
+  - [Replicants now properly parse falsey values {#replicants-now-properly-parse-falsey-values}](#replicants-now-properly-parse-falsey-values-replicants-now-properly-parse-falsey-values)
+  - [NodeCG will now only exit with code 0 if there isn't already an exit code {#nodecg-will-now-only-exit-with-code-0-if-there-isnt-already-an-exit-code}](#nodecg-will-now-only-exit-with-code-0-if-there-isnt-already-an-exit-code-nodecg-will-now-only-exit-with-code-0-if-there-isnt-already-an-exit-code)
+  - [Replicant logging is now configured separately for Console and File outputs {#replicant-logging-is-now-configured-separately-for-console-and-file-outputs}](#replicant-logging-is-now-configured-separately-for-console-and-file-outputs-replicant-logging-is-now-configured-separately-for-console-and-file-outputs)
 
 ## Features {#features}
 
@@ -65,24 +67,24 @@ If your bundle relied on the `accessToken` and `refreshToken` properties availab
 import type NodeCG from '@nodecg/types';
 
 export = (nodecg: NodeCG.ServerAPI) => {
- nodecg.on('login', (user) => {
-  console.log(user.id, user.name);
- });
- 
- nodecg.on('logout', (user) => {
-  console.log(user.id, user.name);
- });
+    nodecg.on('login', (user) => {
+        console.log(user.id, user.name);
+    });
 
- nodecg.mount((req, _res, _next) => {
-  if (req.user) {
-   const ident = req.user.identities[0];
-   switch (ident.provider_type) {
-    case 'discord':
-    case 'twitch':
-     console.log(ident.provider_access_token, ident.provider_refresh_token);
-   }
-  }
- });
+    nodecg.on('logout', (user) => {
+        console.log(user.id, user.name);
+    });
+
+    nodecg.mount((req, _res, _next) => {
+        if (req.user) {
+            const ident = req.user.identities[0];
+            switch (ident.provider_type) {
+                case 'discord':
+                case 'twitch':
+                    console.log(ident.provider_access_token, ident.provider_refresh_token);
+            }
+        }
+    });
 };
 ```
 

@@ -29,6 +29,6 @@ const rep2 = nodecg.Replicant('rep2');
 // You can provide as many Replicant arguments as you want,
 // this example just uses two Replicants.
 NodeCG.waitForReplicants(rep1, rep2).then(() => {
- console.log('rep1 and rep2 are fully declared and ready to use!');
+    console.log('rep1 and rep2 are fully declared and ready to use!');
 });
 ```

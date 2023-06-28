@@ -71,23 +71,23 @@ Configure your `nodecg/cfg/nodecg.json` as such:
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "local": {
-      "enabled": true,
-      "allowedUsers": [
-        {
-          "username": "example1",
-          "password": "password_example"
-        },
-        {
-          "username": "example2",
-          "password": "anotherExample-password1234"
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "local": {
+            "enabled": true,
+            "allowedUsers": [
+                {
+                    "username": "example1",
+                    "password": "password_example"
+                },
+                {
+                    "username": "example2",
+                    "password": "anotherExample-password1234"
+                }
+            ]
         }
-      ]
     }
-  }
 }
 ```
 
@@ -102,23 +102,23 @@ Example:
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "local": {
-      "enabled": true,
-      "allowedUsers": [
-        {
-          "username": "admin",
-          "password": "sha256:ac679e332d4eee340b74eb0581225686f2736d58df7ea30c87a0d2cd5bfd1329"
-        },
-        {
-          "username": "other_admin",
-          "password": "ripemd:6f00f0c4c18fb563921b689876e98b61"
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "local": {
+            "enabled": true,
+            "allowedUsers": [
+                {
+                    "username": "admin",
+                    "password": "sha256:ac679e332d4eee340b74eb0581225686f2736d58df7ea30c87a0d2cd5bfd1329"
+                },
+                {
+                    "username": "other_admin",
+                    "password": "ripemd:6f00f0c4c18fb563921b689876e98b61"
+                }
+            ]
         }
-      ]
     }
-  }
 }
 ```
 
@@ -135,26 +135,26 @@ Example:
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "twitch": {
-      "enabled": true,
-      "clientID": "YOUR_TWITCH_APP_CLIENT_ID",
-      "clientSecret": "YOUR_TWITCH_APP_CLIENT_SECRET",
-      "scope": "user:read:email",
-      "allowedUsernames": [
-        "your_twitch_username",
-        "other_twitch_username",
-        "can_have_as_many_as_you_want"
-      ],
-      "allowedIds": [
-        "your_twitch_id",
-        "other_twitch_id",
-        "can_have_as_many_as_you_want"
-      ]
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "twitch": {
+            "enabled": true,
+            "clientID": "YOUR_TWITCH_APP_CLIENT_ID",
+            "clientSecret": "YOUR_TWITCH_APP_CLIENT_SECRET",
+            "scope": "user:read:email",
+            "allowedUsernames": [
+                "your_twitch_username",
+                "other_twitch_username",
+                "can_have_as_many_as_you_want"
+            ],
+            "allowedIds": [
+                "your_twitch_id",
+                "other_twitch_id",
+                "can_have_as_many_as_you_want"
+            ]
+        }
     }
-  }
 }
 ```
 
@@ -180,22 +180,22 @@ To get a Discord user ID, enable Discord developer mode and then right click on 
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "discord": {
-      "enabled": true,
-      "clientID": "YOUR_DISCORD_APP_CLIENT_ID",
-      "clientSecret": "YOUR_DISCORD_APP_CLIENT_SECRET",
-      "scope": "identify",
-      "allowedUserIDs": [
-        "paste discord user ids you want to allow here",
-        "they look like this",
-        "159600065017675778",
-        "54561421005950976"
-      ]
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "discord": {
+            "enabled": true,
+            "clientID": "YOUR_DISCORD_APP_CLIENT_ID",
+            "clientSecret": "YOUR_DISCORD_APP_CLIENT_SECRET",
+            "scope": "identify",
+            "allowedUserIDs": [
+                "paste discord user ids you want to allow here",
+                "they look like this",
+                "159600065017675778",
+                "54561421005950976"
+            ]
+        }
     }
-  }
 }
 ```
 
@@ -235,7 +235,7 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
       "allowedGuilds": [
         // Use this to allow all members to log in
         {
-          "guildID": "paste a server id here to allow all members to log in",
+          "guildID": "paste a server id here to allow all members to log in"
         },
         // Use this to restrict log in for certain roles
         {
@@ -262,19 +262,19 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "steam": {
-      "enabled": true,
-      "apiKey": "YOUR_STEAM_WEB_API_KEY",
-      "allowedIds": [
-        "paste the SteamId64s you want to allow here",
-        "they look like this",
-        "76561197974943998"
-      ]
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "steam": {
+            "enabled": true,
+            "apiKey": "YOUR_STEAM_WEB_API_KEY",
+            "allowedIds": [
+                "paste the SteamId64s you want to allow here",
+                "they look like this",
+                "76561197974943998"
+            ]
+        }
     }
-  }
 }
 ```
 
@@ -289,11 +289,11 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 
 ```json
 {
-  "ssl": {
-    "enabled": true,
-    "keyPath": "C:\\example\\path\\your-cert-key.key",
-    "certificatePath": "C:\\example\\path\\your-cert.crt",
-    "passphrase": "this is my example passphrase"
-  }
+    "ssl": {
+        "enabled": true,
+        "keyPath": "C:\\example\\path\\your-cert-key.key",
+        "certificatePath": "C:\\example\\path\\your-cert.crt",
+        "passphrase": "this is my example passphrase"
+    }
 }
 ```

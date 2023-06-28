@@ -14,11 +14,11 @@ Install `npm` dependencies as you would in any other Node.js project. Extensions
 
 ```json
 {
-  "name": "my-bundle",
-  ...
-  "dependencies": {
-    "some-dep": "^1.0.0"
-  }
+    "name": "my-bundle",
+    ...
+    "dependencies": {
+        "some-dep": "^1.0.0"
+    }
 }
 ```
 
@@ -28,6 +28,6 @@ Install `npm` dependencies as you would in any other Node.js project. Extensions
 const someDep = require('some-dep');
 
 module.exports = function(nodecg) {
-  // I can use someDep whenever I want!
+    // I can use someDep whenever I want!
 };
 ```

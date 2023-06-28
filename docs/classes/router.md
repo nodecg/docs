@@ -19,11 +19,11 @@ See the [express docs](http://expressjs.com/en/api.html#express.router) for full
 Defining a simple GET route:
 
 ```js
-module.exports = function (nodecg) {
-  const app = nodecg.Router();
-  app.get('/my-bundle/example', (req, res) => {
-    res.send('custom route confirmed');
-  });
-  nodecg.mount(app);
+module.exports = function(nodecg) {
+    const app = nodecg.Router();
+    app.get('/my-bundle/example', (req, res) => {
+        res.send('custom route confirmed');
+    });
+    nodecg.mount(app);
 }
 ```

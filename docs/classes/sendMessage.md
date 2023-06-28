@@ -46,7 +46,7 @@ Sending a message and replying with an acknowledgement:
 
 ```js
 // bundles/my-bundle/extension.js
-module.exports = function (nodecg) {
+module.exports = function(nodecg) {
     nodecg.listenFor('multiplyByTwo', (value, ack) => {
         if (value === 4) {
             ack(new Error('I don\'t like multiplying the number 4!'));

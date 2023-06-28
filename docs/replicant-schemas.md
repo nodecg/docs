@@ -25,45 +25,45 @@ If for any reason a Replicant's persisted value becomes invalid, NodeCG will dis
 
 ```json
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-    "bar": {
-      "type": "string",
-      "description": "The value of bar, which is a String.",
-      "default": "hello world"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "bar": {
+            "type": "string",
+            "description": "The value of bar, which is a String.",
+            "default": "hello world"
+        },
+        "baz": {
+            "type": "number",
+            "description": "The value of baz, which is a Number.",
+            "default": 0
+        }
     },
-    "baz": {
-      "type": "number",
-      "description": "The value of baz, which is a Number.",
-      "default": 0
-    }
-  },
-  "required": ["bar", "baz"]
+    "required": ["bar", "baz"]
 }
 ```
 
 `nodecg/bundles/my-bundle/extension.js`
 
 ```js
-module.exports = function (nodecg) {
-  // We don't need to specify a `defaultValue` here, it will be automatically generated from the defaults
-  // in the schema.
-  const foo = nodecg.Replicant('foo');
+module.exports = function(nodecg) {
+    // We don't need to specify a `defaultValue` here, it will be automatically generated from the defaults
+    // in the schema.
+    const foo = nodecg.Replicant('foo');
 
-  /* You can override this by specifying your own `defaultValue` when declaring the Replicant.
-  const foo = nodecg.Replicant('foo', {
-    defaultValue: {
-      bar: "hi",
-      baz: 5
-    }
-  }); */
+    /* You can override this by specifying your own `defaultValue` when declaring the Replicant.
+    const foo = nodecg.Replicant('foo', {
+        defaultValue: {
+            bar: "hi",
+            baz: 5
+        }
+    }); */
 
-  console.log(foo.value.bar); //=> "hello world"
-  console.log(foo.value.baz); //=> 0
+    console.log(foo.value.bar); //=> "hello world"
+    console.log(foo.value.baz); //=> 0
 
-  foo.value.bar = "greetings planet"; // Valid change, no error will be thrown.
-  foo.value.baz = "this should be a number!"; // Invalid change, an error will be thrown.
+    foo.value.bar = "greetings planet"; // Valid change, no error will be thrown.
+    foo.value.baz = "this should be a number!"; // Invalid change, an error will be thrown.
 };
 ```

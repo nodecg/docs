@@ -24,7 +24,7 @@ From an extension:
 // Extensions have immediate access to the database of Replicants.
 // For this reason, they can use readReplicant synchronously, without a callback.
 module.exports = function(nodecg) {
- var myVal = nodecg.readReplicant('myVar', 'some-bundle');
+    var myVal = nodecg.readReplicant('myVar', 'some-bundle');
 };
 ```
 
@@ -34,7 +34,7 @@ From a graphic or dashboard panel:
 // Graphics and dashboard panels must query the server to retrieve the value,
 // and therefore must provide a callback.
 nodecg.readReplicant('myRep', 'some-bundle', value => {
- // I can use 'value' now!
- console.log('myRep has the value ' + value + '!');
+    // I can use 'value' now!
+    console.log('myRep has the value ' + value + '!');
 });
 ```

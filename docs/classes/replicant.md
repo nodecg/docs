@@ -36,14 +36,24 @@ As of NodeCG 0.8.4, Replicants can also be automatically validated against a JSO
 ### Example {#example}
 
 ```js
-const myRep = nodecg.Replicant('myRep', { defaultValue: 123 });
+const myRep = nodecg.Replicant('myRep', {
+    defaultValue: 123
+});
 
 myRep.on('change', (newValue, oldValue) => {
- console.log(`myRep changed from ${oldValue} to ${newValue}`);
+    console.log(`myRep changed from ${oldValue} to ${newValue}`);
 });
 
 myRep.value = 'Hello!';
-myRep.value = { objects: 'work too!' };
-myRep.value = { objects: { can: { be: 'nested!' } } };
+myRep.value = {
+    objects: 'work too!'
+};
+myRep.value = {
+    objects: {
+        can: {
+            be: 'nested!'
+        }
+    }
+};
 myRep.value = ['Even', 'arrays', 'work!'];
 ```

@@ -6,10 +6,10 @@ sidebar_label: 0.7 → 0.8
 
 ## Breaking Changes {#breaking-changes}
 
-- [Breaking Changes](#breaking-changes)
-  - [Replicant Change Event](#replicant-change-event)
-  - [Panel Routes](#panel-routes)
-  - [Assets & Asset Categories](#assets--asset-categories)
+- [Breaking Changes {#breaking-changes}](#breaking-changes-breaking-changes)
+  - [Replicant Change Event {#replicant-change-event}](#replicant-change-event-replicant-change-event)
+  - [Panel Routes {#panel-routes}](#panel-routes-panel-routes)
+  - [Assets \& Asset Categories {#assets--asset-categories}](#assets--asset-categories-assets--asset-categories)
 
 ### Replicant Change Event {#replicant-change-event}
 
@@ -36,10 +36,10 @@ This means that for a panel with the following declaration:
 
 ```json
 {
-  "name": "test",
-  "title": "Test Panel",
-  "width": 2,
-  "file": "panel.html"
+    "name": "test",
+    "title": "Test Panel",
+    "width": 2,
+    "file": "panel.html"
 }
 ```
 
@@ -49,10 +49,10 @@ This also affects panels served from subfolders. Previously, the following panel
 
 ```json
 {
-  "name": "test-dialog",
-  "title": "Test Dialog",
-  "width": 2,
-  "file": "dialogs/test-dialog.html"
+    "name": "test-dialog",
+    "title": "Test Dialog",
+    "width": 2,
+    "file": "dialogs/test-dialog.html"
 }
 ```
 

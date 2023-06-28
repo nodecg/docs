@@ -12,7 +12,7 @@ Say we have a bundle named `test-bundle`. If we create`./cfg/test-bundle.js` wit
 
 ```js
 module.exports = {
- myData: "hello"
+    myData: "hello"
 }
 ```
 
