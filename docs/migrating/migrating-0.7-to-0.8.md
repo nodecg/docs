@@ -6,10 +6,10 @@ sidebar_label: 0.7 → 0.8
 
 ## Breaking Changes {#breaking-changes}
 
-- [Breaking Changes {#breaking-changes}](#breaking-changes-breaking-changes)
-  - [Replicant Change Event {#replicant-change-event}](#replicant-change-event-replicant-change-event)
-  - [Panel Routes {#panel-routes}](#panel-routes-panel-routes)
-  - [Assets \& Asset Categories {#assets--asset-categories}](#assets--asset-categories-assets--asset-categories)
+- [Breaking Changes](#breaking-changes)
+  - [Replicant Change Event](#replicant-change-event)
+  - [Panel Routes](#panel-routes)
+  - [Assets & Asset Categories](#assets--asset-categories)
 
 ### Replicant Change Event {#replicant-change-event}
 

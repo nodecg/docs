@@ -24,7 +24,7 @@ From an extension:
 // Extensions have immediate access to the database of Replicants.
 // For this reason, they can use readReplicant synchronously, without a callback.
 module.exports = function(nodecg) {
-    var myVal = nodecg.readReplicant('myVar', 'some-bundle');
+    const myVal = nodecg.readReplicant('myVar', 'some-bundle');
 };
 ```
 
