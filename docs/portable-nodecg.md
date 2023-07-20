@@ -13,9 +13,9 @@ requiring an installation process.
    installation into the root of your NodeCG instance.
 3. In the same directory, create a batch file or shell script with the following content:
 
-```bash
-node index.js
-```
+   ```bash
+   node index.js
+   ```
 
 4. Double-click that batch file/shell script to run NodeCG.
 

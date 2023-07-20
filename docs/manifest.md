@@ -12,61 +12,61 @@ The `nodecg` object in a bundle's `package.json` must follow this structure:
 
 ```json
 {
-  "name": "example-bundle",
-  ...
-  "nodecg": {
-    "compatibleRange": "~0.7.0",
-    "bundleDependencies": {
-      "other-bundle": "^1.2.1"
-    },
-    "dashboardPanels": [
-      {
-        "name": "sample-panel",
-        "title": "Sample Panel",
-        "width": 2,
-        "headerColor": "#2d4e8a",
-        "file": "sample-panel.html"
-      },
-      {
-        "name": "sample-dialog",
-        "title": "Sample Dialog",
-        "width": 2,
-        "dialog": true,
-        "dialogButtons": [
-          {
-            "name": "save",
-            "type": "confirm"
-          },
-          {
-            "name": "cancel",
-            "type": "dismiss"
-          }
+    "name": "example-bundle",
+    ...
+    "nodecg": {
+        "compatibleRange": "~0.7.0",
+        "bundleDependencies": {
+            "other-bundle": "^1.2.1"
+        },
+        "dashboardPanels": [
+            {
+                "name": "sample-panel",
+                "title": "Sample Panel",
+                "width": 2,
+                "headerColor": "#2d4e8a",
+                "file": "sample-panel.html"
+            },
+            {
+                "name": "sample-dialog",
+                "title": "Sample Dialog",
+                "width": 2,
+                "dialog": true,
+                "dialogButtons": [
+                    {
+                        "name": "save",
+                        "type": "confirm"
+                    },
+                    {
+                        "name": "cancel",
+                        "type": "dismiss"
+                    }
+                ],
+                "file": "sample-dialog.html"
+            },
+            {
+                "name": "custom-workspace",
+                "title": "Custom Workspace Panel",
+                "width": 4,
+                "file": "custom-workspace.html",
+                "workspace": "My Workspace"
+            },
+            {
+                "name": "fullbleed-panel",
+                "title": "Fullbleed Panel",
+                "fullbleed": true
+            }
         ],
-        "file": "sample-dialog.html"
-      },
-      {
-        "name": "custom-workspace",
-        "title": "Custom Workspace Panel",
-        "width": 4,
-        "file": "custom-workspace.html",
-        "workspace": "My Workspace"
-      },
-      {
-        "name": "fullbleed-panel",
-        "title": "Fullbleed Panel",
-        "fullbleed": true
-      }
-    ],
-    "graphics": [
-      {
-        "file": "index.html",
-        "width": 1280,
-        "height": 720,
-        "singleInstance": false
-      }
-    ]
-  }
-  ...
+        "graphics": [
+            {
+                "file": "index.html",
+                "width": 1280,
+                "height": 720,
+                "singleInstance": false
+            }
+        ]
+    }
+    ...
 }
 ```
 

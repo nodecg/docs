@@ -20,6 +20,6 @@ Listening for socket disconnect events:
 
 ```js
 nodecg.socket.on("disconnect", () => {
-  console.log("Socket disconnected!");
+    console.log("Socket disconnected!");
 });
 ```

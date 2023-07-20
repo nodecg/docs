@@ -6,7 +6,7 @@ sidebar_label: Security & Authentication
 
 ## Is NodeCG secure by default? {#security}
 
-**No.** By default, NodeCG has no authorization or authentication of any kind. To enable basic authentication, see the [How do I enable login security?](#how-do-i-enable-login-security) section.
+**No.** By default, NodeCG has no authorization or authentication of any kind. To enable basic authentication, see the [How do I enable login security?](#enable) section.
 
 **Do not** put an unsecured NodeCG instance on the internet or a public network. Unsecured instances should only be used for local development and on trusted LANs.
 
@@ -65,29 +65,29 @@ NodeCG has support for four authentication providers:
 
 You may have multiple authentication providers enabled simultaneously.
 
-### Local Auth {#local}
+### Local Auth {#local-auth}
 
 Configure your `nodecg/cfg/nodecg.json` as such:
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "local": {
-      "enabled": true,
-      "allowedUsers": [
-        {
-          "username": "example1",
-          "password": "password_example"
-        },
-        {
-          "username": "example2",
-          "password": "anotherExample-password1234"
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "local": {
+            "enabled": true,
+            "allowedUsers": [
+                {
+                    "username": "example1",
+                    "password": "password_example"
+                },
+                {
+                    "username": "example2",
+                    "password": "anotherExample-password1234"
+                }
+            ]
         }
-      ]
     }
-  }
 }
 ```
 
@@ -102,27 +102,27 @@ Example:
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "local": {
-      "enabled": true,
-      "allowedUsers": [
-        {
-          "username": "admin",
-          "password": "sha256:ac679e332d4eee340b74eb0581225686f2736d58df7ea30c87a0d2cd5bfd1329"
-        },
-        {
-          "username": "other_admin",
-          "password": "ripemd:6f00f0c4c18fb563921b689876e98b61"
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "local": {
+            "enabled": true,
+            "allowedUsers": [
+                {
+                    "username": "admin",
+                    "password": "sha256:ac679e332d4eee340b74eb0581225686f2736d58df7ea30c87a0d2cd5bfd1329"
+                },
+                {
+                    "username": "other_admin",
+                    "password": "ripemd:6f00f0c4c18fb563921b689876e98b61"
+                }
+            ]
         }
-      ]
     }
-  }
 }
 ```
 
-### Twitch Auth {#twitch}
+### Twitch Auth {#twitch-auth}
 
 1. [Create a new application on your Twitch Developer Dashboard](https://glass.twitch.tv/console/apps/create)
 2. Give it whatever values you want for Name, Category, and Other Details
@@ -135,30 +135,30 @@ Example:
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "twitch": {
-      "enabled": true,
-      "clientID": "YOUR_TWITCH_APP_CLIENT_ID",
-      "clientSecret": "YOUR_TWITCH_APP_CLIENT_SECRET",
-      "scope": "user:read:email",
-      "allowedUsernames": [
-        "your_twitch_username",
-        "other_twitch_username",
-        "can_have_as_many_as_you_want"
-      ],
-      "allowedIds": [
-        "your_twitch_id",
-        "other_twitch_id",
-        "can_have_as_many_as_you_want"
-      ]
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "twitch": {
+            "enabled": true,
+            "clientID": "YOUR_TWITCH_APP_CLIENT_ID",
+            "clientSecret": "YOUR_TWITCH_APP_CLIENT_SECRET",
+            "scope": "user:read:email",
+            "allowedUsernames": [
+                "your_twitch_username",
+                "other_twitch_username",
+                "can_have_as_many_as_you_want"
+            ],
+            "allowedIds": [
+                "your_twitch_id",
+                "other_twitch_id",
+                "can_have_as_many_as_you_want"
+            ]
+        }
     }
-  }
 }
 ```
 
-### Discord Auth {#discord}
+### Discord Auth {#discord-auth}
 
 You can use two different kinds of authentication, by user or by server.
 You can use one of them or both (in which case matching one of them will grant access).
@@ -168,30 +168,34 @@ You can use one of them or both (in which case matching one of them will grant a
 1. [Create a new application on your Discord Developer Dashboard](https://discord.com/developers/applications)
 2. Give it whatever value you want for the Name
 3. Click on OAuth2 on the left and Set the OAuth Redirect URL to `https://YOUR_DEPLOYMENT_URL/login/auth/discord`.
-- If you're testing locally, use `http://localhost:9090/login/auth/discord`
+
+   - If you're testing locally, use `http://localhost:9090/login/auth/discord`
+
 4. Use the Client ID and Client Secret from general information for your configuration
 5. Configure your `nodecg/cfg/nodecg.json` like below
-- See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
+
+   - See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
 
 To get a Discord user ID, enable Discord developer mode and then right click on a user to copy it.
+
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "discord": {
-      "enabled": true,
-      "clientID": "YOUR_DISCORD_APP_CLIENT_ID",
-      "clientSecret": "YOUR_DISCORD_APP_CLIENT_SECRET",
-      "scope": "identify",
-      "allowedUserIDs": [
-        "paste discord user ids you want to allow here",
-        "they look like this",
-        "159600065017675778",
-        "54561421005950976"
-      ]
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "discord": {
+            "enabled": true,
+            "clientID": "YOUR_DISCORD_APP_CLIENT_ID",
+            "clientSecret": "YOUR_DISCORD_APP_CLIENT_SECRET",
+            "scope": "identify",
+            "allowedUserIDs": [
+                "paste discord user ids you want to allow here",
+                "they look like this",
+                "159600065017675778",
+                "54561421005950976"
+            ]
+        }
     }
-  }
 }
 ```
 
@@ -201,12 +205,14 @@ To get a Discord user ID, enable Discord developer mode and then right click on 
 2. Give it whatever value you want for the Name
 3. Use the Client ID and Client Secret from general information for your configuration
 4. Click on OAuth2 on the left and Set the OAuth Redirect URL to `https://YOUR_DEPLOYMENT_URL/login/auth/discord`.
-- If you're testing locally, use `http://localhost:9090/login/auth/discord`
+
+   - If you're testing locally, use `http://localhost:9090/login/auth/discord`
+
 5. Configure your `nodecg/cfg/nodecg.json` like below
-- See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
+
+   - See the [Discord docs for the list of available scopes](https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes).
 
 Any user in the server will be allowed to use nodecg.
-
 
 If you want to check for roles and not just server membership, you also need to do the following:
 5. Click on Bot on the left, add a bot, then use the token for your configuration
@@ -229,7 +235,7 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
       "allowedGuilds": [
         // Use this to allow all members to log in
         {
-          "guildID": "paste a server id here to allow all members to log in",
+          "guildID": "paste a server id here to allow all members to log in"
         },
         // Use this to restrict log in for certain roles
         {
@@ -247,7 +253,7 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 }
 ```
 
-### Steam Auth {#steam}
+### Steam Auth {#steam-auth}
 
 1. [Create/copy your Steam Web API Key](https://steamcommunity.com/dev/apikey)
 2. Obtain the SteamID64 string for each of the accounts you wish to allow.
@@ -256,19 +262,19 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 
 ```json
 {
-  "login": {
-    "enabled": true,
-    "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
-    "steam": {
-      "enabled": true,
-      "apiKey": "YOUR_STEAM_WEB_API_KEY",
-      "allowedIds": [
-        "paste the SteamId64s you want to allow here",
-        "they look like this",
-        "76561197974943998"
-      ]
+    "login": {
+        "enabled": true,
+        "sessionSecret": "Make this a random string, like one from https://randomkeygen.com/",
+        "steam": {
+            "enabled": true,
+            "apiKey": "YOUR_STEAM_WEB_API_KEY",
+            "allowedIds": [
+                "paste the SteamId64s you want to allow here",
+                "they look like this",
+                "76561197974943998"
+            ]
+        }
     }
-  }
 }
 ```
 
@@ -283,11 +289,11 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 
 ```json
 {
-  "ssl": {
-    "enabled": true,
-    "keyPath": "C:\\example\\path\\your-cert-key.key",
-    "certificatePath": "C:\\example\\path\\your-cert.crt",
-    "passphrase": "this is my example passphrase"
-  }
+    "ssl": {
+        "enabled": true,
+        "keyPath": "C:\\example\\path\\your-cert-key.key",
+        "certificatePath": "C:\\example\\path\\your-cert.crt",
+        "passphrase": "this is my example passphrase"
+    }
 }
 ```

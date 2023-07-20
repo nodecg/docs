@@ -7,11 +7,11 @@ sidebar_label: 0.8 → 0.9
 ## Breaking Changes {#breaking-changes}
 
 - [Breaking Changes](#breaking-changes)
-	- [Routing Changes](#routing-changes)
-	- [Removed Default Styles](#removed-default-styles)
-	- [sendMessage acknowledgement Errors](#sendmessage-acknowledgement-errors)
-	- [No Auto-Installation of Dependencies](#no-auto-installation-of-dependencies)
-	- [Removed Rollbar integration, replaced it with Sentry](#removed-rollbar-integration-replaced-it-with-sentry)
+  - [Routing Changes](#routing-changes)
+  - [Removed Default Styles](#removed-default-styles)
+  - [sendMessage acknowledgement Errors](#sendmessage-acknowledgement-errors)
+  - [No Auto-Installation of Dependencies](#no-auto-installation-of-dependencies)
+  - [Removed Rollbar integration, replaced it with Sentry](#removed-rollbar-integration-replaced-it-with-sentry)
 
 ### Routing Changes {#routing-changes}
 

@@ -8,7 +8,7 @@ sidebar_label: Bundlers & Dev Environments
 
 Bundlers are one option for serving dev servers & are a wonderful tool for releasing code into production. However, there are now many alternatives that are helpful for speedy local development. Speed comparisons vary depending on what metrics are being used, and like any other framework, there are tradeoffs across any tooling choices.
 
-Vite is currently the leading project for an unbundled development environment. Vite provides a [comparison writeup](https://vitejs.dev/guide/why.html) that may be worth checking out when starting a new NodeCG project. The Vue Mastery team also provides a [comparison between Vite and Webpack](https://www.vuemastery.com/blog/vite-vs-webpack/) that may be helpful in making your bundling / module choices. 
+Vite is currently the leading project for an unbundled development environment. Vite provides a [comparison writeup](https://vitejs.dev/guide/why.html) that may be worth checking out when starting a new NodeCG project. The Vue Mastery team also provides a [comparison between Vite and Webpack](https://www.vuemastery.com/blog/vite-vs-webpack/) that may be helpful in making your bundling / module choices.
 
 NodeCG usage is currently not limited to any of these options! Make your choice(s) as you will for what you are comfortable with.
 
@@ -27,7 +27,7 @@ There are several JavaScript bundlers.
 - [parcel](https://github.com/parcel-bundler/parcel)
   - Bundler famous for zero-config and super fast building process
 - [esbuild](https://esbuild.github.io/)
-  - Extremely fast bundler written in Go, however currently the maintainers state that it is [unstable for production usage](https://esbuild.github.io/faq/#production-readiness). 
+  - Extremely fast bundler written in Go, however currently the maintainers state that it is [unstable for production usage](https://esbuild.github.io/faq/#production-readiness).
 
 These bundlers allows you to
 
@@ -123,16 +123,15 @@ use your HTML file with your scripts and stylesheets imported.
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-
-  <body>
-    <div id="tech"></div>
-    <!-- Or a lot of pre-defined elements -->
-    <script src="./index.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="tech"></div>
+        <!-- Or a lot of pre-defined elements -->
+        <script src="./index.js"></script>
+    </body>
 </html>
 ```
 
@@ -204,9 +203,9 @@ For example,
 
 ```json
 {
-  // ...
-  "browserslist": "last 2 chrome versions",
-  "nodecg": //...
+    // ...
+    "browserslist": "last 2 chrome versions",
+    "nodecg": //...
 }
 ```
 

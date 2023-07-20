@@ -9,21 +9,31 @@ for use in the bundle. To enable the Asset system in a bundle, add code like the
 
 ```json
 {
-  "name": "test-bundle",
-  "nodecg": {
-    "assetCategories": [
-      {
-        "name": "thumbnails",
-        "title": "Thumbnails",
-        "allowedTypes": ["jpg", "jpeg", "gif", "png"]
-      },
-      {
-        "name": "boxart",
-        "title": "Boxart",
-        "allowedTypes": ["jpg", "jpeg", "gif", "png"]
-      }
-    ]
-  }
+    "name": "test-bundle",
+    "nodecg": {
+        "assetCategories": [
+            {
+                "name": "thumbnails",
+                "title": "Thumbnails",
+                "allowedTypes": [
+                    "jpg",
+                    "jpeg",
+                    "gif",
+                    "png"
+                ]
+            },
+            {
+                "name": "boxart",
+                "title": "Boxart",
+                "allowedTypes": [
+                    "jpg",
+                    "jpeg",
+                    "gif",
+                    "png"
+                ]
+            }
+        ]
+    }
 }
 ```
 
@@ -41,12 +51,12 @@ These Replicants are arrays. Each item in these arrays describes one of the uplo
 
 ```json
 {
-  "base": "square.png",
-  "namespace": "test-bundle",
-  "category": "thumbnails",
-  "ext": ".png",
-  "name": "square",
-  "sum": "3f5828ff83eb099fe11a938f25e57afe8745efdc",
-  "url": "/assets/test-bundle/thumbnails/square.png"
+    "base": "square.png",
+    "namespace": "test-bundle",
+    "category": "thumbnails",
+    "ext": ".png",
+    "name": "square",
+    "sum": "3f5828ff83eb099fe11a938f25e57afe8745efdc",
+    "url": "/assets/test-bundle/thumbnails/square.png"
 }
 ```

@@ -30,12 +30,13 @@ If you use `nodecg-cli`, be sure to update to the latest version before upgradin
 - [Replicant logging is now configured separately for Console and File outputs](#replicant-logging-is-now-configured-separately-for-console-and-file-outputs)
 
 ## Features {#features}
+
 - All configs may now be written in JSON, CommonJS, or YAML.
 - [Worker clients are now supported.](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 - [All config and replicant schemas may now be authored in JSON Schema Draft 04, Draft 07, Draft 2019-09, or Draft 2020-12](#all-config-and-replicant-schemas-may-now-be-authored-in-json-schema-draft-04-draft-07-draft-2019-09-or-draft-2020-12)
 
+### All authentication keys will be revoked and replaced with new ones {#all-authentication-keys-will-be-revoked-and-replaced-with-new-ones}
 
-### All authentication keys will be revoked and replaced with new ones
 Since the entire login system has been rewritten, none of the prior authenticaon keys are valid. As such, new ones will be generated for all users, and any `?key=xxx` URLs in use will need to be updated.
 
 ### NodeCG no longer commits build outputs to the repository {#nodecg-no-longer-commits-build-outputs-to-the-repository}
@@ -64,24 +65,24 @@ If your bundle relied on the `accessToken` and `refreshToken` properties availab
 import type NodeCG from '@nodecg/types';
 
 export = (nodecg: NodeCG.ServerAPI) => {
-	nodecg.on('login', (user) => {
-		console.log(user.id, user.name);
-	});
-	
-	nodecg.on('logout', (user) => {
-		console.log(user.id, user.name);
-	});
+    nodecg.on('login', (user) => {
+        console.log(user.id, user.name);
+    });
 
-	nodecg.mount((req, _res, _next) => {
-		if (req.user) {
-			const ident = req.user.identities[0];
-			switch (ident.provider_type) {
-				case 'discord':
-				case 'twitch':
-					console.log(ident.provider_access_token, ident.provider_refresh_token);
-			}
-		}
-	});
+    nodecg.on('logout', (user) => {
+        console.log(user.id, user.name);
+    });
+
+    nodecg.mount((req, _res, _next) => {
+        if (req.user) {
+            const ident = req.user.identities[0];
+            switch (ident.provider_type) {
+                case 'discord':
+                case 'twitch':
+                    console.log(ident.provider_access_token, ident.provider_refresh_token);
+            }
+        }
+    });
 };
 ```
 
@@ -115,7 +116,7 @@ Previously, there was a bug where workspace labels used the wrong data for their
 
 ### Fixed Replicant assignment sometimes being applied out-of-order {#fixed-replicant-assignment-sometimes-being-applied-out-of-order}
 
-There was an obscure bug that could cause assignment operations on Replicants to be applied _before_ preceeding change events. This is no longer the case. It is technically a breaking change, but is is unlikely that many bundles relied on this broken behavior.
+There was an obscure bug that could cause assignment operations on Replicants to be applied *before* preceeding change events. This is no longer the case. It is technically a breaking change, but is is unlikely that many bundles relied on this broken behavior.
 
 ### Removed support for `pkg` {#removed-support-for-pkg}
 

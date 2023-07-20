@@ -12,15 +12,15 @@ As of v0.9.9, NodeCG supports a `nodecg.mount` array in your bundle's `package.j
 
 ```json
 {
-  "name": "test-bundle",
-  "nodecg": {
-    "mount": [
-      {
-        "directory": "custom-dir",
-        "endpoint": "my-mount-endpoint"
-      }
-    ]
-  }
+    "name": "test-bundle",
+    "nodecg": {
+        "mount": [
+            {
+                "directory": "custom-dir",
+                "endpoint": "my-mount-endpoint"
+            }
+        ]
+    }
 }
 ```
 

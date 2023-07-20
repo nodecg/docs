@@ -27,9 +27,9 @@ When a dialog is opened, NodeCG will emit a `dialog-opened` event on your dialog
 ```html
 <!-- bundles/my-bundle/dashboard/my-dialog.html -->
 <script>
-  document.addEventListener('dialog-opened', function() {
-    // The user opened the dialog.
-  });
+    document.addEventListener('dialog-opened', function() {
+        // The user opened the dialog.
+    });
 </script>
 ```
 
@@ -45,12 +45,12 @@ on your dialog's `document`. For example:
 ```html
 <!-- bundles/my-bundle/dashboard/my-dialog.html -->
 <script>
-  document.addEventListener('dialog-confirmed', function() {
-    // The user pressed the confirm button.
-  });
-
-  document.addEventListener('dialog-dismissed', function() {
-    // The user pressed the dismiss button.
-  });
+    document.addEventListener('dialog-confirmed', function() {
+        // The user pressed the confirm button.
+    });
+    
+    document.addEventListener('dialog-dismissed', function() {
+        // The user pressed the dismiss button.
+    });
 </script>
 ```

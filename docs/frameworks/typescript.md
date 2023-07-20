@@ -26,7 +26,7 @@ Optionally, you can define types of replicants using replicants' JSON schema.
 
 ```ts
 import { ExampleReplicant } from '../types/schemas/example_replicant';
-const rep = nodecg.Replicant<ExampleReplicant>('example_replicant')
+const rep = nodecg.Replicant<ExampleReplicant>('example_replicant');
 ```
 
 ## Using Type Definitions {#type-definitions}
@@ -45,7 +45,7 @@ The first approach is to use [`include`](https://www.typescriptlang.org/tsconfig
 
 ```json
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx", "node_modules/@nodecg/types/augment-window.d.ts"]
+    "include": ["src/**/*.ts", "src/**/*.tsx", "node_modules/@nodecg/types/augment-window.d.ts"]
 }
 ```
 
@@ -53,7 +53,7 @@ If you use Vue, be sure to include your `*.vue` files as well:
 
 ```json
 {
-  "include": ["src/**/*.ts", "**/*.vue", "node_modules/@nodecg/types/augment-window.d.ts"]
+    "include": ["src/**/*.ts", "**/*.vue", "node_modules/@nodecg/types/augment-window.d.ts"]
 }
 ```
 
@@ -61,9 +61,9 @@ The second approach is to use [`types`](https://www.typescriptlang.org/tsconfig#
 
 ```json
 {
-  "compilerOptions": {
-    "types": ["node", "jest", "express", "@nodecg/types/augment-window"]
-  }
+    "compilerOptions": {
+        "types": ["node", "jest", "express", "@nodecg/types/augment-window"]
+    }
 }
 ```
 
@@ -72,10 +72,10 @@ Both of these approaches have pros and cons, so be sure to read their correspond
 ### extension {#extension}
 
 ```ts
-import NodeCG from '@nodecg/types'
+import NodeCG from '@nodecg/types';
 
 export = (nodecg: NodeCG.ServerAPI) => {
-  nodecg.sendMessage('message')
+    nodecg.sendMessage('message');
 }
 ```
 
@@ -85,6 +85,6 @@ export = (nodecg: NodeCG.ServerAPI) => {
 // Some types get automatically injected into the global scope by our tsconfig.json.
 // For everything else, you can `import NodeCG from '@nodecg/types'` just as in our extension example.
 nodecg.listenFor('message', () => {
-  // ...
+    // ...
 })
 ```

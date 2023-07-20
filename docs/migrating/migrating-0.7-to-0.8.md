@@ -36,10 +36,10 @@ This means that for a panel with the following declaration:
 
 ```json
 {
-  "name": "test",
-  "title": "Test Panel",
-  "width": 2,
-  "file": "panel.html"
+    "name": "test",
+    "title": "Test Panel",
+    "width": 2,
+    "file": "panel.html"
 }
 ```
 
@@ -49,10 +49,10 @@ This also affects panels served from subfolders. Previously, the following panel
 
 ```json
 {
-  "name": "test-dialog",
-  "title": "Test Dialog",
-  "width": 2,
-  "file": "dialogs/test-dialog.html"
+    "name": "test-dialog",
+    "title": "Test Dialog",
+    "width": 2,
+    "file": "dialogs/test-dialog.html"
 }
 ```
 

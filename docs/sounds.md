@@ -9,31 +9,31 @@ create a `nodecg.soundCues` array in your `package.json`:
 
 ```json
 {
-  "name": "test-bundle",
-  "nodecg": {
-    "soundCues": [
-      {
-        "name": "name-only"
-      },
-      {
-        "name": "default-volume",
-        "defaultVolume": 80
-      },
-      {
-        "name": "non-assignable",
-        "assignable": false,
-        "defaultFile": "sound/default-file.ogg"
-      },
-      {
-        "name": "default-file",
-        "defaultFile": "sound/default-file.ogg"
-      },
-      {
-        "name": "single-channel",
-        "channels": 1
-      }
-    ]
-  }
+    "name": "test-bundle",
+    "nodecg": {
+        "soundCues": [
+            {
+                "name": "name-only"
+            },
+            {
+                "name": "default-volume",
+                "defaultVolume": 80
+            },
+            {
+                "name": "non-assignable",
+                "assignable": false,
+                "defaultFile": "sound/default-file.ogg"
+            },
+            {
+                "name": "default-file",
+                "defaultFile": "sound/default-file.ogg"
+            },
+            {
+                "name": "single-channel",
+                "channels": 1
+            }
+        ]
+    }
 }
 ```
 

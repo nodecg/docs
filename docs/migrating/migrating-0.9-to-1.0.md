@@ -43,20 +43,20 @@ However, server-side `listenFor` handlers must be careful to not call an `acknow
 ```js
 // nodecg/bundles/your-bundle
 module.exports = function(nodecg) {
-  nodecg.listenFor('example', (data, ack) => {
-    if (ack && !ack.handled) {
-      ack('foo');
-    }
-  });
+    nodecg.listenFor('example', (data, ack) => {
+        if (ack && !ack.handled) {
+            ack('foo');
+        }
+    });
 };
 ```
 
 ```html
 <!-- nodecg/bundles/your-bundle/graphics/example.html -->
 <script>
-  nodecg.sendMessage('example', 'hello', (error, response) => {
-    console.log(response); // => Will log "foo".
-  });
+    nodecg.sendMessage('example', 'hello', (error, response) => {
+        console.log(response); // => Will log "foo".
+    });
 </script>
 ```
 
@@ -73,16 +73,16 @@ Now, NodeCG sends messages to every listener, regardless of location. This means
 ```js
 // nodecg/bundles/your-bundle/extension.js
 module.exports = function(nodecg) {
-  nodecg.sendMessage('hello', 'Hi there!');
+    nodecg.sendMessage('hello', 'Hi there!');
 };
 ```
 
 ```js
 // nodecg/bundles/my-bundle/extension.js
 module.exports = function(nodecg) {
-  nodecg.listenFor('hello', 'your-bundle', data => {
-    console.log(data); // => Will print "Hi there!"
-  });
+    nodecg.listenFor('hello', 'your-bundle', data => {
+        console.log(data); // => Will print "Hi there!"
+    });
 };
 ```
 
@@ -91,11 +91,11 @@ A side-effect of this change is that it is no longer guaranteed that a server-si
 ```js
 // nodecg/bundles/your-bundle
 module.exports = function(nodecg) {
-  nodecg.listenFor('example', (data, ack) => {
-    if (ack && !ack.handled) {
-      ack('foo');
-    }
-  });
+    nodecg.listenFor('example', (data, ack) => {
+        if (ack && !ack.handled) {
+            ack('foo');
+        }
+    });
 };
 ```
 

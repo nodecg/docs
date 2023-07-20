@@ -71,9 +71,9 @@ Example:
 ```js
 // nodecg/bundles/your-bundle/extension.js
 module.exports = nodecg => {
-  nodecg.listenFor('foo', () => {
-    console.log('bar');
-  });
+    nodecg.listenFor('foo', () => {
+        console.log('bar');
+    });
 };
 ```
 

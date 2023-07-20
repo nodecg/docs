@@ -20,7 +20,14 @@ Before continuing, you may find it helpful to look over our [collection of simpl
    yo nodecg
    ```
 
-   Answer the prompts one-by-one as they come up. If you wish to access the TypeScript boilerplate, just answer yes to the TypeScript prompt. If you wish to access the React boilerplate, first answer yes to the TypeScript prompt and then also answer yes to the React prompt (we currently have a TypeScript+React template but not a plain JavaScript+React template).
+   Answer the prompts one-by-one as they come up.  
+   - If you wish to access the TypeScript boilerplate, just answer yes to the TypeScript prompt.  
+   - If you wish to access the React boilerplate, first answer yes to the TypeScript prompt and then also answer yes to the React prompt (we currently have a TypeScript+React template but not a plain JavaScript+React template).
+
+   :::note
+   If you created the bundle with typescript (plain typescript or react) you have to compile the bundle using `npm run build` inside the `my-first-bundle` directory.  
+   (This is likely your issue if you see something like: `Error: my-first-bundle has a "nodecg.dashboardPanels" property in its package.json, but no "dashboard" folder` when trying to start nodecg)
+   :::
 
 2. If you generated your bundle with TypeScript, you can use the "dev" script to start NodeCG, automatically re-compile your code when it changes, and also automatically restart NodeCG when specifically server-side code changes (such as your extension):
 
@@ -36,9 +43,9 @@ Before continuing, you may find it helpful to look over our [collection of simpl
    nodecg start
    ```
 
-  :::note
-  When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
-  :::
+   :::note
+   When running NodeCG in production, [Docker](https://www.docker.com/) or [pm2](https://github.com/Unitech/pm2) are recommended.
+   :::
 
 3. Open the NodeCG Dashboard, which will be located at [http://localhost:9090](http://localhost:9090) by default. You should see a page like this:
 

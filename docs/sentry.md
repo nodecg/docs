@@ -13,10 +13,10 @@ Then, add the following to your instance's [NodeCG config](nodecg-configuration)
 
 ```json
 {
-  "sentry": {
-    "enabled": true,
-    "dsn": "your project's DSN, used as an API key to report errors"
-  }
+    "sentry": {
+        "enabled": true,
+        "dsn": "your project's DSN, used as an API key to report errors"
+    }
 }
 ```
 
