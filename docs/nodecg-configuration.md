@@ -113,30 +113,30 @@ module.exports = {
                 },
             ],
         },
-        logging: {
-            console: {
-                enabled: true,
-                timestamps: false,
-                level: 'verbose',
-                replicants: false,
-            },
-            file: {
-                enabled: true,
-                timestamps: true,
-                path: 'logs/server.log',
-                level: 'info',
-                replicants: false,
-            },
-        },
-        ssl: {
-            enabled: false,
-            keyPath: '',
-            certificatePath: '',
-        },
-        sentry: {
+    },
+    logging: {
+        console: {
             enabled: true,
-            dsn: 'https://xxx:yyy@sentry.io/zzz',
+            timestamps: false,
+            level: 'verbose',
+            replicants: false,
         },
+        file: {
+            enabled: true,
+            timestamps: true,
+            path: 'logs/server.log',
+            level: 'info',
+            replicants: false,
+        },
+    },
+    ssl: {
+        enabled: false,
+        keyPath: '',
+        certificatePath: '',
+    },
+    sentry: {
+        enabled: true,
+        dsn: 'https://xxx:yyy@sentry.io/zzz',
     },
 };
 ```
