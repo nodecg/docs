@@ -72,7 +72,7 @@ module.exports = function(nodecg) {
 
 ### Logger {#logger}
 
-_Object_
+Type: _Object_
 
 Provides easy access to the Logger class. Useful in cases where you want to create your own custom logger.
 
