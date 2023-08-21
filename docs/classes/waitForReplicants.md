@@ -14,9 +14,9 @@ This method is only useful in client-side code. Server-side code never has to wa
 
 ### Parameters {#parameters}
 
-|    Name    |    Type   | Description |
-| ---------- | --------- | ----------- |
-| replicants | Replicant |             |
+|    Name    |    Type   | Description                   |
+| ---------- | --------- | ----------------------------- |
+| replicants | Replicant | Replicant objects to wait for |
 
 ### Example {#example}
 

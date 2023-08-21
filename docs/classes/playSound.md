@@ -14,10 +14,10 @@ Plays the sound cue of the provided `cueName` in the current bundle. Does nothin
 
 ### Parameters {#parameters}
 
-| Name    | Type   | Attributes    | Description |
-| ------- | ------ | ------------- | ----------- |
-| cueName | String |               |             |
-| opts    | Object | &lt;optional> |             |
+| Name    | Type   | Attributes    | Description                        |
+| ------- | ------ | ------------- | ---------------------------------- |
+| cueName | String |               | Sound cue's name                   |
+| opts    | Object | &lt;optional> | [Options](#opts) for the sound cue |
 
 #### Opts {#opts}
 

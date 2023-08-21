@@ -6,13 +6,14 @@ module.exports = {
 			'manifest',
 			'nodecg-configuration',
 			'using-npm',
+			'extensions',
 			'bundle-configuration',
 			'assets',
 			'sounds',
 			'replicant-schemas',
 			'making-dialogs',
 			'portable-nodecg',
-			'working-on-nodecg-core'
+			'working-on-nodecg-core',
 		],
 		Advanced: [
 			'mounts', 

@@ -14,8 +14,8 @@ You may define multiple listenFor handlers for a given message. They will be cal
 
 ### Parameters {#parameters}
 
-| Name        | Type     | Attributes    | Default   | Description                                                  |
-| ----------- | -------- | ------------- | --------- | ------------------------------------------------------------ |
-| messageName | string   |               |           | The name of the message.                                     |
-| bundleName  | string   | &lt;optional> | CURR_BNDL | The bundle namespace to in which to listen for this message. |
-| handlerFunc | function |               |           | The callback fired when this message is received.            |
+| Name        | Type     | Attributes    | Default        | Description                                                  |
+| ----------- | -------- | ------------- | -------------- | ------------------------------------------------------------ |
+| messageName | string   |               |                | The name of the message.                                     |
+| bundleName  | string   | &lt;optional> | Current bundle | The bundle namespace to in which to listen for this message. |
+| handlerFunc | function |               |                | The callback fired when this message is received.            |

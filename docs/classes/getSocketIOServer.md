@@ -1,7 +1,7 @@
 ---
 id: getSocketIOServer
-title: getSocketIOServer()
-sidebar_label: getSocketIOServer()
+title: getSocketIOServer
+sidebar_label: getSocketIOServer
 ---
 
 :::important Extension Only

@@ -1,7 +1,7 @@
 ---
 id: mount
-title: mount()
-sidebar_label: mount()
+title: mount
+sidebar_label: mount
 ---
 
 :::important Extension Only

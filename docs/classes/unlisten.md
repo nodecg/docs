@@ -12,11 +12,11 @@ Messages are namespaced by bundle. To remove a listener to a message in another 
 
 ### Parameters {#parameters}
 
-| Name        | Type     | Attributes    | Default   | Description                                                                                          |
-| ----------- | -------- | ------------- | --------- | ---------------------------------------------------------------------------------------------------- |
-| messageName | string   |               |           | The name of the message.                                                                             |
-| bundleName  | string   | &lt;optional> | CURR_BNDL | The bundle namespace to in which to listen for this message                                          |
-| handlerFunc | function |               |           | A reference to a handler function added as a listener to this message via [listenFor](listenFor.md). |
+| Name        | Type     | Attributes    | Default        | Description                                                                                          |
+| ----------- | -------- | ------------- | -------------- | ---------------------------------------------------------------------------------------------------- |
+| messageName | string   |               |                | The name of the message.                                                                             |
+| bundleName  | string   | &lt;optional> | Current bundle | The bundle namespace to in which to listen for this message                                          |
+| handlerFunc | function |               |                | A reference to a handler function added as a listener to this message via [listenFor](listenFor.md). |
 
 ### Example {#example}
 

@@ -10,11 +10,11 @@ Reads the value of a replicant once, and doesn't create a subscription to it. Al
 
 ### Parameters {#parameters}
 
-| Name   | Type     | Attributes    | Default   | Description                                                                              |
-| ------ | -------- | ------------- | --------- | ---------------------------------------------------------------------------------------- |
-| name   | string   |               |           | The name of the replicant.                                                               |
-| bundle | string   | &lt;optional> | CURR_BNDL | The bundle namespace to in which to look for this replicant.                             |
-| cb     | function |               |           | _Browser only_ The callback that handles the server's response which contains the value. |
+| Name   | Type     | Attributes    | Default        | Description                                                                              |
+| ------ | -------- | ------------- | -------------- | ---------------------------------------------------------------------------------------- |
+| name   | string   |               |                | The name of the replicant.                                                               |
+| bundle | string   | &lt;optional> | Current bundle | The bundle namespace to in which to look for this replicant.                             |
+| cb     | function |               |                | _Browser only_ The callback that handles the server's response which contains the value. |
 
 ### Example {#example}
 

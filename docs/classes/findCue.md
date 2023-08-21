@@ -10,6 +10,6 @@ Returns the sound cue of the provided `cueName` in the current bundle. Returns u
 
 ### Parameters {#parameters}
 
-|  Name   |  Type  | Description |
-| ------- | ------ | ----------- |
-| cueName | String |             |
+|  Name   |  Type  | Description           |
+| ------- | ------ | --------------------- |
+| cueName | String | Name of the sound cue |
