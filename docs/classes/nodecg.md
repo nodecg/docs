@@ -29,7 +29,7 @@ Provides information about the current git status of this bundle, if found.
 
 #### Properties {#properties}
 
-|    Name   |  Type  |   Attribues   |                  Description                    |
+|    Name   |  Type  |  Attributes   |                  Description                    |
 | --------- | ------ | ------------- | ----------------------------------------------- |
 | branch    | String |               | What branch this bundle is on.                  |
 | hash      | String |               | The full hash of the commit this bundle is on.  |
@@ -53,8 +53,7 @@ This can only be used in code which runs on the server.
 
 Object containing references to all other loaded extensions. To access another bundle's extension, it must be declared as a bundleDependency in your bundle's manifest.
 
-```js
-// bundles/my-bundle/package.json
+```js title="bundles/my-bundle/package.json"
 {
     "name": "my-bundle"
     ...
@@ -62,15 +61,18 @@ Object containing references to all other loaded extensions. To access another b
         "other-bundle": "^1.0.0"
     }
 }
+```
 
-// bundles/my-bundle/extension.js
+```js title="bundles/my-bundle/extension.js"
 module.exports = function(nodecg) {
     const otherBundle = nodecg.extensions['other-bundle'];
     // Now I can use `otherBundle`!
 }
 ```
 
-### Logger _:Object_ {#logger}
+### Logger {#logger}
+
+_Object_
 
 Provides easy access to the Logger class. Useful in cases where you want to create your own custom logger.
 

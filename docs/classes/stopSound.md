@@ -14,6 +14,6 @@ Stops all currently playing instances of the provided `cueName`.
 
 ### Parameters {#parameters}
 
-| Name    | Type   | Description |
-| ------- | ------ | ----------- |
-| cueName | String |             |
+| Name    | Type   | Description      |
+| ------- | ------ | ---------------- |
+| cueName | String | Sound cue's name |

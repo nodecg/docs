@@ -1,10 +1,10 @@
 ---
 id: log
-title: log()
-sidebar_label: log()
+title: log
+sidebar_label: log
 ---
 
-`log()`
+`log`
 
 An instance of NodeCG's Logger, with the following methods. The logging level is set in cfg/nodecg.json, NodeCG's global config file.
 

@@ -1,7 +1,7 @@
 ---
 id: stopAllSounds
-title: stopAllSounds()
-sidebar_label: stopAllSounds()
+title: stopAllSounds
+sidebar_label: stopAllSounds
 ---
 
 :::important Browser Only

@@ -71,8 +71,7 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
 
 ### Example {#example} Config {#example}
 
-```js
-// cfg/nodecg.js
+```js title="cfg/nodecg.js"
 module.exports = {
     host: '0.0.0.0',
     port: 9090,

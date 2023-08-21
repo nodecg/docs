@@ -44,8 +44,7 @@ nodecg.sendMessage('printMessage', 'dope.');
 
 Sending a message and replying with an acknowledgement:
 
-```js
-// bundles/my-bundle/extension.js
+```js title="bundles/my-bundle/extension.js"
 module.exports = function(nodecg) {
     nodecg.listenFor('multiplyByTwo', (value, ack) => {
         if (value === 4) {
@@ -53,7 +52,7 @@ module.exports = function(nodecg) {
             return;
         }
 
-        // acknowledgements should always be error-first callbacks.
+        // Acknowledgements should always be error-first callbacks.
         // If you do not wish to send an error, use a falsey value
         // like "null" instead.
         if (ack && !ack.handled) {
@@ -61,9 +60,10 @@ module.exports = function(nodecg) {
         }
     });
 }
+```
 
-// bundles/my-bundle/graphics/script.js
-// Both of these examples are functionally identical.
+```js  title="bundles/my-bundle/graphics/script.js"
+/* Both of these examples are functionally identical. */
 
 // Promise acknowledgement
 nodecg.sendMessage('multiplyByTwo', 2)
