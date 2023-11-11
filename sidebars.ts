@@ -1,4 +1,6 @@
-module.exports = {
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
+
+const sidebars: SidebarsConfig = {
 	mainSidebar: {
 		'Quick Start': ['what-is-nodecg', 'installing', 'creating-bundles'],
 		Guides: [
@@ -59,3 +61,5 @@ module.exports = {
 		]
 	}
 };
+
+export default sidebars;

@@ -1,9 +1,9 @@
-// @ts-check
+import type { Config } from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
-const latestVersion = "2.1.0"
+const latestVersion = "2.1.11";
 
-/** @type {import('@docusaurus/types').Config} */
-module.exports = {
+const config: Config = {
   title: 'NodeCG',
   tagline: 'Create broadcast graphics using Node.js and a browser',
   url: 'https://nodecg.dev/',
@@ -12,7 +12,6 @@ module.exports = {
   organizationName: 'nodecg',
   projectName: 'docs',
   themeConfig: {
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     prism: {
       theme: require('./src/css/nodecg-light'),
       darkTheme: require('./src/css/nodecg-dark'),
@@ -96,11 +95,10 @@ module.exports = {
       copyright: 'Copyright (c) 2023 Alex Van Camp, Matthew McNamara, and contributors',
     },
     image: 'img/splash.png'
-  },
+  } satisfies Preset.ThemeConfig,
   presets: [
     [
       '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -112,7 +110,7 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
+      } satisfies Preset.Options,
     ],
   ],
   plugins: [require.resolve('./force-theme.js'), require.resolve('docusaurus-lunr-search')],
@@ -129,3 +127,5 @@ module.exports = {
   },
   clientModules: [require.resolve("./clientModule.js")]
 };
+
+export default config;

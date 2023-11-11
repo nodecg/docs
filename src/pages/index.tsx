@@ -1,5 +1,4 @@
-import React from "react";
-import classnames from "classnames";
+import clsx from 'clsx';
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -30,14 +29,14 @@ const features = [
 					HTML such as:
 				</Translate>
 				<div
-					className={classnames(
+					className={clsx(
 						"container-small",
 						styles.environments
 					)}
 				>
 					<div className="row">
 						<a
-							className={classnames(
+							className={clsx(
 								"col",
 								styles.environmentItem,
 								styles.shadow2
@@ -47,7 +46,7 @@ const features = [
 							OBS Studio
 						</a>
 						<a
-							className={classnames(
+							className={clsx(
 								"col",
 								styles.environmentItem,
 								styles.shadow2
@@ -59,7 +58,7 @@ const features = [
 					</div>
 					<div className="row">
 						<a
-							className={classnames(
+							className={clsx(
 								"col",
 								styles.environmentItem,
 								styles.shadow2
@@ -69,7 +68,7 @@ const features = [
 							xSplit
 						</a>
 						<a
-							className={classnames(
+							className={clsx(
 								"col",
 								styles.environmentItem,
 								styles.shadow2
@@ -107,7 +106,7 @@ const features = [
 function Feature({ imageUrl, title, description }) {
 	const imgUrl = useBaseUrl(imageUrl);
 	return (
-		<div className={classnames("col col--4", styles.feature)}>
+		<div className={clsx("col col--4", styles.feature)}>
 			{imgUrl && (
 				<div className="text--center">
 					<img
@@ -131,7 +130,7 @@ function Home() {
 			description="Browser-based broadcast graphics and controls"
 		>
 			<header
-				className={classnames("hero hero--primary", styles.heroBanner)}
+				className={clsx("hero hero--primary", styles.heroBanner)}
 			>
 				<div className="container">
 					<img alt="Splash" src="img/splash.png" />
@@ -143,7 +142,7 @@ function Home() {
 					</p>
 					<div className={styles.buttons}>
 						<Link
-							className={classnames(
+							className={clsx(
 								"button button--contained button--secondary button--lg",
 								styles.getStarted
 							)}
