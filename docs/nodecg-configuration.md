@@ -69,7 +69,7 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
   - `enabled` _Boolean_ Whether to enable Sentry error reporting. [DEFAULT: `false`]
   - `dsn` _String_ Your Sentry API key for error reporting. This option is required when `sentry.enabled = true`! [NO DEFAULT!]
 
-### Example {#example} Config {#example}
+### Example Config {#example}
 
 ```js title="cfg/nodecg.js"
 module.exports = {

@@ -257,7 +257,7 @@ To get a Discord role ID, enable Discord developer mode and then right click on 
 
 1. [Create/copy your Steam Web API Key](https://steamcommunity.com/dev/apikey)
 2. Obtain the SteamID64 string for each of the accounts you wish to allow.
-   - <https://steamid.io/> is one tool for looking these up.
+   - [steamid.io](https://steamid.io/) is one tool for looking these up.
 3. Configure your `nodecg/cfg/nodecg.json` as such:
 
 ```json

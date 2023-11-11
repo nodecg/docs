@@ -57,6 +57,7 @@ html[data-theme="dark"] {
 	--ifm-blockquote-color: #b7b7b7;
 	--ifm-color-info: #ffffff;
 	--ifm-table-border-color: #dadde1;
+	--ifm-breadcrumb-color-active: var(--nodecg-light-primary);
 }
 
 /* Info admonition colour */
