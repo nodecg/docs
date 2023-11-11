@@ -13,7 +13,46 @@
         <link href="https://nodecg.dev/ja/blog/2023/03/26/v2.1.0"/>
         <updated>2023-03-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Updates covering between 2.0.1 and 2.1.0]]></summary>
-        <content type="html"><![CDATA[<p>Updates covering between 2.0.1 and 2.1.0</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="#features" class="hash-link" aria-label="Features への直接リンク" title="Features への直接リンク">​</a></h2><ul><li>Smaller docker image <a href="https://github.com/nodecg/nodecg/issues/631" target="_blank" rel="noopener noreferrer">#631</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug fixes<a href="#bug-fixes" class="hash-link" aria-label="Bug fixes への直接リンク" title="Bug fixes への直接リンク">​</a></h2><ul><li>v2.0.1<ul><li>Remove package-lock.json from dependency files <a href="https://github.com/nodecg/nodecg/issues/620" target="_blank" rel="noopener noreferrer">#620</a></li><li>Fix docker file <a href="https://github.com/nodecg/nodecg/issues/617" target="_blank" rel="noopener noreferrer">#617</a></li></ul></li><li>v2.0.2<ul><li>Include templates in server build output <a href="https://github.com/nodecg/nodecg/issues/625" target="_blank" rel="noopener noreferrer">#625</a></li><li>Make node-fetch-commonjs a production dependency <a href="https://github.com/nodecg/nodecg/issues/623" target="_blank" rel="noopener noreferrer">#623</a></li></ul></li><li>v2.0.3<ul><li>Make @sentry/browser, @sentry/node, socket.io-client and tslib production dependencies <a href="https://github.com/nodecg/nodecg/issues/627" target="_blank" rel="noopener noreferrer">#627</a></li></ul></li><li>v2.0.4<ul><li>Fix authenticated URLs <a href="https://github.com/nodecg/nodecg/issues/629" target="_blank" rel="noopener noreferrer">#629</a></li></ul></li><li>v2.1.0<ul><li>Allow socket authentication with a token <a href="https://github.com/nodecg/nodecg/issues/635" target="_blank" rel="noopener noreferrer">#635</a></li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks-to">Thanks to<a href="#thanks-to" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2><ul><li><a href="https://github.com/alvancamp" target="_blank" rel="noopener noreferrer">Lange</a></li><li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Keiichiro Amemiya</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<p>Updates covering between 2.0.1 and 2.1.0</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://nodecg.dev/ja/blog/2023/03/26/v2.1.0#features" class="hash-link" aria-label="Features への直接リンク" title="Features への直接リンク">​</a></h2>
+<ul>
+<li>Smaller docker image <a href="https://github.com/nodecg/nodecg/issues/631" target="_blank" rel="noopener noreferrer">#631</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug fixes<a href="https://nodecg.dev/ja/blog/2023/03/26/v2.1.0#bug-fixes" class="hash-link" aria-label="Bug fixes への直接リンク" title="Bug fixes への直接リンク">​</a></h2>
+<ul>
+<li>v2.0.1<!-- -->
+<ul>
+<li>Remove package-lock.json from dependency files <a href="https://github.com/nodecg/nodecg/issues/620" target="_blank" rel="noopener noreferrer">#620</a></li>
+<li>Fix docker file <a href="https://github.com/nodecg/nodecg/issues/617" target="_blank" rel="noopener noreferrer">#617</a></li>
+</ul>
+</li>
+<li>v2.0.2<!-- -->
+<ul>
+<li>Include templates in server build output <a href="https://github.com/nodecg/nodecg/issues/625" target="_blank" rel="noopener noreferrer">#625</a></li>
+<li>Make node-fetch-commonjs a production dependency <a href="https://github.com/nodecg/nodecg/issues/623" target="_blank" rel="noopener noreferrer">#623</a></li>
+</ul>
+</li>
+<li>v2.0.3<!-- -->
+<ul>
+<li>Make @sentry/browser, @sentry/node, socket.io-client and tslib production dependencies <a href="https://github.com/nodecg/nodecg/issues/627" target="_blank" rel="noopener noreferrer">#627</a></li>
+</ul>
+</li>
+<li>v2.0.4<!-- -->
+<ul>
+<li>Fix authenticated URLs <a href="https://github.com/nodecg/nodecg/issues/629" target="_blank" rel="noopener noreferrer">#629</a></li>
+</ul>
+</li>
+<li>v2.1.0<!-- -->
+<ul>
+<li>Allow socket authentication with a token <a href="https://github.com/nodecg/nodecg/issues/635" target="_blank" rel="noopener noreferrer">#635</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks-to">Thanks to<a href="https://nodecg.dev/ja/blog/2023/03/26/v2.1.0#thanks-to" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2>
+<ul>
+<li><a href="https://github.com/alvancamp" target="_blank" rel="noopener noreferrer">Lange</a></li>
+<li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Keiichiro Amemiya</a></li>
+</ul>]]></content>
         <author>
             <name>Ewan Lyon</name>
             <email>ewan@ewanlyon.com</email>
@@ -27,7 +66,39 @@
         <link href="https://nodecg.dev/ja/blog/2023/03/23/v2.0.0"/>
         <updated>2023-03-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This has been in the making for a while now but the final checks are complete and NodeCG v2 has been released!]]></summary>
-        <content type="html"><![CDATA[<p>This has been in the making for a while now but the final checks are complete and NodeCG v2 has been released!</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="changed">What's changed?<a href="#changed" class="hash-link" aria-label="What's changed? への直接リンク" title="What's changed? への直接リンク">​</a></h2><p>For bundle developers? Nothing really... but in a good way. This means that bundles can be migrated over to v2 with little to no changes required. This update is more about making it easier for NodeCG core developers to develop new features that you can use in the future.</p><p>Please refer to the <a href="/ja/docs/migrating/migrating-1.x-to-2.x">migration docs</a> for more information and if you need any help please don't hesitate to reach out to the <a href="https://discord.com/invite/GJ4r8a8" target="_blank" rel="noopener noreferrer">Discord</a>!</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="typescript">TypeScript rewrite<a href="#typescript" class="hash-link" aria-label="TypeScript rewrite への直接リンク" title="TypeScript rewrite への直接リンク">​</a></h2><p>The biggest and most important change for NodeCG is that it is now written in TypeScript. This will greatly benefit developers of NodeCG core and also allow bundle developers to more easily use types through the <code>@nodecg/types</code> package.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="build">NodeCG repository now contains only source code<a href="#build" class="hash-link" aria-label="NodeCG repository now contains only source code への直接リンク" title="NodeCG repository now contains only source code への直接リンク">​</a></h2><p>NodeCG used to contain its build outputs in the repository. This was helpful at the time, since all that was needed was to install the dependencies and you were off to the races. However, in v2 this has changed. If you use <code>nodecg-cli</code>, make sure to download the latest version in order for v2 to install correctly (<code>npm i -g nodecg-cli@latest</code>). Developers who would clone manually must now install all dependencies (<code>npm i</code>) and run <code>npm run build</code> themselves.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="issues">Running into issues?<a href="#issues" class="hash-link" aria-label="Running into issues? への直接リンク" title="Running into issues? への直接リンク">​</a></h2><p>If you are having any issues at all with version 2, please post an <a href="https://github.com/nodecg/nodecg/issues" target="_blank" rel="noopener noreferrer">issue on our GitHub</a> or reach out to our <a href="https://discord.com/invite/GJ4r8a8" target="_blank" rel="noopener noreferrer">Discord</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="future">Future<a href="#future" class="hash-link" aria-label="Future への直接リンク" title="Future への直接リンク">​</a></h2><p>NodeCG waiting to be rewritten in TypeScript was a major blocker for new developments to the project. It was also a massive undertaking, which is why it took so long to develop.</p><p>Now that it's written in TypeScript we can start developing new features that have been long requested such as:</p><ul><li>Per-user permissions</li><li>Reworked project structure</li><li>Better bundle management</li><li>Internationalization</li><li>Updating the dashboard UI to React (will not affect bundles, just the internal code of the dashboard. You will never be forced to write your bundles in any specific framework.)</li><li>and more!</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks">Thanks to<a href="#thanks" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2><ul><li><a href="https://github.com/alvancamp" target="_blank" rel="noopener noreferrer">Lange</a> for lead development of v2</li><li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Keiichiro Amemiya</a> for assisting in direction and development of v2</li><li><a href="https://github.com/zoton2" target="_blank" rel="noopener noreferrer">zoton2</a> for testing &amp; feedback</li><li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Ewan Lyon</a> for testing &amp; feedback</li><li><a href="https://github.com/daniel0611" target="_blank" rel="noopener noreferrer">Daniel</a> for testing &amp; feedback</li><li><a href="https://github.com/Dan-Shields" target="_blank" rel="noopener noreferrer">Dan Shields</a> for fixes &amp; feedback</li><li><a href="https://github.com/faultyserver" target="_blank" rel="noopener noreferrer">Jon Egeland</a> for major contributions to the architecture of the code</li><li><a href="https://github.com/DomHynes" target="_blank" rel="noopener noreferrer">Dom Hynes</a> for fixes &amp; feedback</li><li>The NodeCG community for their patience and support during this time</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>This has been in the making for a while now but the final checks are complete and NodeCG v2 has been released!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changed">What's changed?<a href="https://nodecg.dev/ja/blog/2023/03/23/v2.0.0#changed" class="hash-link" aria-label="What's changed? への直接リンク" title="What's changed? への直接リンク">​</a></h2>
+<p>For bundle developers? Nothing really... but in a good way. This means that bundles can be migrated over to v2 with little to no changes required. This update is more about making it easier for NodeCG core developers to develop new features that you can use in the future.</p>
+<p>Please refer to the <a href="https://nodecg.dev/ja/docs/migrating/migrating-1.x-to-2.x">migration docs</a> for more information and if you need any help please don't hesitate to reach out to the <a href="https://discord.com/invite/GJ4r8a8" target="_blank" rel="noopener noreferrer">Discord</a>!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="typescript">TypeScript rewrite<a href="https://nodecg.dev/ja/blog/2023/03/23/v2.0.0#typescript" class="hash-link" aria-label="TypeScript rewrite への直接リンク" title="TypeScript rewrite への直接リンク">​</a></h2>
+<p>The biggest and most important change for NodeCG is that it is now written in TypeScript. This will greatly benefit developers of NodeCG core and also allow bundle developers to more easily use types through the <code>@nodecg/types</code> package.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="build">NodeCG repository now contains only source code<a href="https://nodecg.dev/ja/blog/2023/03/23/v2.0.0#build" class="hash-link" aria-label="NodeCG repository now contains only source code への直接リンク" title="NodeCG repository now contains only source code への直接リンク">​</a></h2>
+<p>NodeCG used to contain its build outputs in the repository. This was helpful at the time, since all that was needed was to install the dependencies and you were off to the races. However, in v2 this has changed. If you use <code>nodecg-cli</code>, make sure to download the latest version in order for v2 to install correctly (<code>npm i -g nodecg-cli@latest</code>). Developers who would clone manually must now install all dependencies (<code>npm i</code>) and run <code>npm run build</code> themselves.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="issues">Running into issues?<a href="https://nodecg.dev/ja/blog/2023/03/23/v2.0.0#issues" class="hash-link" aria-label="Running into issues? への直接リンク" title="Running into issues? への直接リンク">​</a></h2>
+<p>If you are having any issues at all with version 2, please post an <a href="https://github.com/nodecg/nodecg/issues" target="_blank" rel="noopener noreferrer">issue on our GitHub</a> or reach out to our <a href="https://discord.com/invite/GJ4r8a8" target="_blank" rel="noopener noreferrer">Discord</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future">Future<a href="https://nodecg.dev/ja/blog/2023/03/23/v2.0.0#future" class="hash-link" aria-label="Future への直接リンク" title="Future への直接リンク">​</a></h2>
+<p>NodeCG waiting to be rewritten in TypeScript was a major blocker for new developments to the project. It was also a massive undertaking, which is why it took so long to develop.</p>
+<p>Now that it's written in TypeScript we can start developing new features that have been long requested such as:</p>
+<ul>
+<li>Per-user permissions</li>
+<li>Reworked project structure</li>
+<li>Better bundle management</li>
+<li>Internationalization</li>
+<li>Updating the dashboard UI to React (will not affect bundles, just the internal code of the dashboard. You will never be forced to write your bundles in any specific framework.)</li>
+<li>and more!</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks">Thanks to<a href="https://nodecg.dev/ja/blog/2023/03/23/v2.0.0#thanks" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2>
+<ul>
+<li><a href="https://github.com/alvancamp" target="_blank" rel="noopener noreferrer">Lange</a> for lead development of v2</li>
+<li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Keiichiro Amemiya</a> for assisting in direction and development of v2</li>
+<li><a href="https://github.com/zoton2" target="_blank" rel="noopener noreferrer">zoton2</a> for testing &amp; feedback</li>
+<li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Ewan Lyon</a> for testing &amp; feedback</li>
+<li><a href="https://github.com/daniel0611" target="_blank" rel="noopener noreferrer">Daniel</a> for testing &amp; feedback</li>
+<li><a href="https://github.com/Dan-Shields" target="_blank" rel="noopener noreferrer">Dan Shields</a> for fixes &amp; feedback</li>
+<li><a href="https://github.com/faultyserver" target="_blank" rel="noopener noreferrer">Jon Egeland</a> for major contributions to the architecture of the code</li>
+<li><a href="https://github.com/DomHynes" target="_blank" rel="noopener noreferrer">Dom Hynes</a> for fixes &amp; feedback</li>
+<li>The NodeCG community for their patience and support during this time</li>
+</ul>]]></content>
         <author>
             <name>Ewan Lyon</name>
             <uri>https://github.com/EwanLyon</uri>
@@ -41,8 +112,18 @@
         <link href="https://nodecg.dev/ja/blog/2020/02/26/New-Docs"/>
         <updated>2020-02-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Docusaurus goes roar!]]></summary>
-        <content type="html"><![CDATA[<p>Docusaurus goes roar!</p><p>After all those years of JSDocs we have moved on to using <a href="https://v2.docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>!</p><p>This will allow us to give much more information in a clear manner as well as giving a better introduction to what NodeCG is.
-Expect to see the docs change a bit as we go through and make sure everything makes sense and looks good.</p><p>Docs <a href="https://github.com/nodecg/docs" target="_blank" rel="noopener noreferrer">GitHub</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks">Thanks to<a href="#thanks" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2><ul><li>Everyone on the NodeCG discord for testing</li><li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Ewan Lyon</a></li><li><a href="https://github.com/Lange" target="_blank" rel="noopener noreferrer">Lange</a></li></ul><p>for making this update happen!</p>]]></content>
+        <content type="html"><![CDATA[<p>Docusaurus goes roar!</p>
+<p>After all those years of JSDocs we have moved on to using <a href="https://v2.docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>!</p>
+<p>This will allow us to give much more information in a clear manner as well as giving a better introduction to what NodeCG is.
+Expect to see the docs change a bit as we go through and make sure everything makes sense and looks good.</p>
+<p>Docs <a href="https://github.com/nodecg/docs" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks">Thanks to<a href="https://nodecg.dev/ja/blog/2020/02/26/New-Docs#thanks" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2>
+<ul>
+<li>Everyone on the NodeCG discord for testing</li>
+<li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Ewan Lyon</a></li>
+<li><a href="https://github.com/Lange" target="_blank" rel="noopener noreferrer">Lange</a></li>
+</ul>
+<p>for making this update happen!</p>]]></content>
         <author>
             <name>Ewan Lyon</name>
             <uri>https://github.com/EwanLyon</uri>
@@ -56,7 +137,35 @@ Expect to see the docs change a bit as we go through and make sure everything ma
         <link href="https://nodecg.dev/ja/blog/2020/02/25/v1.6.0"/>
         <updated>2020-02-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Minor version bump.]]></summary>
-        <content type="html"><![CDATA[<p>Minor version bump.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="new">New<a href="#new" class="hash-link" aria-label="New への直接リンク" title="New への直接リンク">​</a></h2><ul><li>Docs now get automatically built <em>(old jsdocs)</em></li><li>Flexible mounts</li><li>Expose NodeCG router</li><li>p5.js Tutorial</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="update">Update<a href="#update" class="hash-link" aria-label="Update への直接リンク" title="Update への直接リンク">​</a></h2><ul><li>Docket now on Node 10</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="fix">Fix<a href="#fix" class="hash-link" aria-label="Fix への直接リンク" title="Fix への直接リンク">​</a></h2><ul><li>Check if bundle package.json has version</li><li>Typo in replicants description <em>(objcts → objects)</em></li><li>Clone replicant default value</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks">Thanks to<a href="#thanks" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to への直接リンク">​</a></h2><ul><li><a href="https://github.com/Seldszar" target="_blank" rel="noopener noreferrer">Seldszar</a></li><li><a href="https://github.com/Dan-Shields" target="_blank" rel="noopener noreferrer">Dan-Shields</a></li><li><a href="https://github.com/VodBox" target="_blank" rel="noopener noreferrer">VodBox</a></li><li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Ewan Lyon</a></li><li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Hoishin</a></li><li><a href="https://github.com/Lange" target="_blank" rel="noopener noreferrer">Lange</a></li></ul><p>for making this update happen!</p><p><strong>Version comparison <a href="https://github.com/nodecg/nodecg/compare/v1.5.0...v1.6.0" target="_blank" rel="noopener noreferrer">here</a></strong></p>]]></content>
+        <content type="html"><![CDATA[<p>Minor version bump.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new">New<a href="https://nodecg.dev/ja/blog/2020/02/25/v1.6.0#new" class="hash-link" aria-label="New への直接リンク" title="New への直接リンク">​</a></h2>
+<ul>
+<li>Docs now get automatically built <em>(old jsdocs)</em></li>
+<li>Flexible mounts</li>
+<li>Expose NodeCG router</li>
+<li>p5.js Tutorial</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="update">Update<a href="https://nodecg.dev/ja/blog/2020/02/25/v1.6.0#update" class="hash-link" aria-label="Update への直接リンク" title="Update への直接リンク">​</a></h2>
+<ul>
+<li>Docket now on Node 10</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fix">Fix<a href="https://nodecg.dev/ja/blog/2020/02/25/v1.6.0#fix" class="hash-link" aria-label="Fix への直接リンク" title="Fix への直接リンク">​</a></h2>
+<ul>
+<li>Check if bundle package.json has version</li>
+<li>Typo in replicants description <em>(objcts → objects)</em></li>
+<li>Clone replicant default value</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="thanks">Thanks to<a href="https://nodecg.dev/ja/blog/2020/02/25/v1.6.0#thanks" class="hash-link" aria-label="Thanks to への直接リンク" title="Thanks to へ�の直接リンク">​</a></h2>
+<ul>
+<li><a href="https://github.com/Seldszar" target="_blank" rel="noopener noreferrer">Seldszar</a></li>
+<li><a href="https://github.com/Dan-Shields" target="_blank" rel="noopener noreferrer">Dan-Shields</a></li>
+<li><a href="https://github.com/VodBox" target="_blank" rel="noopener noreferrer">VodBox</a></li>
+<li><a href="https://github.com/EwanLyon" target="_blank" rel="noopener noreferrer">Ewan Lyon</a></li>
+<li><a href="https://github.com/Hoishin" target="_blank" rel="noopener noreferrer">Hoishin</a></li>
+<li><a href="https://github.com/Lange" target="_blank" rel="noopener noreferrer">Lange</a></li>
+</ul>
+<p>for making this update happen!</p>
+<p><strong>Version comparison <a href="https://github.com/nodecg/nodecg/compare/v1.5.0...v1.6.0" target="_blank" rel="noopener noreferrer">here</a></strong></p>]]></content>
         <author>
             <name>Ewan Lyon</name>
             <uri>https://github.com/EwanLyon</uri>
