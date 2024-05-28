@@ -15,6 +15,9 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
 - `logging` _Object_ Contains other configuration properties.
   - `console` _Object_ Contains properties for console logging.
     - `enabled` _Boolean_ Whether to enable console logging. [DEFAULT: `true`]
+    - `level` _String_ Lowest importance of messages which should be logged. Must be `"verbose"`, `"debug"`, `"info"`, `"warn"` or `"error"` [DEFAULT: `"info"`]
+    - `timestamps` _Boolean_ Whether to add timestamps to the console logging. [DEFAULT: `true`]
+    - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy. [DEFAULT: `false`]
   - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy. [DEFAULT: `false`]
     - `timestamps` _Boolean_ Whether to add timestamps to the console logging. [DEFAULT: `true`]
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"verbose"`, `"debug"`, `"info"`, `"warn"` or `"error"` [DEFAULT: `"info"`]
@@ -22,8 +25,8 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
     - `enabled` _Boolean_ Whether to enable file logging. [DEFAULT: `false`]
     - `replicants` _Boolean_ Whether to enable logging of the Replicants subsystem. Very spammy. [DEFAULT: `false`]
     - `timestamps` _Boolean_ Whether to add timestamps to the file logging. [DEFAULT: `true`]
-    - `path` _String_ The filepath to log to. [DEFAULT: `"logs/nodecg.log"`]
     - `level` _String_ Lowest importance of messages which should be logged. Must be `"verbose"`, `"debug"`, `"info"`, `"warn"` or `"error"` [DEFAULT: `"info"`]
+    - `path` _String_ The filepath to log to. [DEFAULT: `"logs/nodecg.log"`]
 - `bundles` _Object_ Contains configuration for bundles.
   - `enabled` _Array of strings_ A whitelist array of bundle names that will be the only ones loaded at startup. Cannot be used with `bundles.disabled`. [DEFAULT: `null` -> this bundle whitelist feature is disabled -> load all bundles]
   - `disabled` _Array of strings_ A blacklist array of bundle names that will not be loaded at startup. Cannot be used with `bundles.enabled`. [DEFAULT: `null` -> no bundle blacklisted from loading / all bundles are loaded]
