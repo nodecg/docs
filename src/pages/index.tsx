@@ -129,6 +129,10 @@ function Home() {
 			title={`Broadcast Graphics`}
 			description="Browser-based broadcast graphics and controls"
 		>
+			<div className={styles.banner}>
+				<img src="/img/Flag_of_Palestine.svg" alt="Flag of Palestine" className={styles.flag} />
+				We stand in solidarity with Palestinian people
+			</div>
 			<header
 				className={clsx("hero hero--primary", styles.heroBanner)}
 			>
