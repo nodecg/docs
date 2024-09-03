@@ -44,10 +44,10 @@ NodeCG is configured via a `cfg/nodecg.js`, `cfg/nodecg.yaml`, or `cfg/nodecg.js
     - `allowedIds` _Array of strings_ Which 64 bit Steam IDs to allow. Can be obtained from [https://steamid.io/](https://steamid.io/). This option is required when `login.steam.enabled = true`! [NO DEFAULT!]
   - `twitch` _Object_ Contains twitch login configuration properties.
     - `enabled` _Boolean_ Whether to enable Twitch authentication. [DEFAULT: `false`]
-    - `clientID` _String_ A Twitch application ClientID [http://twitch.tv/kraken/oauth2/clients/new](http://twitch.tv/kraken/oauth2/clients/new). This option is required when `login.twitch.enabled = true`! [NO DEFAULT!]
-    - `clientSecret` _String_ A Twitch application ClientSecret [http://twitch.tv/kraken/oauth2/clients/new](http://twitch.tv/kraken/oauth2/clients/new). This option is required when `login.twitch.enabled = true`! [NO DEFAULT!]
+    - `clientID` _String_ A Twitch application ClientID [https://dev.twitch.tv/console/apps/create](https://dev.twitch.tv/console/apps/create). This option is required when `login.twitch.enabled = true`! [NO DEFAULT!]
+    - `clientSecret` _String_ A Twitch application ClientSecret [https://dev.twitch.tv/console/apps/create](https://dev.twitch.tv/console/apps/create). This option is required when `login.twitch.enabled = true`! [NO DEFAULT!]
     - _Note:_ Configure your Twitch OAuth credentials with a Redirect URI to `{baseURL}/login/auth/twitch`
-    - `scope` _String_ A space-separated string of Twitch application [permissions](https://dev.twitch.tv/docs/authentication/#scopes). [DEFAULT: `"user_read"`]
+    - `scope` _String_ A space-separated string of Twitch scopes [permissions](https://dev.twitch.tv/docs/authentication/#scopes). [DEFAULT: `"user:read:email"`]
     - `allowedUsernames` _Array of strings_ Which Twitch usernames to allow. Either this option or `allowedIds` is required when `login.twitch.enabled = true`! [NO DEFAULT!]
     - `allowedIds` _Array of strings_ Which Twitch IDs to allow. Can be obtained from [https://twitchinsights.net/checkuser](https://twitchinsights.net/checkuser). Either this option or `allowedUsernames` is required when `login.twitch.enabled = true`! [NO DEFAULT!]
   - `discord` _Object_ Contains discord login configuration properties.
@@ -94,7 +94,7 @@ module.exports = {
             enabled: true,
             clientID: 'your_app_id',
             clientSecret: 'your_app_key',
-            scope: 'user_read',
+            scope: 'user:read:email',
             allowedUsernames: ['some_username'],
             allowedIds: ['11111111111111111', '22222222222222222'],
         },
