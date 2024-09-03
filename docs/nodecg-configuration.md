@@ -92,8 +92,8 @@ module.exports = {
         },
         twitch: {
             enabled: true,
-            clientID: 'your_app_id',
-            clientSecret: 'your_app_key',
+            clientID: 'your_twitch_app_client_id',
+            clientSecret: 'your_twitch_app_client_secret',
             scope: 'user:read:email',
             allowedUsernames: ['some_username'],
             allowedIds: ['11111111111111111', '22222222222222222'],
