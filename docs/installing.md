@@ -8,7 +8,7 @@ sidebar_label: Installing
 
 There are two methods to install NodeCG: cloning from GitHub or using the [nodecg-cli](https://github.com/nodecg/nodecg-cli).
 
-Install [Node.js (version 18)](http://nodejs.org/).  
+Install [Node.js (version 22)](http://nodejs.org/).  
 
 Using [nodecg-cli](https://github.com/nodecg/nodecg-cli):
 
@@ -51,7 +51,7 @@ terminal commands.
 ### GitHub {#installing-bundles-github}
 
 ```bash
-nodecg install lange/lange-notify
+nodecg install username/repo-name
 ```
 
 ### BitBucket {#installing-bundles-bitbucket}
