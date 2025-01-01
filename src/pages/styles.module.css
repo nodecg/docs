@@ -4,65 +4,114 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+	padding: 4rem 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+	.heroBanner {
+		padding: 2rem;
+	}
+}
+
+.banner {
+	position: relative;
+	display: grid;
+	font-weight: bold;
+	text-align: center;
+	display: grid;
+	grid-template-rows: repeat(3, 20px);
+	font-size: 15px;
+
+	& > div {
+		display: grid;
+		place-content: center;
+	}
+
+	& > .top {
+		grid-row: 1 / 2;
+		grid-column: 1 / -1;
+		background-color: #000000;
+		color: white;
+	}
+	& > .center {
+		grid-row: 2 / 3;
+		grid-column: 1 / -1;
+		background-color: #ffffff;
+		color: black;
+	}
+	& > .bottom {
+		grid-row: 3 / 4;
+		grid-column: 1 / -1;
+		background-color: #009736;
+		color: white;
+	}
+
+	& > .bannerTriangle {
+		grid-row: 1 / -1;
+		grid-column: 1 / 2;
+		justify-self: start;
+	}
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 2rem 0;
+	width: 100%;
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+	height: 200px;
+	width: 200px;
 }
 
 .environments {
-  width: 75%;
-  margin: auto;
-  margin-top: 0.5rem;
+	width: 75%;
+	margin: auto;
+	margin-top: 0.5rem;
 }
 
 .environmentItem {
-  background: var(--nodecg-background-secondary);
-  margin: 0.2rem;
-  margin-bottom: 0.1rem;
-  padding: 0.2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  color: #11e2d8;
+	background: var(--nodecg-background-secondary);
+	margin: 0.2rem;
+	margin-bottom: 0.1rem;
+	padding: 0.2rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-align: center;
+	color: #11e2d8;
 }
 
 .environmentItem:hover {
-  color: #00b9b0;
+	color: #00b9b0;
 }
 
 .shadow1 {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+	box-shadow:
+		0px 1px 3px rgba(0, 0, 0, 0.2),
+		0px 2px 1px rgba(0, 0, 0, 0.12),
+		0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .shadow2 {
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.14);
+	box-shadow:
+		0px 1px 5px rgba(0, 0, 0, 0.2),
+		0px 3px 1px rgba(0, 0, 0, 0.12),
+		0px 2px 2px rgba(0, 0, 0, 0.14);
 }
 
 .shadow4 {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
+	box-shadow:
+		0px 2px 4px rgba(0, 0, 0, 0.2),
+		0px 1px 10px rgba(0, 0, 0, 0.12),
+		0px 4px 5px rgba(0, 0, 0, 0.14);
 }
