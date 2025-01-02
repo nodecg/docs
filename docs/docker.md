@@ -55,12 +55,8 @@ Example Dockerfile:
 
 ```docker
 # Specifies the base image to build on top of.
-# This base image includes nodecg-cli, so you don't need to install it separately.
 # It also creates a nodecg user with appropriate permissions.
 FROM ghcr.io/nodecg/nodecg:latest
-
-# Switches to the nodecg user created by the base image.
-USER nodecg
 
 # This is one way to install a bundle and generate a config for it.
 # You may need to take a different approach depending on your use case.
@@ -72,19 +68,19 @@ RUN nodecg install [bundle-repo] && nodecg defaultconfig [bundle-name]
 # The drawbacks are that you cannot easily change this config once it is in the container and that anyone with access to the docker image will have access to the secrets in the configuration files.
 # If you don't want to put your configuration inside the image, then use the volume mounting approach outlined in the Simple Deployment section above.
 # If you use a *.yaml or *.js config file, be sure to edit this command to reflect that.
-COPY --chown=nodecg:nodecg ./cfg/nodecg.json /opt/nodecg/cfg/nodecg.json
+COPY ./cfg/nodecg.json /opt/nodecg/cfg/nodecg.json
 
 # The principles outlined above apply to any file that is part of your NodeCG deployment: you can either put it in the container or you can mount it from a volume. The base nodecg/nodecg Docker image already defines volume mount points for the cfg, bundles, logs, db, and assets directories. It is recommended that you mount logs, db, and assets as volumes so that NodeCG can persist data in those folders to the host filesystem, meaning that they will be carried over when you update your Docker image and redeploy. For the cfg and bundles directories, it is up to you whether you want to bake them into your image or if you want to mount them as volumes.
 
 # This is how you'd copy a specific bundle from the build directory into your image:
-COPY --chown=nodecg:nodecg ./bundles/example-bundle /opt/nodecg/bundles/example-bundle
+COPY ./bundles/example-bundle /opt/nodecg/bundles/example-bundle
 
 # This is how you'd copy all bundles from the build directory into your image:
-COPY --chown=nodecg:nodecg ./bundles /opt/nodecg/bundles
+COPY ./bundles /opt/nodecg/bundles
 
 # This is how you'd copy all config files fmr the build directory into your image:
 # Again, be warned that anyone with access to this image will be able to read the secrets from these files.
-COPY --chown=nodecg:nodecg ./cfg /opt/nodecg/cfg
+COPY ./cfg /opt/nodecg/cfg
 
 ```
 

@@ -6,14 +6,14 @@ sidebar_label: Installing
 
 ## Install {#install}
 
-There are two methods to install NodeCG: cloning from GitHub or using the [nodecg-cli](https://github.com/nodecg/nodecg-cli).
+There are two methods to install NodeCG: cloning from GitHub or using the CLI.
 
-Install [Node.js (version 22)](http://nodejs.org/).  
+Install [Node.js (version 22)](http://nodejs.org/).
 
-Using [nodecg-cli](https://github.com/nodecg/nodecg-cli):
+Using the CLI:
 
 ```bash
-npm install --global nodecg-cli@latest
+npm install --global nodecg@latest
 mkdir nodecg
 cd nodecg
 nodecg setup
@@ -41,12 +41,9 @@ When running NodeCG in production, [Docker](docker) or [pm2](https://github.com/
 
 ## Installing bundles {#installing-bundles}
 
-NodeCG's individual graphics packages are called _bundles_. They can be installed either from the command-line
-(via [_nodecg-cli_](https://www.npmjs.com/package/nodecg-cli)), or by simply placing the folder into the `./bundles` directory.
+NodeCG's individual graphics packages are called _bundles_. They can be installed either from the command-line (via CLI), or by simply placing the folder into the `./bundles` directory.
 
-The easiest way to install bundles is via the command-line using [nodecg-cli](https://www.npmjs.com/package/nodecg-cli).
-You will need to install [nodecg-cli](https://www.npmjs.com/package/nodecg-cli) before you can use the `nodecg`
-terminal commands.
+The easiest way to install bundles is via the command-line.
 
 ### GitHub {#installing-bundles-github}
 

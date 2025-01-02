@@ -36,7 +36,7 @@ Before continuing, you may find it helpful to look over our [collection of simpl
    npm run dev
    ```
 
-   Else, you can start NodeCG the old-fashioned way with `nodecg-cli`:
+   Else, you can start NodeCG the old-fashioned way with the CLI:
 
    ```bash
    cd ../..
