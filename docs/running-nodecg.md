@@ -7,7 +7,7 @@ sidebar_label: Running
 ## Usage {#usage}
 
 - Install a bundle to the `bundles` folder.
-- Start NodeCG (`node index.js` or `nodecg start` if you have [nodecg-cli](https://www.npmjs.com/package/nodecg-cli) installed).
+- Start NodeCG (`node index.js` or `nodecg start` if you have installed `nodecg` globally).
 - Open the dashboard (`http://localhost:9090` by default).
 - Open a graphic from the "Graphics" menu.
 - You can configure NodeCG by creating and editing [cfg/nodecg.json](/docs/nodecg-configuration).
