@@ -2,7 +2,7 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
 	mainSidebar: {
-		'Quick Start': ['what-is-nodecg', 'installing', 'creating-bundles'],
+		'Quick Start': ['what-is-nodecg', 'installing', 'installing-new', 'creating-bundles'],
 		Guides: [
 			'concepts-and-terminology',
 			'manifest',

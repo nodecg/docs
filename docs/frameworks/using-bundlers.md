@@ -97,23 +97,10 @@ missing packages for you if there is any.
 
 ```bash
 npm install --save-dev parcel-bundler
-# or
-yarn add -D parcel-bundler
 ```
 
 The `parcel` command will be available locally. You can run it either adding
-npm scripts, or `npx parcel`/`yarn parcel`.
-
-##### Globally {#parcel-add-global}
-
-```bash
-npm install -g parcel-bundler
-# or
-yarn global add parcel-bundler
-```
-
-With this, `parcel` command should be available globally. Just run `parcel` to
-run the bundler.
+npm scripts, or `npx parcel`
 
 #### Make an entrypoint {#parcel-entrypoint}
 
