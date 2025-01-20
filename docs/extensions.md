@@ -44,7 +44,7 @@ To make programming easier we split different functionality into different files
 ### Utility script
 
 ```typescript title="nodecg-api-context.ts"
-import type NodeCG from '@nodecg/types';
+import type NodeCG from 'nodecg/types';
 
 let context: NodeCG.ServerAPI;
 
@@ -58,7 +58,7 @@ export function set(ctx: NodeCG.ServerAPI) {
 ```
 
 ```typescript title="index.ts"
-import type NodeCG from '@nodecg/types';
+import type NodeCG from 'nodecg/types';
 import * as nodecgApiContext from './nodecg-api-context';
 
 let ncgConfig: NodeCG.ServerAPI<ConfigSchema>['bundleConfig'];
@@ -92,7 +92,7 @@ nodecg.Replicant<string>('test-replicant');
 ### Have each extension export a function to call
 
 ```typescript title="example.ts"
-import type NodeCG from '@nodecg/types';
+import type NodeCG from 'nodecg/types';
 
 export const test = (nodecg: NodeCG) => {
     nodecg.Replicant<string>('test-replicant');
@@ -100,7 +100,7 @@ export const test = (nodecg: NodeCG) => {
 ```
 
 ```typescript title="index.ts"
-import type NodeCG from '@nodecg/types';
+import type NodeCG from 'nodecg/types';
 
 import { test } from "./example";
 
