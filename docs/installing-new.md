@@ -9,7 +9,7 @@ In this new way, NodeCG is installed as a dependency of your project,
 instead of including your project in the NodeCG's bundles directory.
 
 This simplifies the process of creating and managing NodeCG projects
-by directly managing NodeCG version as a npm dependency.
+by directly managing NodeCG version as an npm dependency.
 
 You can still use the old way of using NodeCG, but will be deprecated in the future.
 
@@ -35,7 +35,7 @@ If you have an existing NodeCG projects that run inside NodeCG's bundles directo
 you can migrate to the new structure by following these steps:
 
 1. If you run multiple bundles, choose one of them to be the main project.
-1. Move the main bundle as a independent project root.
+1. Move the main bundle as an independent project root.
 1. Install NodeCG as a dependency of the main project by running `npm install nodecg`.
 1. Move the other bundles to the `bundles` directory in the main project root.
 1. Move the following directories from the previous NodeCG root:
