@@ -1,7 +1,7 @@
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const latestVersion = "2.1.11";
+const latestVersion = "2.6.0";
 
 const config: Config = {
   title: 'NodeCG',
