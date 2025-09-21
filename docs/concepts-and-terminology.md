@@ -27,6 +27,10 @@ Graphics are defined in your bundle's `package.json` file, in the `nodecg.graphi
 - `singleInstance`, an optional property, that only allows your graphic to be open in one place at a time.
   - This is useful in scenarios where your graphic has fragile or highly stateful logic.
   - Ideally, you'd never need to use `singleInstance`. However, it is sometimes hard to avoid, and can be the fastest route to shipping a complex graphic.
+- `name`, optional, a custom display name.
+- `description`, optional, text that displays below the graphic
+- `group`, optional, what sub-group the graphic should be in. (Graphics are already grouped by bundle).
+- `order`, optional, a number which determines where the graphic should be in the list
 
 ### Related Docs {#graphics-manifest}
 
@@ -51,6 +55,7 @@ The dashboard is where all your controls for your graphics end up. Each panel is
   - Each `fullbleed` panel gets its own dedicated workspace.
 - `dialog`, an optional property, that will turn the panel into a dialog that other panels are able to open.
 - `dialogButtons`, an optional property, that will show buttons for `confirm`, `dismiss`, or both on the dialog.
+- `workspaceOrder`, an optional property, that sets the order of the workspace as it appears in the tab list.
 
 ### Related Docs {#dashboard-manifest}
 
