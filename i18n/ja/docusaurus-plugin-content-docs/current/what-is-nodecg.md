@@ -6,7 +6,7 @@ sidebar_label: NodeCG
 
 [![NodeCG](https://raw.githubusercontent.com/nodecg/nodecg/master/media/splash.png)](/)
 
-[![Discord](https://img.shields.io/discord/754749209722486814.svg?logo=discord)](https://discord.com/invite/GJ4r8a8)
+[![Discord](https://img.shields.io/discord/754749209722486814.svg?logo=discord)](https://discord.com/invite/nsXXDFGBEt)
 [![Build Status](https://github.com/nodecg/nodecg/workflows/CI/badge.svg)](https://github.com/nodecg/nodecg/actions?query=workflow%3ACI)
 [![Coverage Status](https://codecov.io/gh/nodecg/nodecg/branch/master/graph/badge.svg)](https://codecov.io/gh/nodecg/nodecg)
 [![Docker Build Status](https://ghcr-badge.egpl.dev/nodecg/nodecg/latest_tag)](https://ghcr.io/nodecg/nodecg)
@@ -23,7 +23,7 @@ NodeCG はブロードキャスト グラフィックス フレームワーク�
 Don't see your preferred streaming software on this list? NodeCG graphics require a modern browser engine. If your streaming software's implementation of browser source uses a recent-ish browser engine, chances are that NodeCG graphics will work in it. You can check what version your streaming software uses for its browser sources by opening [whatversion.net/chrome](https://www.whatversion.net/browser/) as a browser source.
 :::
 
-Have questions about NodeCG, or just want to say 'hi'? [Join our Discord server](https://discord.com/invite/GJ4r8a8)!
+Have questions about NodeCG, or just want to say 'hi'? [Join our Discord server](https://discord.com/invite/nsXXDFGBEt)!
 
 ## Goals
 
