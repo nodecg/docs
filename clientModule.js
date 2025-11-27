@@ -1,13 +1,13 @@
-/* 
-  a docusaurus client module. 
-  for docs see: https://docusaurus.io/docs/api/docusaurus-config#clientModules and https://docusaurus.io/docs/advanced/client#client-module-lifecycles 
+/*
+  a docusaurus client module.
+  for docs see: https://docusaurus.io/docs/api/docusaurus-config#clientModules and https://docusaurus.io/docs/advanced/client#client-module-lifecycles
 */
 
-const inviteId = "GJ4r8a8";
+const inviteId = "nsXXDFGBEt";
 let cachedResponse = undefined;
 
 // re-do on location change, because gets overridden again by theme default sometimes (when switching between / and /docs for example)
-//  so this actually re-triggers now on EVERY page change (even just switching between doc pages - would not be required but doesn't matter since it's cached) 
+//  so this actually re-triggers now on EVERY page change (even just switching between doc pages - would not be required but doesn't matter since it's cached)
 // Note: this also gets triggered on first load, so no special handling required
 export function onRouteDidUpdate({ location, previousLocation }) {
   // Don't execute if we are still on the same page; the lifecycle may be fired

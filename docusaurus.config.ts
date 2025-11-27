@@ -69,7 +69,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord (Stats loading...)',
-              href: 'https://discord.com/invite/GJ4r8a8',
+              href: 'https://discord.com/invite/nsXXDFGBEt',
               id: 'footer-discord-link'
             },
           ],
