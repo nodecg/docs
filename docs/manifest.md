@@ -118,11 +118,70 @@ less boilerplate.
 
 This field is only required if your bundle has dashboard panels.
 
+### Config {#dashboard-panel-config}
+
+| Name           | Type    | Attributes | Default | Description                                                                                                                                             |
+| -------------- | ------- | ---------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | string  |            |         | Internal name of the dashboard panel.                                                                                                                   |
+| title          | string  |            |         | Title of the dashboard panel as it appears in the NodeCG workspace.                                                                                     |
+| file           | string  |            |         | The location of the dashboard panel relative to "/dashboard".                                                                                           |
+| width          | number  | optional   | 2       | The width of the panel on the dashboard. Valid values are 1-8.                                                                                          |
+| headerColor    | string  | optional   |         | A hexadecimal color value that will change the color of the panel's header.                                                                             |
+| workspace      | string  | optional   |         | The name of the workspace the panel should be placed in. (Workspaces are shared between bundles).                                                       |
+| workspaceOrder | number  | optional   |         | A number which sets the order of the workspace as it appears in the tab list.                                                                           |
+| fullbleed      | boolean | optional   | false   | Whether or not the panel should be fullbleed in its own workspace.                                                                                      |
+| dialog         | boolean | optional   | false   | Whether or not the panel is a dialog.                                                                                                                   |
+| dialogButtons  | array   | optional   |         | An array of buttons to show on the dialog. Each button is an object with a `name` and `type` property. The `type` can be either `confirm` or `dismiss`. |
+
+### Example {#dashboard-panels-example}
+
+```json
+"dashboardPanels": [
+    {
+        "name": "sample-panel",
+        "title": "Sample Panel",
+        "file": "sample-panel.html",
+        "width": 2,
+        "headerColor": "#2d4e8a",
+        "workspace": "My Workspace",
+        "workspaceOrder": 1
+    },
+]
+```
+
 ## nodecg.graphics {#graphics}
 
 An array of objects, each object describing a graphic.
-Each graphic must have a `file`, `width`, and `height`. `file` is relative to the bundle's `graphics` folder.
-If you wish to enforce that your graphic only ever be open in one place at a time, set `singleInstance` to `true`
-(defaults to `false`).
 
 This field is only required if your bundle has graphics.
+
+### Config {#graphics-config}
+
+| Name           | Type    | Attributes | Default | Description                                                                        |
+| -------------- | ------- | ---------- | ------- | ---------------------------------------------------------------------------------- |
+| file           | string  |            |         | The location of the graphic relative to "/graphics".                               |
+| width          | number  |            |         | The designed width of the graphic.                                                 |
+| height         | number  |            |         | The designed height of the graphic.                                                |
+| name           | string  | optional   |         | A custom display name for the graphic.                                             |
+| description    | string  | optional   |         | Text that displays below the graphic in the dashboard.                             |
+| group          | string  | optional   |         | What sub-group the graphic should be in. (Graphics are already grouped by bundle). |
+| order          | number  | optional   |         | A number which determines where the graphic should be in the list.                 |
+| singleInstance | boolean | optional   | false   | Whether or not the graphic can be opened in multiple places at once.               |
+
+### Example {#graphics-example}
+
+```json
+"graphics": [
+    {
+        "file": "main.html",
+        "width": 1920,
+        "height": 1080,
+        "name": "Main Graphic",
+        "description": "This is the main graphic.",
+        "group": "Overlays",
+        "order": 1,
+    }
+]
+```
+
+![Graphics page example](/img/graphics-page.png)
